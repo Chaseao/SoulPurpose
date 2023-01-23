@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,27 +6,11 @@ public class TextParserTool
     
 }
 
-public class DialogueManager : SingletonMonoBehavior<DialogueManager>
-{
-    [SerializeField] List<DialogueSceneData> dialogueSceneData;
-
-    public void StartDialogue(DialogueSystemValidData.DIALOGUE_ID id)
-    {
-
-    }
-}
-
-[CreateAssetMenu(fileName = "New Data", menuName = "Dialogue/Data")]
-public class DialogueSceneData : ScriptableObject
-{
-    [SerializeField] ConversationData conversationData;
-}
-
 [System.Serializable]
 public class DialogueData
 {
     public bool WickIsSpeaker;
-    public string Dialogue;
+    [SerializeField, TextArea()]public string Dialogue;
 }
 
 [System.Serializable]
@@ -46,7 +29,7 @@ public class ConversationData
 public class DialogueBranchData
 {
     public string BranchText;
-    public List<string> Requirments;
+    public List<string> Requirements;
 }
 
 public class DialogueSystemValidData
@@ -64,11 +47,11 @@ public class DialogueSystemValidData
 
     public enum DIALOGUE_ID
     {
-        Glass1,
-        Glass2,
-        Glass3,
-        Letter1,
-        Letter2,
-        Letter3
+        glass1,
+        glass2,
+        glass3,
+        letter1,
+        letter2,
+        letter3
     };
 }
