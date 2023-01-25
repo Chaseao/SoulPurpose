@@ -1,13 +1,20 @@
-﻿using System.Collections.Generic;
+﻿using Sirenix.OdinInspector;
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Dialogue/ImageDatabase")]
-public class ImageDatabase : ScriptableObject
+public class ImageDatabase : SerializedScriptableObject
 {
     [SerializeField] Dictionary<string, Sprite> portraits;
 
     public Sprite GetPortrait(string characterName)
     {
-        return portraits[characterName];
+        if(portraits.TryGetValue(characterName, out var sprite))
+        {
+            return sprite;
+        }
+
+        Debug.Log("Could not find " + characterName);
+        return null;
     }
 }

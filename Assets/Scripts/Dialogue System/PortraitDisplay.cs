@@ -28,8 +28,3 @@ public class PortraitDisplay : MonoBehaviour
         }
     }
 }
-
-public class DialogueUIController : MonoBehaviour
-{
-
-}

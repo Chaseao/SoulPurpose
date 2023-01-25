@@ -8,9 +8,9 @@ using UnityEngine;
 
 public class DialogueManager : SingletonMonoBehavior<DialogueManager>
 {
-    public static Action<string> OnGainItem;
     public static Action<ConversationData> OnDialogueStarted;
     public static Action OnDialogueEnded;
+    public static Action<string, bool> OnTextUpdated;
 
     [SerializeField] List<SOConversationData> conversationGroup;
     [SerializeField] List<string> dialogueUnlocks;
@@ -34,7 +34,7 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
             return;
         }
 
-        var SOConversationData = conversationGroup.Find(data => data.Data.ID.ToLower().Equals(dialogueId));
+        var SOConversationData = conversationGroup.Find(data => data.Data.ID.ToLower().Equals(dialogueId.ToLower()));
         if (SOConversationData == null)
         {
             Debug.LogError("Could not find " + dialogueId + " in database");
@@ -53,7 +53,6 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
             yield return ProcessDialogue(dialogue, data.Conversant);
         }
 
-        HandleGains(data.Gives);
         HandleUnlock(data.Unlocks);
         int choiceSelection = HandleChoices(data.Choices);
         string nextDialogue = HandleLeadsTo(data.LeadsTo, choiceSelection);
@@ -66,7 +65,7 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
 
         foreach(var route in leadsTo)
         {
-            if(route.Requirements.Count == 0 || route.Requirements.Find(x => !dialogueUnlocks.Contains(x)) == null)
+            if(route.Requirements.Count == 0 || route.Requirements.Find(x => !dialogueUnlocks.Contains(x.ToLower())) == null)
             {
                 return route.BranchText;
             }
@@ -81,19 +80,11 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
         return 0;
     }
 
-    private static void HandleGains(string whatIsGained)
-    {
-        if (!whatIsGained.IsNullOrWhitespace())
-        {
-            OnGainItem?.Invoke(whatIsGained);
-        }
-    }
-
     private void HandleUnlock(string whatIsUnlocked)
     {
-        if (!whatIsUnlocked.IsNullOrWhitespace() && dialogueUnlocks.Contains(whatIsUnlocked))
+        if (!whatIsUnlocked.IsNullOrWhitespace() && !dialogueUnlocks.Contains(whatIsUnlocked.ToLower()))
         {
-            dialogueUnlocks.Add(whatIsUnlocked);
+            dialogueUnlocks.Add(whatIsUnlocked.ToLower());
         }
     }
 
@@ -103,7 +94,10 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
     {
         continueInputRecieved = false;
         string name = dialogue.WickIsSpeaker ? "Wick" : conversant;
-        Debug.Log(name + ": " + dialogue.Dialogue);
+        string text = name + ": " + dialogue.Dialogue;
+        Debug.Log(text);
+
+        OnTextUpdated?.Invoke(text, dialogue.WickIsSpeaker);
 
         Controller.OnInteract += OnContinueInput;
 
