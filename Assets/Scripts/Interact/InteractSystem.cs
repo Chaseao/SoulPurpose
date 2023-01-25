@@ -29,14 +29,11 @@ public class InteractSystem : MonoBehaviour
 
     void Interact()
     {
-        Debug.Log("interact");
         RaycastHit hit;
-        if (Physics.SphereCast(this.transform.position, 4 , transform.forward, out hit, 10))
+        LayerMask mask = LayerMask.GetMask("Item");
+        if (Physics.SphereCast(this.transform.position, 20 , transform.forward, out hit, 10, mask))
         {
-            if (hit.transform.CompareTag("Item"))
-            {
                 Debug.Log("HIT ITEM");
-            }
         }
     }
 }

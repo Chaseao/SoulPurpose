@@ -928,9 +928,9 @@ GameObject:
   - component: {fileID: 1572124623}
   - component: {fileID: 1572124622}
   - component: {fileID: 1572124621}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Glass
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
