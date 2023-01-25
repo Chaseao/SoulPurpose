@@ -23,9 +23,11 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
+        //Check for whether or not player is going higher than the max speed, added in another check for if the player wants to change directions
         if (Math.Abs(rigidbody.velocity.x) > maxX && (Mathf.Sign(movementForce.x) == Mathf.Sign(rigidbody.velocity.x))) movementForce.x = 0;
         if (Math.Abs(rigidbody.velocity.z) > maxZ && (Mathf.Sign(movementForce.z) == Mathf.Sign(rigidbody.velocity.z))) movementForce.z = 0;
         this.rigidbody.AddForce(movementForce, ForceMode.VelocityChange);
+        //Allows player to not slide
         if(playerInput.Equals(Vector2.zero))
         {
             rigidbody.velocity = Vector3.zero;
