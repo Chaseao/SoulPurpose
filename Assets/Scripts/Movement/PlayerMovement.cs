@@ -23,8 +23,8 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
-        if (Math.Abs(rigidbody.velocity.x) > maxX) movementForce.x = 0;
-        if (Math.Abs(rigidbody.velocity.z) > maxZ) movementForce.z = 0;
+        if (Math.Abs(rigidbody.velocity.x) > maxX && (Mathf.Sign(movementForce.x) == Mathf.Sign(rigidbody.velocity.x))) movementForce.x = 0;
+        if (Math.Abs(rigidbody.velocity.z) > maxZ && (Mathf.Sign(movementForce.z) == Mathf.Sign(rigidbody.velocity.z))) movementForce.z = 0;
         this.rigidbody.AddForce(movementForce, ForceMode.VelocityChange);
         if(playerInput.Equals(Vector2.zero))
         {
