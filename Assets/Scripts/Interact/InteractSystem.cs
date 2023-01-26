@@ -5,17 +5,7 @@ using UnityEngine.InputSystem;
 
 public class InteractSystem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private float RangeOfInteract = 2;
 
     private void OnEnable()
     {
@@ -27,13 +17,21 @@ public class InteractSystem : MonoBehaviour
         Controller.OnInteract -= Interact;
     }
 
+    void Update()
+    {
+        
+    }
+
     void Interact()
     {
-        RaycastHit hit;
-        LayerMask mask = LayerMask.GetMask("Item");
-        if (Physics.SphereCast(this.transform.position, 20 , transform.forward, out hit, 10, mask))
+        RaycastHit[] hits;
+        hits = Physics.SphereCastAll(this.transform.position, RangeOfInteract, transform.forward, 0);
+        foreach (RaycastHit hit in hits)
         {
+            if(hit.collider.gameObject.CompareTag("Item"))
+            {
                 Debug.Log("HIT ITEM");
+            }
         }
     }
 }
