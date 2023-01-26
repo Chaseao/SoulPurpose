@@ -8,16 +8,24 @@ public class ChoicesDisplay : MonoBehaviour
 
     List<TextMeshProUGUI> choices = new List<TextMeshProUGUI>();
 
-    public void Display(ConversationData conversationData)
+    public void Display(List<string> validChoices)
     {
-        foreach(var choiceOption in conversationData.Choices)
+        foreach(var choiceOption in validChoices)
         {
             GameObject instance = Instantiate(choiceTemplate, transform);
             var textBox = instance.transform.GetComponentInChildren<TextMeshProUGUI>();
-            textBox.text = choiceOption.BranchText;
+            textBox.text = choiceOption;
             textBox.color = Color.gray;
             choices.Add(textBox);
         }
+
+        if (choices.Count > 0) SelectChoice(0);
+    }
+
+    public void SelectChoice(int index)
+    {
+        choices.ForEach(choice => choice.color = Color.gray);
+        choices[index].color = Color.black;
     }
 
     public void Hide()

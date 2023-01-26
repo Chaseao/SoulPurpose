@@ -11,18 +11,20 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
     public static Action<ConversationData> OnDialogueStarted;
     public static Action OnDialogueEnded;
     public static Action<string, bool> OnTextUpdated;
-
-    [Button]
-    public void TESTCONVERSTION(SOConversationData conversationData) => JsonDialogueConverter.ConvertToJson(conversationData.Data);
+    public static Action<List<string>> OnChoiceMenuOpen;
+    public static Action OnChoiceMenuClose;
 
     [SerializeField] float dialogueSpeed;
     [SerializeField] float dialogueFastSpeed;
     [SerializeField] List<SOConversationData> conversationGroup;
     [SerializeField] List<string> dialogueUnlocks;
 
+    Dictionary<string, DialogueBranchData> choiceToPath = new Dictionary<string, DialogueBranchData>();
+
     float currentDialogueSpeed;
     bool inDialogue;
     bool continueInputRecieved;
+    string choiceSelected;
     public bool InDialogue => inDialogue;
 
     [Button]
@@ -35,9 +37,13 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
     {
         if(dialogueId == null || dialogueId.Equals("Exit"))
         {
-            inDialogue = false;
-            OnDialogueEnded?.Invoke();
+            ExitDialogue();
             return;
+        }
+        else if (!inDialogue)
+        {
+            inDialogue = true;
+            Controller.Instance.SwapToUI();
         }
 
         var SOConversationData = conversationGroup.Find(data => data.Data.ID.ToLower().Equals(dialogueId.ToLower()));
@@ -50,6 +56,13 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
         StartCoroutine(HandleConversation(SOConversationData.Data));
     }
 
+    private void ExitDialogue()
+    {
+        inDialogue = false;
+        OnDialogueEnded?.Invoke();
+        Controller.Instance.SwapToGameplay();
+    }
+
     private IEnumerator HandleConversation(ConversationData data)
     {
         OnDialogueStarted?.Invoke(data);
@@ -60,18 +73,19 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
         }
 
         HandleUnlock(data.Unlocks);
-        int choiceSelection = HandleChoices(data.Choices);
-        string nextDialogue = HandleLeadsTo(data.LeadsTo, choiceSelection);
+        GenerateChoiceToPath(data);
+        yield return HandleChoices();
+        string nextDialogue = HandleLeadsTo(data.LeadsTo);
         StartDialogue(nextDialogue);
     }
 
-    private string HandleLeadsTo(List<DialogueBranchData> leadsTo, int choiceSelection)
+    private string HandleLeadsTo(List<DialogueBranchData> leadsTo)
     {
-        if (choiceSelection != -1) return leadsTo[choiceSelection].BranchText;
+        if (choiceToPath.Count != 0) return choiceToPath[choiceSelected].BranchText;
 
         foreach(var route in leadsTo)
         {
-            if(route.Requirements.Count == 0 || route.Requirements.Find(x => !dialogueUnlocks.Contains(x.ToLower())) == null)
+            if(route.Requirements.Count == 0 || CheckIfMeetsRequirements(route))
             {
                 return route.BranchText;
             }
@@ -80,10 +94,28 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
         return null;
     }
 
-    private int HandleChoices(List<DialogueBranchData> choices)
+    public void SelectChoice(string choice) => choiceSelected = choice;
+
+    private IEnumerator HandleChoices()
     {
-        if (choices.Count == 0) return -1;
-        return 0;
+        choiceSelected = null;
+        if (choiceToPath.Count == 0) yield break;
+
+        OnChoiceMenuOpen?.Invoke(choiceToPath.Keys.ToList());
+        yield return new WaitUntil(() => choiceSelected != null);
+        OnChoiceMenuClose?.Invoke();
+    }
+
+    private void GenerateChoiceToPath(ConversationData conversation)
+    {
+        choiceToPath.Clear();
+        for (int i = 0; i < conversation.Choices.Count; i++)
+        {
+            if (CheckIfMeetsRequirements(conversation.Choices[i]))
+            {
+                choiceToPath.Add(conversation.Choices[i].BranchText, conversation.LeadsTo[i]);
+            }
+        }
     }
 
     private void HandleUnlock(string whatIsUnlocked)
@@ -92,6 +124,11 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
         {
             dialogueUnlocks.Add(whatIsUnlocked.ToLower());
         }
+    }
+
+    private bool CheckIfMeetsRequirements(DialogueBranchData branchData)
+    {
+        return branchData.Requirements.Find(x => !dialogueUnlocks.Contains(x.ToLower())) == null;
     }
 
     private void OnContinueInput() => continueInputRecieved = true;
@@ -103,25 +140,25 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
 
         yield return TypewriterDialogue(name, dialogue.Dialogue, dialogue.WickIsSpeaker);
 
-        Controller.OnInteract += OnContinueInput;
+        Controller.OnSelect += OnContinueInput;
 
         yield return new WaitUntil(() => continueInputRecieved);
 
-        Controller.OnInteract -= OnContinueInput;
+        Controller.OnSelect -= OnContinueInput;
     }
 
     private IEnumerator TypewriterDialogue(string name, string line, bool isWickSpeaker)
     {
         currentDialogueSpeed = dialogueSpeed;
         string loadedText = name;
-        Controller.OnInteract += SpeedUpText;
+        Controller.OnSelect += SpeedUpText;
         foreach(char letter in line)
         {
             loadedText += letter;
             OnTextUpdated?.Invoke(loadedText, isWickSpeaker);
             yield return new WaitForSeconds(1 / currentDialogueSpeed);
         }
-        Controller.OnInteract -= SpeedUpText;
+        Controller.OnSelect -= SpeedUpText;
     }
 
     private void SpeedUpText() => currentDialogueSpeed = dialogueFastSpeed;

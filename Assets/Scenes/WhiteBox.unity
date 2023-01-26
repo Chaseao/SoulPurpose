@@ -231,23 +231,83 @@ MonoBehaviour:
     m_ActionId: b6b61349-4087-436f-818c-19001bc83357
     m_ActionName: Gameplay/Pause[/Keyboard/escape]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 148449181}
+        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
+        m_MethodName: NavigateMenu
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 100702a6-2f17-4121-a31e-cf068476d40b
     m_ActionName: UI/Navigate Menu
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 148449181}
+        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
+        m_MethodName: Select
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 44a4228b-fc36-42c8-acb8-0a18489ddb16
     m_ActionName: UI/Select
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 148449181}
+        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
+        m_MethodName: GoBack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 48c0b318-fe10-4854-8754-804a9619c585
     m_ActionName: UI/Go Back
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 148449181}
+        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
+        m_MethodName: Skip
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 9dc674c5-a479-4c94-81a1-6db0babbae6e
     m_ActionName: UI/Skip
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 148449181}
+        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
+        m_MethodName: Resume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: b0f996c3-4345-4bdc-842f-1d985eac0c4c
     m_ActionName: UI/Resume
   m_NeverAutoSwitchControlSchemes: 0
@@ -267,6 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50b9584e58f13cd45bc2e75d0132c95b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInput: {fileID: 148449180}
 --- !u!4 &148449182
 Transform:
   m_ObjectHideFlags: 0
@@ -408,6 +469,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946e59b96c1711e419fdfccb6271bbb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueSpeed: 0
+  dialogueFastSpeed: 0
   conversationGroup:
   - {fileID: 11400000, guid: cf73def97631d9343ac46abe504ede6b, type: 2}
   dialogueUnlocks: []

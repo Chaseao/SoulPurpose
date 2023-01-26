@@ -25,12 +25,12 @@ MonoBehaviour:
       Dialogue: Thats cool
     Choices:
     - BranchText: Your Cool
-      Requirements: []
+      Requirements:
+      - SeenLetter
     - BranchText: Your Lame
       Requirements: []
     LeadsTo:
     - BranchText: Glass2
-      Requirements:
-      - SeenLetter
+      Requirements: []
     - BranchText: Exit
       Requirements: []

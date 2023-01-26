@@ -17,6 +17,11 @@ public class Controller : SingletonMonoBehavior<Controller>
     public static Action OnSkip;
     public static Action OnResume;
 
+    [SerializeField] PlayerInput playerInput;
+
+    public void SwapToUI() => playerInput.SwitchCurrentActionMap("UI");
+    public void SwapToGameplay() => playerInput.SwitchCurrentActionMap("Gameplay");
+
     #region Gameplay Layout
 
     public void Move(InputAction.CallbackContext context)
