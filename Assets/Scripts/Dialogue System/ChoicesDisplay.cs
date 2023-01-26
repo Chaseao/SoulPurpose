@@ -1,12 +1,18 @@
-﻿using System.Collections.Generic;
+﻿using Sirenix.Utilities;
+using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ChoicesDisplay : MonoBehaviour
 {
     [SerializeField] GameObject choiceTemplate;
+    [SerializeField] float scaleFactor;
 
-    List<TextMeshProUGUI> choices = new List<TextMeshProUGUI>();
+    List<TextMeshProUGUI> choicesText = new List<TextMeshProUGUI>();
+    List<RectTransform> choices = new List<RectTransform>();
+
 
     public void Display(List<string> validChoices)
     {
@@ -16,16 +22,22 @@ public class ChoicesDisplay : MonoBehaviour
             var textBox = instance.transform.GetComponentInChildren<TextMeshProUGUI>();
             textBox.text = choiceOption;
             textBox.color = Color.gray;
-            choices.Add(textBox);
+            choicesText.Add(textBox);
+            choices.Add(instance.GetComponent<RectTransform>());
         }
 
-        if (choices.Count > 0) SelectChoice(0);
+        if (choicesText.Count > 0) SelectChoice(0);
     }
 
     public void SelectChoice(int index)
     {
-        choices.ForEach(choice => choice.color = Color.gray);
-        choices[index].color = Color.black;
+        choicesText.ForEach(choice => choice.color = Color.gray);
+        choicesText[index].color = Color.black;
+        if (choices.Count > 1)
+        {
+            choices.ForEach(x => x.localScale = Vector3.one);
+            choices[index].localScale = Vector3.one * scaleFactor;
+        }
     }
 
     public void Hide()
@@ -41,6 +53,7 @@ public class ChoicesDisplay : MonoBehaviour
             Destroy(transform.GetChild(children).gameObject);
             children--;
         }
+        choicesText.Clear();
         choices.Clear();
     }
 }

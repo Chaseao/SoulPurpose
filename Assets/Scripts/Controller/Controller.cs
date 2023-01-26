@@ -67,6 +67,7 @@ public class Controller : SingletonMonoBehavior<Controller>
 
     public void NavigateMenu(InputAction.CallbackContext context)
     {
+        if(context.started)
         OnNavigateMenu?.Invoke(context.ReadValue<Vector2>());
     }
 

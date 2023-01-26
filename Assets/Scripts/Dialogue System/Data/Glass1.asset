@@ -29,8 +29,12 @@ MonoBehaviour:
       - SeenLetter
     - BranchText: Your Lame
       Requirements: []
+    - BranchText: Wait what?
+      Requirements: []
     LeadsTo:
     - BranchText: Glass2
       Requirements: []
     - BranchText: Exit
+      Requirements: []
+    - BranchText: Glass1
       Requirements: []

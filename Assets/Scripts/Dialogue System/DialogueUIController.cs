@@ -40,7 +40,7 @@ public class DialogueUIController : MonoBehaviour
 
     private void UpdateChoiceSelection(Vector2 navigation)
     {
-        currentChoice += Mathf.RoundToInt(navigation.x);
+        currentChoice += Mathf.RoundToInt(navigation.normalized.x);
         currentChoice = Mathf.Clamp(currentChoice, 0, totalChoices - 1);
         choicesDisplay.SelectChoice(currentChoice);
     }

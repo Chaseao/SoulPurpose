@@ -1526,6 +1526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   choiceTemplate: {fileID: 8838967234143712388, guid: 8b1743bcaff5a0e4aa556be21b67d653, type: 3}
+  scaleFactor: 1.1
 --- !u!114 &1901853018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1547,6 +1548,6 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 300, y: 100}
-  m_Spacing: {x: 0, y: 0}
+  m_Spacing: {x: 80, y: 0}
   m_Constraint: 2
   m_ConstraintCount: 1
