@@ -1,0 +1,32 @@
+{
+    "ID": "Glass1",
+    "Conversant": "Baalmot",
+    "Unlocks": "",
+    "Dialogues": [
+        {
+            "WickIsSpeaker": false,
+            "Dialogue": "Hey"
+        },
+        {
+            "WickIsSpeaker": true,
+            "Dialogue": "I really like your shirt"
+        },
+        {
+            "WickIsSpeaker": false,
+            "Dialogue": "Thats cool"
+        }
+    ],
+    "Choices": [],
+    "LeadsTo": [
+        {
+            "BranchText": "Glass2",
+            "Requirements": [
+                "SeenLetter"
+            ]
+        },
+        {
+            "BranchText": "Exit",
+            "Requirements": []
+        }
+    ]
+}

@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationData:
     ID: Glass1
-    Conversant: Glass
-    Gives: 
+    Conversant: Baalmot
     Unlocks: 
     Dialogues:
     - WickIsSpeaker: 0
@@ -24,7 +23,11 @@ MonoBehaviour:
       Dialogue: I really like your shirt
     - WickIsSpeaker: 0
       Dialogue: Thats cool
-    Choices: []
+    Choices:
+    - BranchText: Your Cool
+      Requirements: []
+    - BranchText: Your Lame
+      Requirements: []
     LeadsTo:
     - BranchText: Glass2
       Requirements:

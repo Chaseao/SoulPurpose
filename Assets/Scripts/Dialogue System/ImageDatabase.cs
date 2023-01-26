@@ -9,7 +9,7 @@ public class ImageDatabase : SerializedScriptableObject
 
     public Sprite GetPortrait(string characterName)
     {
-        if(portraits.TryGetValue(characterName, out var sprite))
+        if(portraits.TryGetValue(characterName.ToLower(), out var sprite))
         {
             return sprite;
         }

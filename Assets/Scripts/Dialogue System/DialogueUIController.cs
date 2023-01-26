@@ -5,6 +5,7 @@ public class DialogueUIController : MonoBehaviour
 {
     [SerializeField] PortraitDisplay leftPortrait, rightPortrait;
     [SerializeField] TextBoxDisplay textBoxDisplay;
+    [SerializeField] ChoicesDisplay choicesDisplay;
 
     private void OnEnable()
     {
@@ -18,6 +19,7 @@ public class DialogueUIController : MonoBehaviour
         leftPortrait.Hide();
         rightPortrait.Hide();
         textBoxDisplay.Hide();
+        choicesDisplay.Hide();
         DialogueManager.OnTextUpdated -= textBoxDisplay.UpdateDialogueText;
     }
 
@@ -26,6 +28,7 @@ public class DialogueUIController : MonoBehaviour
         leftPortrait.Display(conversation.Conversant);
         rightPortrait.Display("wick");
         textBoxDisplay.Display();
+        choicesDisplay.Display(conversation);
         DialogueManager.OnTextUpdated += textBoxDisplay.UpdateDialogueText;
     }
 

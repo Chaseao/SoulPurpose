@@ -12,6 +12,7 @@ public class PortraitDisplay : MonoBehaviour
     {
         ToggleChildrenDisplay(true);
         portrait.sprite = imageDatabase.GetPortrait(characterName);
+        portrait.enabled = portrait.sprite != null;
         textField.text =  characterName[0].ToString().ToUpper() + characterName.Substring(1);
     }
 

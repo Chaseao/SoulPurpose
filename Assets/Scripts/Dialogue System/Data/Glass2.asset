@@ -18,7 +18,7 @@ MonoBehaviour:
     Gives: 
     Unlocks: 
     Dialogues:
-    - WickIsSpeaker: 0
+    - WickIsSpeaker: 1
       Dialogue: Wait this was mentioned in the letter
     Choices: []
     LeadsTo: []

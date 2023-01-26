@@ -12,9 +12,15 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
     public static Action OnDialogueEnded;
     public static Action<string, bool> OnTextUpdated;
 
+    [Button]
+    public void TESTCONVERSTION(SOConversationData conversationData) => JsonDialogueConverter.ConvertToJson(conversationData.Data);
+
+    [SerializeField] float dialogueSpeed;
+    [SerializeField] float dialogueFastSpeed;
     [SerializeField] List<SOConversationData> conversationGroup;
     [SerializeField] List<string> dialogueUnlocks;
 
+    float currentDialogueSpeed;
     bool inDialogue;
     bool continueInputRecieved;
     public bool InDialogue => inDialogue;
@@ -93,11 +99,9 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
     private IEnumerator ProcessDialogue(DialogueData dialogue, string conversant)
     {
         continueInputRecieved = false;
-        string name = dialogue.WickIsSpeaker ? "Wick" : conversant;
-        string text = name + ": " + dialogue.Dialogue;
-        Debug.Log(text);
+        string name = (dialogue.WickIsSpeaker ? "Wick" : conversant) + ": ";
 
-        OnTextUpdated?.Invoke(text, dialogue.WickIsSpeaker);
+        yield return TypewriterDialogue(name, dialogue.Dialogue, dialogue.WickIsSpeaker);
 
         Controller.OnInteract += OnContinueInput;
 
@@ -105,4 +109,20 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
 
         Controller.OnInteract -= OnContinueInput;
     }
+
+    private IEnumerator TypewriterDialogue(string name, string line, bool isWickSpeaker)
+    {
+        currentDialogueSpeed = dialogueSpeed;
+        string loadedText = name;
+        Controller.OnInteract += SpeedUpText;
+        foreach(char letter in line)
+        {
+            loadedText += letter;
+            OnTextUpdated?.Invoke(loadedText, isWickSpeaker);
+            yield return new WaitForSeconds(1 / currentDialogueSpeed);
+        }
+        Controller.OnInteract -= SpeedUpText;
+    }
+
+    private void SpeedUpText() => currentDialogueSpeed = dialogueFastSpeed;
 }

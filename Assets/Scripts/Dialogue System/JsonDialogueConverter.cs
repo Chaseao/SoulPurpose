@@ -1,9 +1,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TextParserTool
+public static class JsonDialogueConverter
 {
-    
+    public static void ConvertToJson(ConversationData conversation)
+    {
+        string jsonFile = JsonUtility.ToJson(conversation, true);
+        string conversationID = conversation.ID;
+        System.IO.File.WriteAllText(Application.dataPath + $"/Dialogue/{conversationID}.json", jsonFile);
+    }
 }
 
 [System.Serializable]
@@ -18,9 +23,9 @@ public class ConversationData
 {
     public string ID;
     public string Conversant;
-    public string Gives;
     public string Unlocks;
     public List<DialogueData> Dialogues;
+    public Dictionary<DialogueSystemValidData.SoundEmotions, int> Emotions;
     public List<DialogueBranchData> Choices;
     public List<DialogueBranchData> LeadsTo;
 }
@@ -54,4 +59,14 @@ public class DialogueSystemValidData
         letter2,
         letter3
     };
+
+    public enum SoundEmotions
+    {
+        sorrow,
+        pain,
+        warmth,
+        fundamental,
+        bliss,
+        fear
+    }
 }
