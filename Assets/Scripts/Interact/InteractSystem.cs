@@ -1,11 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class InteractSystem : MonoBehaviour
 {
-    [SerializeField] private float RangeOfInteract = 2;
+    [SerializeField] private float rangeOfInteract = 2;
+    private IInteractable item;
 
     private void OnEnable()
     {
@@ -19,18 +22,27 @@ public class InteractSystem : MonoBehaviour
 
     void Update()
     {
-        
+        RaycastHit[] hits;
+        hits = Physics.SphereCastAll(this.transform.position, rangeOfInteract, transform.forward, 0);
+        foreach (RaycastHit hit in hits)
+        {
+            if (hit.collider.gameObject.CompareTag("Item"))
+            {
+                //Make object glow
+            }
+        }
     }
 
     void Interact()
     {
         RaycastHit[] hits;
-        hits = Physics.SphereCastAll(this.transform.position, RangeOfInteract, transform.forward, 0);
+        hits = Physics.SphereCastAll(this.transform.position, rangeOfInteract, transform.forward, 0);
         foreach (RaycastHit hit in hits)
         {
             if(hit.collider.gameObject.CompareTag("Item"))
             {
-                Debug.Log("HIT ITEM");
+                item = hit.collider.gameObject.GetComponent<IInteractable>();
+                item.ExecuteDialogue();
             }
         }
     }

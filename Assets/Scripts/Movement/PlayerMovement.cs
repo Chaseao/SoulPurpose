@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 playerInput;
     private float maxX;
     private float maxZ;
+    [SerializeField] private bool canMove = true;
     [SerializeField] private float maxSpeed = 5f;
     [SerializeField] private float speed = 0.25f;
 
@@ -47,6 +48,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Move(Vector2 input)
     {
+        if(!canMove)
+        {
+            input = Vector3.zero;
+        }
         playerInput= input;
         input *= speed;
         movementForce = new Vector3(input.x, 0f, input.y);

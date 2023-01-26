@@ -965,6 +965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1f586cb6f8aaf45b79d242125f3dbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canMove: 1
   maxSpeed: 2
   speed: 0.5
 --- !u!114 &1123556431
@@ -979,6 +980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0617816e16eb91459d69911a55fabde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rangeOfInteract: 2
 --- !u!1 &1572124619
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,6 +993,7 @@ GameObject:
   - component: {fileID: 1572124623}
   - component: {fileID: 1572124622}
   - component: {fileID: 1572124621}
+  - component: {fileID: 1572124624}
   m_Layer: 0
   m_Name: Glass
   m_TagString: Item
@@ -1076,6 +1079,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572124619}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1572124624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572124619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e7916505c0782941bf8c7b8efa89701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueID: 0
 --- !u!1 &1597719669
 GameObject:
   m_ObjectHideFlags: 0
