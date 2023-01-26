@@ -44,6 +44,11 @@ public class InteractSystem : MonoBehaviour
                 item = hit.collider.gameObject.GetComponent<IInteractable>();
                 item.ExecuteDialogue();
             }
+            else if(hit.collider.gameObject.CompareTag("Key"))
+            {
+                item = hit.collider.gameObject.GetComponent<IInteractable>();
+                item.OpenDoor();
+            }
         }
     }
 }

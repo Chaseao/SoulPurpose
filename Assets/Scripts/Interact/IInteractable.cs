@@ -6,4 +6,6 @@ public interface IInteractable
 {
     void ExecuteDialogue();
 
+    void OpenDoor();
+
 }

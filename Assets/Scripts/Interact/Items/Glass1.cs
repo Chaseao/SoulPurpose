@@ -10,4 +10,9 @@ public class Glass1 : MonoBehaviour, IInteractable
         print("Starting Glass1 Dialogue");
         DialogueManager.Instance.StartDialogue(dialogueID);
     }
+
+    public void OpenDoor()
+    {
+        //Should never activate this method
+    }
 }
