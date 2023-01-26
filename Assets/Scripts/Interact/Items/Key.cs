@@ -14,6 +14,6 @@ public class Key : MonoBehaviour, IInteractable
     {
         //Later we can change this to an animation that opens the door
         door.SetActive(false);
-        this.gameObject.SetActive(true);
+        this.gameObject.SetActive(false);
     }
 }
