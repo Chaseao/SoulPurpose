@@ -1,0 +1,57 @@
+{
+    "ID": "BravoTalk",
+    "Conversant": "Martyn",
+    "Unlocks": "TalkTalk",
+    "Dialogues": [
+        {
+            "WickIsSpeaker": true,
+            "Dialogue": "Hey what are you up to?"
+        },
+        {
+            "WickIsSpeaker": false,
+            "Dialogue": "Nothing much"
+        },
+        {
+            "WickIsSpeaker": true,
+            "Dialogue": "Cool"
+        }
+    ],
+    "EmotionsValue": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "Choices": [
+        {
+            "BranchText": "Give Up",
+            "Requirements": []
+        },
+        {
+            "BranchText": "Fight Back",
+            "Requirements": [
+                "SeenKey"
+            ]
+        },
+        {
+            "BranchText": "Exit Dialogue",
+            "Requirements": []
+        }
+    ],
+    "LeadsTo": [
+        {
+            "BranchText": "AceTalk",
+            "Requirements": []
+        },
+        {
+            "BranchText": "CharlieTalk",
+            "Requirements": []
+        },
+        {
+            "BranchText": "Exit",
+            "Requirements": []
+        }
+    ]
+}

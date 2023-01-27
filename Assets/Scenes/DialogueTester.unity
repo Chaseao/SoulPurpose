@@ -387,6 +387,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 032e8ddbcc714c54b8e5e510836f8049, type: 2}
   - {fileID: 11400000, guid: 544994c08ac600d4592ca4a08db22da0, type: 2}
   dialogueUnlocks: []
+  box: "ID: BravoTalk\r\nConversant: Martyn\r\nSound:\r\n\tSorrow: 0\r\n\tPain: 0
+    \r\n\tWarmth: 0\r\n\tFundamental: 0\r\n\tBliss: 0\r\n\tFear: 0\r\nUnlocks: TalkTalk\r\nDialogue:\r\n\tWick:
+    Hey what are you up to?\r\n\tMartyn: Nothing much\r\n\tWick: Cool\r\nChoices:\r\n\tGive
+    Up\r\n\tFight Back ~ SeenKey\r\n\tExit Dialogue\r\nLeads to:\r\n\tAceTalk\r\n\tCharlieTalk\r\n\tExit"
 --- !u!1 &456952261
 GameObject:
   m_ObjectHideFlags: 0

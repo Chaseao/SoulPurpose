@@ -18,6 +18,7 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
     [SerializeField] float dialogueFastSpeed;
     [SerializeField] List<SOConversationData> conversationGroup;
     [SerializeField] List<string> dialogueUnlocks;
+    [SerializeField, TextArea(10, 40)] string box;
 
     Dictionary<string, DialogueBranchData> choiceToPath = new Dictionary<string, DialogueBranchData>();
 
@@ -26,6 +27,12 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
     bool continueInputRecieved;
     string choiceSelected;
     public bool InDialogue => inDialogue;
+
+    [Button]
+    public void TryToConvert()
+    {
+        JsonDialogueConverter.ConvertToJson(box);
+    }
 
     [Button]
     public void StartDialogue(DialogueSystemValidData.DIALOGUE_ID id)
