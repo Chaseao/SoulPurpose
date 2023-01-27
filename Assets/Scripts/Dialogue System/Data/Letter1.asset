@@ -15,10 +15,29 @@ MonoBehaviour:
   conversationData:
     ID: Letter1
     Conversant: Letter
-    Gives: 
     Unlocks: SeenLetter
     Dialogues:
     - WickIsSpeaker: 1
       Dialogue: Woah its a letter!
-    Choices: []
-    LeadsTo: []
+    Choices:
+    - BranchText: Woah
+      Requirements: []
+    - BranchText: How
+      Requirements: []
+    - BranchText: MMMM
+      Requirements: []
+    - BranchText: <3
+      Requirements: []
+    - BranchText: :(
+      Requirements: []
+    LeadsTo:
+    - BranchText: Glass2
+      Requirements: []
+    - BranchText: Glass2
+      Requirements: []
+    - BranchText: Glass2
+      Requirements: []
+    - BranchText: Glass2
+      Requirements: []
+    - BranchText: Glass2
+      Requirements: []
