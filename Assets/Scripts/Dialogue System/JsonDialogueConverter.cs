@@ -27,6 +27,11 @@ public static class JsonDialogueConverter
         ConvertToJson(ConvertToConversation(text));
     }
 
+    public static ConversationData ConvertFromJson(TextAsset jsonFile)
+    {
+        return JsonUtility.FromJson<ConversationData>(jsonFile.text);
+    }
+
     private static ConversationData ConvertToConversation(string text)
     {
         var conversation = new ConversationData();

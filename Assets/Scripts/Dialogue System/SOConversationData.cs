@@ -5,6 +5,7 @@ using UnityEngine;
 public class SOConversationData : ScriptableObject
 {
     [SerializeField] ConversationData conversationData;
+    [SerializeField] TextAsset jsonConversationData;
 
-    public ConversationData Data => conversationData;
+    public ConversationData Data => jsonConversationData != null ? JsonDialogueConverter.ConvertFromJson(jsonConversationData) : conversationData;
 }
