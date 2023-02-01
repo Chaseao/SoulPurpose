@@ -33,7 +33,7 @@ public class ChoicesDisplay : MonoBehaviour
     {
         choicesText.ForEach(choice => choice.color = Color.gray);
         choicesText[index].color = Color.black;
-        if (choices.Count > 1)
+        if (choices.Count > 0)
         {
             choices.ForEach(x => x.localScale = Vector3.one);
             choices[index].localScale = Vector3.one * scaleFactor;

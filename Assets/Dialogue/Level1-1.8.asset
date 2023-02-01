@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level1-1.8
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level1-1.8
+    Conversant: Father
+    Unlocks: N/A
+    Dialogues:
+    - WickIsSpeaker: 0
+      Dialogue: "Well\u2026 my brother-in-law thinks that making contact with some
+        rehab programs might help me\u2026 with an, uh, upcoming court hearing."
+    - WickIsSpeaker: 0
+      Dialogue: "There was an accident almost two weeks ago. I was out driving, after
+        a few drinks\u2026 and this girl just\u2026 just came out of nowhere!"
+    - WickIsSpeaker: 0
+      Dialogue: "It was so dark and I\u2014 I couldn\u2019t do anything. She wasn\u2019t
+        even with anybody, I don\u2019t know why she was there!"
+    - WickIsSpeaker: 0
+      Dialogue: "He\u2019s probably right anyway, legal help or not, I need some
+        help\u2026"
+    EmotionsValue: 000000000000000000000000000000000000000000000000
+    Choices:
+    - BranchText: "\u201CI have some questions to ask.\u201D"
+      Requirements: []
+    LeadsTo:
+    - BranchText: Level1-2.0
+      Requirements: []
+  jsonConversationData: {fileID: 0}

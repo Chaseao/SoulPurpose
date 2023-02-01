@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level1-2.4
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level1-2.4
+    Conversant: Father
+    Unlocks: N/A
+    Dialogues:
+    - WickIsSpeaker: 0
+      Dialogue: "The accident was about two weeks ago. I was out driving at night
+        and\u2026 well I hit that girl. She didn\u2019t make it."
+    - WickIsSpeaker: 0
+      Dialogue: "But it was an accident! I don\u2019t know why she was alone\u2026
+        I swear there was nothing I could have done, it was a freak accident!!"
+    EmotionsValue: 000000000000000000000000000000000000000000000000
+    Choices:
+    - BranchText: "<b>\u201CCan you tell me more about the accident?\u201D</b>"
+      Requirements: []
+    - BranchText: "\u201CI saw your broken window, what happened?\u201D"
+      Requirements:
+      - SeenWindow
+    - BranchText: "\u201CCan you tell me more about your wife\u2019s passing?\u201D"
+      Requirements:
+      - SeenNewspaper
+    - BranchText: "\u201CI\u2019d like to hear more about the court hearing.\u201D"
+      Requirements:
+      - SeenLetter
+    LeadsTo:
+    - BranchText: Level1-3.1
+      Requirements: []
+    - BranchText: Level1-2.1
+      Requirements: []
+    - BranchText: Level1-2.2
+      Requirements: []
+    - BranchText: Level1-2.3
+      Requirements: []
+  jsonConversationData: {fileID: 0}

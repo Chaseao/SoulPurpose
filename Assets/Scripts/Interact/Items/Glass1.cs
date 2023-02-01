@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Glass1 : MonoBehaviour, IInteractable
 {
-    [SerializeField] private DialogueSystemValidData.DIALOGUE_ID dialogueID;
+    [SerializeField] private SOConversationData dialogue;
     public void ExecuteDialogue()
     {
         print("Starting Glass1 Dialogue");
-        DialogueManager.Instance.StartDialogue(dialogueID);
+        DialogueManager.Instance.StartDialogue(dialogue);
     }
 
     public void OpenDoor()

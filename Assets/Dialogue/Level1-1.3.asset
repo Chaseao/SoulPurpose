@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level1-1.3
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level1-1.3
+    Conversant: Father
+    Unlocks: SeenLevel1-1.3
+    Dialogues:
+    - WickIsSpeaker: 0
+      Dialogue: "Oh\u2026 uh\u2014 ya he\u2019s been trying to get a little better
+        I guess. He, uh\u2026 must have snuck that bottle past me\u2026 yeah\u2026"
+    EmotionsValue: 000000000000000000000000000000000000000000000000
+    Choices:
+    - BranchText: "\u201CYou\u2019re lying\u2014 you and I both know the bottle isn\u2019t
+        his, and neither are the brochures.\u201D"
+      Requirements: []
+    LeadsTo:
+    - BranchText: Level1-1.5
+      Requirements: []
+  jsonConversationData: {fileID: 0}

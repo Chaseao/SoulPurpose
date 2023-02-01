@@ -28,9 +28,9 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
     public bool InDialogue => inDialogue;
 
     [Button]
-    public void StartDialogue(DialogueSystemValidData.DIALOGUE_ID id)
+    public void StartDialogue(SOConversationData conversation)
     {
-        StartDialogue(id.ToString());
+        StartDialogue(conversation.Data.ID);
     }
 
     public void StartDialogue(string dialogueId)
@@ -128,6 +128,8 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
 
     private bool CheckIfMeetsRequirements(DialogueBranchData branchData)
     {
+        branchData.Requirements.ForEach(x => Debug.Log(x));
+        branchData.Requirements.Where(x => !dialogueUnlocks.Contains(x.ToLower())).ForEach(x => Debug.Log(x.ToString()));
         return branchData.Requirements.Find(x => !dialogueUnlocks.Contains(x.ToLower())) == null;
     }
 

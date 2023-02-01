@@ -55,6 +55,7 @@ public class DialogueUIController : MonoBehaviour
         choicesDisplay.Display(validChoices);
         choices = validChoices;
         totalChoices = validChoices.Count;
+        currentChoice = 0;
         Controller.OnSelect += SelectChoice;
         Controller.OnNavigateMenu += UpdateChoiceSelection;
     }

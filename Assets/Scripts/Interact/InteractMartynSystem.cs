@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InteractMartynSystem : MonoBehaviour
 {
-    [SerializeField] private DialogueSystemValidData.DIALOGUE_ID dialogueID;
+    [SerializeField] private SOConversationData dialogue;
 
     private void OnEnable()
     {
@@ -19,6 +19,6 @@ public class InteractMartynSystem : MonoBehaviour
     void InteractMartyn()
     {
         print("Starting Martyn Dialogue");
-        DialogueManager.Instance.StartDialogue(dialogueID);
+        DialogueManager.Instance.StartDialogue(dialogue);
     }
 }

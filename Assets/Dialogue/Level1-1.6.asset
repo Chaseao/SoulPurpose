@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level1-1.6
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level1-1.6
+    Conversant: Father
+    Unlocks: N/A
+    Dialogues:
+    - WickIsSpeaker: 0
+      Dialogue: "The accident was two weeks ago\u2014 God I can\u2019t believe it\u2019s
+        only been two weeks\u2026"
+    - WickIsSpeaker: 0
+      Dialogue: "I was out driving, and this girl\u2026 she appeared out of nowhere!"
+    - WickIsSpeaker: 0
+      Dialogue: "It was the middle of the night! I don\u2019t know why she was out
+        in the street\u2026 but, I\u2026 I\u2026 well, she didn\u2019t make it."
+    - WickIsSpeaker: 0
+      Dialogue: "I swear it was an accident! Why weren\u2019t her parent with her??
+        That\u2019s why your here, isn\u2019t it\u2026 come to take me away?"
+    EmotionsValue: 000000000000000000000000000000000000000000000000
+    Choices:
+    - BranchText: "\u201CI have some questions for you to answer first.\u201D"
+      Requirements: []
+    LeadsTo:
+    - BranchText: Level1-2.0
+      Requirements: []
+  jsonConversationData: {fileID: 0}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Sirenix.Utilities;
+using UnityEditor;
 
 public static class JsonDialogueConverter
 {
@@ -11,25 +12,36 @@ public static class JsonDialogueConverter
     private static readonly string UNLOCKS_MARKER = "Unlocks: ";
     private static readonly string DIALOGUE_MARKER = "Dialogue:";
     private static readonly string WICK_MARKER = "Wick: ";
-    private static readonly string SOUND_MARKER = "Sound:";
+    private static readonly string SOUND_MARKER = "Sound Profile:";
     private static readonly string CHOICES_MARKER = "Choices:";
     private static readonly string LEADS_TO_MARKER = "Leads to:";
 
-    public static void ConvertToJson(ConversationData conversation)
+    public static string ConvertToJson(ConversationData conversation)
     {
         string jsonFile = JsonUtility.ToJson(conversation, true);
         string conversationID = conversation.ID;
-        System.IO.File.WriteAllText(Application.dataPath + $"/Dialogue/{conversationID}.json", jsonFile);
+        //System.IO.File.WriteAllText(Application.dataPath + $"/Dialogue/{conversationID}.json", jsonFile);
+        return jsonFile;
     }
 
     public static void ConvertToJson(string text)
     {
-        ConvertToJson(ConvertToConversation(text));
+        foreach (string dialogueScene in text.Split(ID_MARKER, StringSplitOptions.RemoveEmptyEntries)) {
+            Debug.Log(dialogueScene);
+            SOConversationData conversation = ScriptableObject.CreateInstance<SOConversationData>();
+            conversation.SetConversation(ConvertFromJson(ConvertToJson(ConvertToConversation(dialogueScene))));
+            AssetDatabase.CreateAsset(conversation, $"Assets/Dialogue/{conversation.Data.ID}.asset");
+        }
+    }
+
+    public static ConversationData ConvertFromJson(string jsonFile)
+    {
+        return JsonUtility.FromJson<ConversationData>(jsonFile);
     }
 
     public static ConversationData ConvertFromJson(TextAsset jsonFile)
     {
-        return JsonUtility.FromJson<ConversationData>(jsonFile.text);
+        return ConvertFromJson(jsonFile.text);
     }
 
     private static ConversationData ConvertToConversation(string text)
@@ -39,8 +51,8 @@ public static class JsonDialogueConverter
         Debug.Log(lines.Count);
         Debug.Log(text.Split('\n').Count());
 
-        AssertMarker(lines[0], ID_MARKER);
-        conversation.ID = lines[0].Substring(ID_MARKER.Length);
+        //AssertMarker(lines[0], ID_MARKER);
+        conversation.ID = lines[0];//.Substring(ID_MARKER.Length);
         lines.RemoveAt(0);
 
         AssertMarker(lines[0], CONVERSANT_MARKER);
@@ -51,8 +63,8 @@ public static class JsonDialogueConverter
         lines.RemoveAt(0);
         for(int i = 0; i < 6; i++)
         {
-            Debug.Assert(DialogueSystemValidData.SOUND_EMOTIONS.Contains(lines[0].Split(": ")[0]), $"INVALID EMOTION AT {lines[0]}");
-            conversation.EmotionsValue[i] = int.Parse(lines[0].Split(": ")[1].Trim());
+            //Debug.Assert(DialogueSystemValidData.SOUND_EMOTIONS.Contains(lines[0].Split(": ")[0]), $"INVALID EMOTION AT {lines[0]}");
+            conversation.EmotionsValue[i] = 0; //int.Parse(lines[0].Split(": ")[1].Trim());
             lines.RemoveAt(0);
         }
 
@@ -65,17 +77,25 @@ public static class JsonDialogueConverter
 
         while (!lines[0].StartsWith(CHOICES_MARKER))
         {
-            Debug.Assert(lines[0].StartsWith(WICK_MARKER) || lines[0].StartsWith($"{conversation.Conversant}: "), $"INVALID DIALOGUE STARTER AT LINE {lines[0]}");
-            string dialogueLine = "";
-            if(lines[0].StartsWith(WICK_MARKER))
+            //Debug.Assert(lines[0].StartsWith(WICK_MARKER) || lines[0].StartsWith($"{conversation.Conversant}: "), $"INVALID DIALOGUE STARTER AT LINE {lines[0]}");
+            if (!lines[0].StartsWith(WICK_MARKER) && !lines[0].StartsWith($"{conversation.Conversant}: "))
             {
-                dialogueLine = lines[0].Substring(WICK_MARKER.Length);
+                conversation.Dialogues[conversation.Dialogues.Count - 1].Dialogue += " " + lines[0];
             }
             else
             {
-                dialogueLine = lines[0].Substring(conversation.Conversant.Length + ": ".Length);
+                string dialogueLine = "";
+                if (lines[0].StartsWith(WICK_MARKER))
+                {
+                    dialogueLine = lines[0].Substring(WICK_MARKER.Length);
+                }
+                else
+                {
+                    dialogueLine = lines[0].Substring(conversation.Conversant.Length + ": ".Length);
+                }
+                conversation.Dialogues.Add(new DialogueData() { Dialogue = dialogueLine.Trim(), WickIsSpeaker = lines[0].StartsWith(WICK_MARKER) });
             }
-            conversation.Dialogues.Add(new DialogueData() { Dialogue = dialogueLine.Trim(), WickIsSpeaker = lines[0].StartsWith(WICK_MARKER) });
+
             lines.RemoveAt(0);
         }
 

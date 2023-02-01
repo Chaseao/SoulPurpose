@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level1-1.0
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level1-1.0
+    Conversant: Father
+    Unlocks: N/A
+    Dialogues:
+    - WickIsSpeaker: 0
+      Dialogue: "Well\u2026 It certainly hasn\u2019t been easy here. My wife passed
+        away about six months ago and it\u2019s made things really difficult around
+        here."
+    - WickIsSpeaker: 0
+      Dialogue: "That\u2019s her brother on the couch, he\u2019s been trying to help
+        out as much as he can\u2026 especially recently. My daughter should be in
+        her room with our dog."
+    - WickIsSpeaker: 0
+      Dialogue: "Every day is a struggle without my wife, for all of us. I\u2019m
+        not sure how much more tragedy our family can handle\u2014 not that I\u2019ve
+        been much help at all."
+    EmotionsValue: 000000000000000000000000000000000000000000000000
+    Choices:
+    - BranchText: "<b>\u201CI found an empty bottle in the bathroom trash, can you
+        tell me about that?\u201D</b>"
+      Requirements:
+      - SeenBottle
+    - BranchText: "<b>\u201CI saw the brochures on your counter, can you tell me
+        about that?\u201D</b>"
+      Requirements:
+      - SeenBrochures
+    - BranchText: "<b>\u201CThat doesn\u2019t sound like the whole story, tell me
+        more.\u201D</b>"
+      Requirements: []
+    LeadsTo:
+    - BranchText: Level1-1.1
+      Requirements: []
+    - BranchText: Level1-1.2
+      Requirements: []
+    - BranchText: Level1-1.6
+      Requirements: []
+  jsonConversationData: {fileID: 0}

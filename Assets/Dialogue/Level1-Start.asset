@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level1-Start
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level1-Start
+    Conversant: Father
+    Unlocks: N/A
+    Dialogues:
+    - WickIsSpeaker: 0
+      Dialogue: Who are you? What are you doing in my house?! Get out before I call
+        the police!
+    - WickIsSpeaker: 1
+      Dialogue: "You\u2019ve done harm in this world, and it\u2019s time for repayment."
+    - WickIsSpeaker: 0
+      Dialogue: "What have I done? You don\u2019t know anything about me!"
+    - WickIsSpeaker: 1
+      Dialogue: "I\u2019m sensing an overwhelming amount of sorrow in this house\u2014
+        I can feel it emanating off of you, the girl, and the man on the couch."
+    EmotionsValue: 000000000000000000000000000000000000000000000000
+    Choices:
+    - BranchText: "\u201CTell me about what\u2019s been happening.\u201D"
+      Requirements: []
+    LeadsTo:
+    - BranchText: Level1-1.0
+      Requirements: []
+  jsonConversationData: {fileID: 0}

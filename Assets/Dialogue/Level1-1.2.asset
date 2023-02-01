@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level1-1.2
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level1-1.2
+    Conversant: Father
+    Unlocks: N/A
+    Dialogues:
+    - WickIsSpeaker: 0
+      Dialogue: "Yeah\u2026 my brother-in-law brought those. He\u2019s, uh\u2026
+        trying to talk me into getting some professional help."
+    - WickIsSpeaker: 0
+      Dialogue: "You see, it\u2019s been tough since my wife passed\u2026 I was drinking
+        a little too much sometimes, got unhealthy."
+    - WickIsSpeaker: 0
+      Dialogue: "But I\u2019m no alcoholic, just sometimes like a drink\u2026"
+    EmotionsValue: 000000000000000000000000000000000000000000000000
+    Choices:
+    - BranchText: "<b>\u201CI found a bottle hidden in the bathroom trash, care to
+        explain that?\u201D</b>"
+      Requirements:
+      - SeenBottle
+    - BranchText: "<b>\u201CIt seems pretty insistent of your brother-in-law to bring
+        all of these\u2026\u201D</b>"
+      Requirements: []
+    LeadsTo:
+    - BranchText: Level1-1.7
+      Requirements: []
+    - BranchText: Level1-1.8
+      Requirements: []
+  jsonConversationData: {fileID: 0}

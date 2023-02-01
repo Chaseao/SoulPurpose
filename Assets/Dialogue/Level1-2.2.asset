@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level1-2.2
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level1-2.2
+    Conversant: Father
+    Unlocks: N/A
+    Dialogues:
+    - WickIsSpeaker: 0
+      Dialogue: "She died six months ago\u2026 the police report said it was an accidental
+        overdose."
+    - WickIsSpeaker: 0
+      Dialogue: "She had been taking this new medicine for a condition she developed\u2026
+        they were strong pills."
+    - WickIsSpeaker: 0
+      Dialogue: "One night she\u2026 she must have forgot how many she had taken
+        or something. She must have kept swallowing more\u2026 about four times her
+        prescribed dosage."
+    - WickIsSpeaker: 0
+      Dialogue: "It killed her while she slept\u2026 I woke up in the morning and
+        found her there\u2014 it was horrible\u2026 I still can\u2019t believe it."
+    EmotionsValue: 000000000000000000000000000000000000000000000000
+    Choices:
+    - BranchText: "\u201CI saw your broken window, what happened?\u201D"
+      Requirements:
+      - SeenWindow
+    - BranchText: "\u201CI\u2019d like to hear more about the court hearing.\u201D"
+      Requirements:
+      - SeenLetter
+    - BranchText: "<b>\u201DWhat would your wife think about your situation? And
+        your drinking?\u201D</b>"
+      Requirements:
+      - SeenLevel1-1.3
+    - BranchText: "\u201CCan you tell me about the accident again?\u201D"
+      Requirements: []
+    LeadsTo:
+    - BranchText: Level1-2.1
+      Requirements: []
+    - BranchText: Level1-2.3
+      Requirements: []
+    - BranchText: Level1-3.3
+      Requirements: []
+    - BranchText: Level1-2.4
+      Requirements: []
+  jsonConversationData: {fileID: 0}

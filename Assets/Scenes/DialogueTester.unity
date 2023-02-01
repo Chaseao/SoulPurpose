@@ -383,14 +383,30 @@ MonoBehaviour:
   dialogueSpeed: 25
   dialogueFastSpeed: 50
   conversationGroup:
-  - {fileID: 11400000, guid: cf73def97631d9343ac46abe504ede6b, type: 2}
-  - {fileID: 11400000, guid: 032e8ddbcc714c54b8e5e510836f8049, type: 2}
-  - {fileID: 11400000, guid: 544994c08ac600d4592ca4a08db22da0, type: 2}
+  - {fileID: 11400000, guid: e29cbcd6fac7b034787d004108216688, type: 2}
+  - {fileID: 11400000, guid: 9989234944a8cfb498551feb90da7c99, type: 2}
+  - {fileID: 11400000, guid: 6266d45583182864cbdcd1cc001e8e3b, type: 2}
+  - {fileID: 11400000, guid: ec9e72a52cd254b4fa2581c33005cd42, type: 2}
+  - {fileID: 11400000, guid: bbdc35d39160b37479f246d150078888, type: 2}
+  - {fileID: 11400000, guid: ae6fdf64074f9b44db08fa7df04a32fb, type: 2}
+  - {fileID: 11400000, guid: 7702618112e60754e8fceff437b823b1, type: 2}
+  - {fileID: 11400000, guid: f6875f7533fe9e64fac7f293dc241d7a, type: 2}
+  - {fileID: 11400000, guid: 125c472e9239afe42a80ec9960a1934a, type: 2}
+  - {fileID: 11400000, guid: 1f2024a9b40b87d45be4aa493046ccb9, type: 2}
+  - {fileID: 11400000, guid: ac6e98fa58f6d5a4696baf776054ed79, type: 2}
+  - {fileID: 11400000, guid: 14308b188608a6a4c933ea2af3b32ad2, type: 2}
+  - {fileID: 11400000, guid: bbdd82c4768917d46917b7f005bd7df5, type: 2}
+  - {fileID: 11400000, guid: 5691a9ad2256f5d47be3637babdb1211, type: 2}
+  - {fileID: 11400000, guid: 9d22930a642c3e84cad3ba02b6130245, type: 2}
+  - {fileID: 11400000, guid: cbe483e861fa0eb4797cd03e2943f897, type: 2}
+  - {fileID: 11400000, guid: 496587de6dbcfc543b7d07d2bb9296ec, type: 2}
+  - {fileID: 11400000, guid: 484443304347e564f9f56af20d814a86, type: 2}
+  - {fileID: 11400000, guid: b94cf2cbc6a15ed449783d659ace2774, type: 2}
+  - {fileID: 11400000, guid: 45c1302ddb268174aa56bbfc5f3664ec, type: 2}
+  - {fileID: 11400000, guid: d3a06724f9d45cb4fa3464116bb11356, type: 2}
+  - {fileID: 11400000, guid: 8c0fefc8a2a4ce64eb3bab1b60607edb, type: 2}
+  - {fileID: 11400000, guid: b7a24947b2d0ef44eadd676687879ba9, type: 2}
   dialogueUnlocks: []
-  box: "ID: BravoTalk\r\nConversant: Martyn\r\nSound:\r\n\tSorrow: 0\r\n\tPain: 0
-    \r\n\tWarmth: 0\r\n\tFundamental: 0\r\n\tBliss: 0\r\n\tFear: 0\r\nUnlocks: TalkTalk\r\nDialogue:\r\n\tWick:
-    Hey what are you up to?\r\n\tMartyn: Nothing much\r\n\tWick: Cool\r\nChoices:\r\n\tGive
-    Up\r\n\tFight Back ~ SeenKey\r\n\tExit Dialogue\r\nLeads to:\r\n\tAceTalk\r\n\tCharlieTalk\r\n\tExit"
 --- !u!1 &456952261
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,8 +755,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.25
-  m_fontSizeBase: 44.25
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1514,7 +1530,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -410}
+  m_AnchoredPosition: {x: 0, y: -450}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1901853017
@@ -1530,7 +1546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   choiceTemplate: {fileID: 8838967234143712388, guid: 8b1743bcaff5a0e4aa556be21b67d653, type: 3}
-  scaleFactor: 1.1
+  scaleFactor: 1.2
 --- !u!114 &1901853018
 MonoBehaviour:
   m_ObjectHideFlags: 0
