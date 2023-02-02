@@ -836,7 +836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b7260b9815bed40a1988c33f242d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueID: 1
+  dialogue: {fileID: 0}
 --- !u!4 &370594935
 Transform:
   m_ObjectHideFlags: 0
@@ -1371,7 +1371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3de468ec2b72b04439ac3ca5a7bc42f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueID: 3
+  dialogue: {fileID: 11400000, guid: 544994c08ac600d4592ca4a08db22da0, type: 2}
 --- !u!65 &832014843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2855,7 +2855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e7916505c0782941bf8c7b8efa89701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueID: 0
+  dialogue: {fileID: 11400000, guid: cf73def97631d9343ac46abe504ede6b, type: 2}
 --- !u!1 &1597719669
 GameObject:
   m_ObjectHideFlags: 0
