@@ -9834,7 +9834,7 @@ GameObject:
   - component: {fileID: 250277287}
   m_Layer: 0
   m_Name: Newspaper
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48392,7 +48392,7 @@ GameObject:
   - component: {fileID: 1379016364}
   m_Layer: 0
   m_Name: CourtSummons
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48405,7 +48405,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1379016358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.92, y: 0, z: -0.76}
+  m_LocalPosition: {x: 2.92, y: -0.143, z: -0.76}
   m_LocalScale: {x: 0.82226, y: 1, z: 0.66043}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -48705,7 +48705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 468ff1b6cb4f1334099c6c80503c1b4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 544994c08ac600d4592ca4a08db22da0, type: 2}
+  dialogue: {fileID: 0}
 --- !u!850595691 &1398489058
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -78866,7 +78866,7 @@ GameObject:
   - component: {fileID: 1971598913}
   m_Layer: 0
   m_Name: Bottle
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79199,7 +79199,7 @@ GameObject:
   - component: {fileID: 1982749329}
   m_Layer: 0
   m_Name: Brochure
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79529,7 +79529,7 @@ GameObject:
   - component: {fileID: 2008513264}
   m_Layer: 0
   m_Name: BrokenWindow
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
