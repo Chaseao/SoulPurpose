@@ -56,6 +56,17 @@
                 },
                 {
                     "name": "",
+                    "id": "8f697bfa-a2e2-4182-bf1a-67ff85dfa1bb",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "6b8531f7-9457-43ea-b026-cea341cf7ea5",
                     "path": "<Keyboard>/q",
                     "interactions": "",
