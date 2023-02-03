@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level1-Dog
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level1-Dog
+    Conversant: Nothing
+    Unlocks: N/A
+    Dialogues:
+    - WickIsSpeaker: 1
+      Dialogue: "<i>The dog is fast asleep. It looks pretty old\u2026</i>"
+    - WickIsSpeaker: 1
+      Dialogue: "<i>Didn\u2019t he do it for you?</i>"
+    EmotionsValue: 5e000000010000002d0000001e0000003200000055000000
+    Choices:
+    - BranchText: Exit.
+      Requirements: []
+    LeadsTo:
+    - BranchText: Exit
+      Requirements: []
+  jsonConversationData: {fileID: 0}

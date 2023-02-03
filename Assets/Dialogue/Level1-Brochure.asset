@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level1-Brochure
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level1-Brochure
+    Conversant: Brochure
+    Unlocks: SeenBrochure
+    Dialogues:
+    - WickIsSpeaker: 1
+      Dialogue: "<i>There\u2019s a brochure on the counter for a rehab program.</i>"
+    - WickIsSpeaker: 1
+      Dialogue: "<i>\u201DGet your life back on track! Find your inner self again
+        through meditation and relaxation all while making the right choice for your
+        loved ones.\u201D</i>"
+    - WickIsSpeaker: 1
+      Dialogue: "<i>\u201D8-week program\u2026 designed for those struggling with
+        addiction\u2026 support system for you, resources for your family.</i>"
+    EmotionsValue: 13000000380000002e0000003c0000002a0000002d000000
+    Choices:
+    - BranchText: Exit.
+      Requirements: []
+    LeadsTo:
+    - BranchText: Exit
+      Requirements: []
+  jsonConversationData: {fileID: 0}

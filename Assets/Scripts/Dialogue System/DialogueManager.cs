@@ -14,6 +14,7 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
     public static Action<List<string>> OnChoiceMenuOpen;
     public static Action OnChoiceMenuClose;
 
+    [SerializeField] AudioControls audioControls;
     [SerializeField] float dialogueSpeed;
     [SerializeField] float dialogueFastSpeed;
     [SerializeField] List<SOConversationData> conversationGroup;
@@ -38,6 +39,7 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
         if(dialogueId == null || dialogueId.Equals("Exit"))
         {
             ExitDialogue();
+            audioControls?.SetAudio(new int[6] { 50, 0, 0, 0, 0, 0});
             return;
         }
         else if (!inDialogue)
@@ -67,6 +69,8 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
     {
         OnDialogueStarted?.Invoke(data);
 
+        AdjustAudio(data.EmotionsValue);
+
         foreach (var dialogue in data.Dialogues)
         {
             yield return ProcessDialogue(dialogue, data.Conversant);
@@ -77,6 +81,13 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
         yield return HandleChoices();
         string nextDialogue = HandleLeadsTo(data.LeadsTo);
         StartDialogue(nextDialogue);
+    }
+
+    private void AdjustAudio(int[] emotionsValue)
+    {
+        if (audioControls == null) return;
+
+        audioControls.SetAudio(emotionsValue);
     }
 
     private string HandleLeadsTo(List<DialogueBranchData> leadsTo)
