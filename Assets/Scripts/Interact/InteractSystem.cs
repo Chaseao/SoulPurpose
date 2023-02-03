@@ -36,19 +36,28 @@ public class InteractSystem : MonoBehaviour
     void Interact()
     {
         RaycastHit[] hits;
+        float minDistance = 1000f;
         hits = Physics.SphereCastAll(this.transform.position, rangeOfInteract, transform.forward, 0);
         foreach (RaycastHit hit in hits)
         {
             if(hit.collider.gameObject.CompareTag("Item"))
             {
-                item = hit.collider.gameObject.GetComponent<IInteractable>();
-                item.ExecuteDialogue();
+                if(hit.distance < minDistance)
+                {
+                    item = hit.collider.gameObject.GetComponent<IInteractable>();
+                    minDistance = hit.distance;
+                }
             }
             else if(hit.collider.gameObject.CompareTag("Key"))
             {
-                item = hit.collider.gameObject.GetComponent<IInteractable>();
-                item.OpenDoor();
+                if(hit.distance < minDistance)
+                {
+                    item = hit.collider.gameObject.GetComponent<IInteractable>();
+                    minDistance = hit.distance;
+                }
             }
         }
+        item.ExecuteDialogue();
+        item.OpenDoor();
     }
 }
