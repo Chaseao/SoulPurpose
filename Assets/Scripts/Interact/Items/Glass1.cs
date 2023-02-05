@@ -5,10 +5,10 @@ using UnityEngine;
 public class Glass1 : MonoBehaviour, IInteractable
 {
     [SerializeField] private SOConversationData dialogue;
-    public void ExecuteDialogue()
+    public bool ExecuteDialogue()
     {
-        print("Starting Glass1 Dialogue");
         DialogueManager.Instance.StartDialogue(dialogue);
+        return true;
     }
 
     public void OpenDoor()

@@ -5,12 +5,12 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System.Linq;
 using Sirenix.Utilities;
 
 public class InteractSystem : MonoBehaviour
 {
     [SerializeField] private float rangeOfInteract = 2;
+    [SerializeField] private AudioSource interactSound;
     private IInteractable item;
     private Material glow;
     private Dictionary<GameObject, Boolean> objectsHit = new Dictionary<GameObject, bool>();
@@ -88,7 +88,7 @@ public class InteractSystem : MonoBehaviour
                 }
             }
         }
-        item.ExecuteDialogue();
+        if(item.ExecuteDialogue()) interactSound.Play();
         item.OpenDoor();
     }
 }

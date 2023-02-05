@@ -5,9 +5,9 @@ using UnityEngine;
 public class Key : MonoBehaviour, IInteractable
 {
     [SerializeField] private GameObject door;
-    public void ExecuteDialogue()
+    public bool ExecuteDialogue()
     {
-        //Should never activate this method
+        return false;
     }
 
     public void OpenDoor()

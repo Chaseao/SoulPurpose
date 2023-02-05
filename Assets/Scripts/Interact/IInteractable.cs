@@ -4,7 +4,8 @@ using UnityEngine;
 
 public interface IInteractable
 {
-    void ExecuteDialogue();
+
+    bool ExecuteDialogue();
 
     void OpenDoor();
 

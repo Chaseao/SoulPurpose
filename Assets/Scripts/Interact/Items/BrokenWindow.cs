@@ -5,10 +5,10 @@ using UnityEngine;
 public class BrokenWindow : MonoBehaviour, IInteractable
 {
     [SerializeField] private SOConversationData dialogue;
-    public void ExecuteDialogue()
+    public bool ExecuteDialogue()
     {
-        print("Starting BrokenWindow Dialogue");
         DialogueManager.Instance.StartDialogue(dialogue);
+        return true;
     }
 
     public void OpenDoor()

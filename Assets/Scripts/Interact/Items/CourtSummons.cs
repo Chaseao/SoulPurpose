@@ -5,10 +5,10 @@ using UnityEngine;
 public class CourtSummons : MonoBehaviour, IInteractable
 {
     [SerializeField] private SOConversationData dialogue;
-    public void ExecuteDialogue()
+    public bool ExecuteDialogue()
     {
-        print("Starting CourtSummons Dialogue");
         DialogueManager.Instance.StartDialogue(dialogue);
+        return true;
     }
 
     public void OpenDoor()
