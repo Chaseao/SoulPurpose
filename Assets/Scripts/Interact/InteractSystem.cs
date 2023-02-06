@@ -15,6 +15,7 @@ public class InteractSystem : MonoBehaviour
     private Material glow;
     private Dictionary<GameObject, Boolean> objectsHit = new Dictionary<GameObject, bool>();
     private bool hasHitItem;
+    private bool hasHitItem1;
 
     private void OnEnable()
     {
@@ -81,14 +82,19 @@ public class InteractSystem : MonoBehaviour
         {
             if(hit.collider.gameObject.CompareTag("Item") || hit.collider.gameObject.CompareTag("Key"))
             {
-                if(hit.distance < minDistance)
+                hasHitItem1 = true;
+                if (hit.distance < minDistance)
                 {
                     item = hit.collider.gameObject.GetComponent<IInteractable>();
                     minDistance = hit.distance;
                 }
             }
         }
-        if(item.ExecuteDialogue()) interactSound.Play();
+        if (hasHitItem1)
+        {
+            if (item.ExecuteDialogue()) interactSound.Play();
+        }
+        hasHitItem1 = false;
         item.OpenDoor();
     }
 }
