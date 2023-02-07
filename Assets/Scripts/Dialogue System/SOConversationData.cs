@@ -1,16 +1,16 @@
 ﻿using System.Collections;
 using UnityEngine;
+using static DialogueHelperClass;
 
 [CreateAssetMenu(fileName = "New Data", menuName = "Dialogue/Data")]
 public class SOConversationData : ScriptableObject
 {
     [SerializeField] ConversationData conversationData;
-    [SerializeField] TextAsset jsonConversationData;
 
     public void SetConversation(ConversationData conversation)
     {
         conversationData = conversation;
     }
 
-    public ConversationData Data => jsonConversationData != null ? JsonDialogueConverter.ConvertFromJson(jsonConversationData) : conversationData;
+    public ConversationData Data => conversationData;
 }
