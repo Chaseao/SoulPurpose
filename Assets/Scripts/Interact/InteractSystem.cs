@@ -12,7 +12,7 @@ public class InteractSystem : MonoBehaviour
     [SerializeField] private float rangeOfInteract = 2;
     [SerializeField] private AudioSource interactSound;
     private IInteractable item;
-    private Material glow;
+    private GameObject glowPlane;
     private Dictionary<GameObject, Boolean> objectsHit = new Dictionary<GameObject, bool>();
     private bool hasHitItem;
     private bool hasHitItem1;
@@ -57,19 +57,17 @@ public class InteractSystem : MonoBehaviour
 
     void Glow(GameObject objectToGlow)
     {
-        if (objectToGlow.GetComponent<MeshRenderer>().material != null)
+        if (objectToGlow.transform.GetChild(0) != null)
         {
-            glow = objectToGlow.GetComponent<MeshRenderer>().material;
-            glow.SetInteger("_GlowBool", 1);
+            objectToGlow.transform.GetChild(0).gameObject.SetActive(true);
         }
     }
 
     void NotGlow(GameObject objectToNotGlow)
     {
-        if (objectToNotGlow.GetComponent<MeshRenderer>().material != null)
+        if (objectToNotGlow.transform.GetChild(0) != null)
         {
-            glow = objectToNotGlow.GetComponent<MeshRenderer>().material;
-            glow.SetInteger("_GlowBool", 0);
+            objectToNotGlow.transform.GetChild(0).gameObject.SetActive(false);
         }
     }
 
