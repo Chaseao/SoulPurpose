@@ -15,6 +15,15 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private bool canMove = true;
     [SerializeField] private float maxSpeed = 5f;
     [SerializeField] private float speed = 0.25f;
+    [SerializeField] private GameObject WickLeft;
+    [SerializeField] private GameObject WickRight;
+    private Direction direction = Direction.Left;
+
+    private enum Direction
+    {
+        Right,
+        Left
+    }
 
     private void Start()
     {
@@ -32,6 +41,27 @@ public class PlayerMovement : MonoBehaviour
         if(playerInput.Equals(Vector2.zero))
         {
             rigidbody.velocity = Vector3.zero;
+        }
+        switch (direction)
+        {
+            case Direction.Left:
+                if (playerInput.x > 0)
+                {
+                    direction = Direction.Right;
+                    WickRight.SetActive(true);
+                    WickLeft.SetActive(false);
+                }
+
+                break;
+            case Direction.Right:
+                if (playerInput.x < 0)
+                {
+                    direction = Direction.Left;
+                    WickLeft.SetActive(true);
+                    WickRight.SetActive(false);
+                }
+
+                break;
         }
 
     }
@@ -57,4 +87,6 @@ public class PlayerMovement : MonoBehaviour
         movementForce = new Vector3(input.x, 0f, input.y);
 
     }
+
+
 }
