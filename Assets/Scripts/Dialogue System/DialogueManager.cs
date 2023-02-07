@@ -166,9 +166,13 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
         currentDialogueSpeed = dialogueSpeed;
         string loadedText = name;
         Controller.OnSelect += SpeedUpText;
+        bool atSpecialCharacter = false;
         foreach(char letter in line)
         {
             loadedText += letter;
+            atSpecialCharacter = letter == '<' || atSpecialCharacter;
+            if (atSpecialCharacter && letter != '>') continue;
+            atSpecialCharacter = false;
             OnTextUpdated?.Invoke(loadedText, isWickSpeaker);
             yield return new WaitForSeconds(1 / currentDialogueSpeed);
         }
