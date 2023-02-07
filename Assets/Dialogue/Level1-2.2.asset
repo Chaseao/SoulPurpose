@@ -30,7 +30,7 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "It killed her while she slept\u2026 I woke up in the morning and
         found her there\u2014 it was horrible\u2026 I still can\u2019t believe it."
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 050000002a00000049000000190000005a00000048000000
     Choices:
     - BranchText: "\u201CI saw your broken window, what happened?\u201D"
       Requirements:
@@ -38,8 +38,8 @@ MonoBehaviour:
     - BranchText: "\u201CI\u2019d like to hear more about the court hearing.\u201D"
       Requirements:
       - SeenLetter
-    - BranchText: "<b>\u201DWhat would your wife think about your situation? And
-        your drinking?\u201D</b>"
+    - BranchText: "<i>\u201DWhat would your wife think about your situation? And
+        your drinking?\u201D</i>"
       Requirements:
       - SeenLevel1-1.3
     - BranchText: "\u201CCan you tell me about the accident again?\u201D"
@@ -53,4 +53,3 @@ MonoBehaviour:
       Requirements: []
     - BranchText: Level1-2.4
       Requirements: []
-  jsonConversationData: {fileID: 0}

@@ -24,16 +24,15 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "Oh whiskey? Ya that\u2014 that must be my brother-in-law\u2019s,
         he\u2019s a big whiskey guy."
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 0e000000300000002100000047000000390000002e000000
     Choices:
-    - BranchText: "<b>\u201CSo those brochures on the counter\u2026 are they also
-        his?\u201D</b>"
+    - BranchText: "<i>\u201CSo that brochure on the counter\u2026 is that his?\u201D</i>"
       Requirements:
-      - SeenBrochures
-    - BranchText: "<b>\u201CWas he also the recipient of that letter I saw?\u201D</b>"
+      - SeenBrochure
+    - BranchText: "<i>\u201CWas he also the recipient of that letter I saw?\u201D</i>"
       Requirements:
       - SeenLetter
-    - BranchText: "<b>\u201CIt seemed pretty hidden away, why might that be?\u201D</b>"
+    - BranchText: "<i>\u201CIt seemed pretty hidden away, why might that be?\u201D</i>"
       Requirements: []
     LeadsTo:
     - BranchText: Level1-1.3
@@ -42,4 +41,3 @@ MonoBehaviour:
       Requirements: []
     - BranchText: Level1-1.9
       Requirements: []
-  jsonConversationData: {fileID: 0}

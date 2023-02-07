@@ -20,11 +20,10 @@ MonoBehaviour:
     - WickIsSpeaker: 1
       Dialogue: "<i>The refrigerator is basically empty\u2026 nothing more than some
         lunchmeat and leftover pizza.</i>"
-    EmotionsValue: 130000003e00000029000000530000000a0000003a000000
+    EmotionsValue: 3200000017000000020000000c0000000f00000059000000
     Choices:
     - BranchText: Exit.
       Requirements: []
     LeadsTo:
     - BranchText: Exit
       Requirements: []
-  jsonConversationData: {fileID: 0}

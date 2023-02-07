@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level1-3.6
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level1-3.6
+    Conversant: Father
+    Unlocks: N/A
+    Dialogues:
+    - WickIsSpeaker: 0
+      Dialogue: "What do you mean \u201Cjudgment?\u201D"
+    - WickIsSpeaker: 1
+      Dialogue: "I\u2019m here to collect a soul; if not yours\u2026 then somebody
+        else\u2026"
+    - WickIsSpeaker: 0
+      Dialogue: Somebody else?! Please, leave my daughter out of this!!
+    - WickIsSpeaker: 1
+      Dialogue: "Your daughter is safe, I will bring her no harm. Though I suppose
+        your brother-in-law could take your place\u2026 or even your daughter\u2019s
+        dog."
+    - WickIsSpeaker: 0
+      Dialogue: "No, not my brother-in-law\u2026 he wouldn\u2019t hurt a fly! He
+        doesn\u2019t deserve that."
+    - WickIsSpeaker: 1
+      Dialogue: "Then I suppose it\u2019s you or the dog\u2026"
+    EmotionsValue: 560000001b0000001e0000000d0000003a00000023000000
+    Choices:
+    - BranchText: "\u201CDo you have anything else to say for yourself?\u201D"
+      Requirements: []
+    LeadsTo:
+    - BranchText: Level1-4.2
+      Requirements: []

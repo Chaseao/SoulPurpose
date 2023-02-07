@@ -25,18 +25,17 @@ MonoBehaviour:
         a little too much sometimes, got unhealthy."
     - WickIsSpeaker: 0
       Dialogue: "But I\u2019m no alcoholic, just sometimes like a drink\u2026"
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 4e000000530000001f0000002b000000480000000d000000
     Choices:
-    - BranchText: "<b>\u201CI found a bottle hidden in the bathroom trash, care to
-        explain that?\u201D</b>"
+    - BranchText: "<i>\u201CI found a bottle hidden in the bathroom trash, care to
+        explain that?\u201D</i>"
       Requirements:
       - SeenBottle
-    - BranchText: "<b>\u201CIt seems pretty insistent of your brother-in-law to bring
-        all of these\u2026\u201D</b>"
+    - BranchText: "<i>\u201CIt seems pretty insistent of your brother-in-law to bring
+        all of these\u2026\u201D</i>"
       Requirements: []
     LeadsTo:
     - BranchText: Level1-1.7
       Requirements: []
     - BranchText: Level1-1.8
       Requirements: []
-  jsonConversationData: {fileID: 0}

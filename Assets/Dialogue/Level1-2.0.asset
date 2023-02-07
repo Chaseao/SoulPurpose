@@ -19,9 +19,9 @@ MonoBehaviour:
     Dialogues:
     - WickIsSpeaker: 0
       Dialogue: What else can I tell you?
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 400000004000000034000000440000000800000035000000
     Choices:
-    - BranchText: "<b>\u201CCan you tell me more about the accident?\u201D</b>"
+    - BranchText: "<i>\u201CCan you tell me more about the accident?\u201D</i>"
       Requirements: []
     - BranchText: "\u201CI saw your broken window, what happened?\u201D"
       Requirements:
@@ -41,4 +41,3 @@ MonoBehaviour:
       Requirements: []
     - BranchText: Level1-2.3
       Requirements: []
-  jsonConversationData: {fileID: 0}

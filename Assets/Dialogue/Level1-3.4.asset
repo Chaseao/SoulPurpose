@@ -28,11 +28,10 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "I want to get better for her\u2026 I do, but\u2026 how much of a
         father could I ever be to her\u2026"
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 180000005b000000120000004c0000001600000016000000
     Choices:
-    - BranchText: "\u201CDo you have anything else to say for yourself?\u201D"
+    - BranchText: "\u201CAre you prepared to face judgment?\u201D"
       Requirements: []
     LeadsTo:
-    - BranchText: Level1-4.3
+    - BranchText: Level1-3.7
       Requirements: []
-  jsonConversationData: {fileID: 0}

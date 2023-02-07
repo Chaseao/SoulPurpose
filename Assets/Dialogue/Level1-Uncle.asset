@@ -20,11 +20,10 @@ MonoBehaviour:
     - WickIsSpeaker: 1
       Dialogue: "<i>There\u2019s a man on the couch, it looks like he can\u2019t
         get to sleep\u2026</i>"
-    EmotionsValue: 0c000000160000004f0000001e0000001a0000003c000000
+    EmotionsValue: 4c0000000800000016000000580000000000000042000000
     Choices:
     - BranchText: Exit.
       Requirements: []
     LeadsTo:
     - BranchText: Exit
       Requirements: []
-  jsonConversationData: {fileID: 0}

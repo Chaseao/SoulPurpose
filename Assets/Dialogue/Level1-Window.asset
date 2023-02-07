@@ -18,12 +18,16 @@ MonoBehaviour:
     Unlocks: SeenWindow
     Dialogues:
     - WickIsSpeaker: 1
-      Dialogue: Test
-    EmotionsValue: 450000001700000011000000270000000200000027000000
+      Dialogue: "<i>There\u2019s a broken window in the kitchen\u2026A heavy piece
+        of metal lies on the ground outside.</i>"
+    - WickIsSpeaker: 1
+      Dialogue: "<i>There\u2019s still some tiny shards of glass on the kitchen floor
+        and small droplets of red next to them. The wind outside sends a chill through
+        the hole. Why has no one boarded this up?</i>"
+    EmotionsValue: 160000002500000056000000330000000000000051000000
     Choices:
     - BranchText: Exit.
       Requirements: []
     LeadsTo:
     - BranchText: Exit
       Requirements: []
-  jsonConversationData: {fileID: 0}

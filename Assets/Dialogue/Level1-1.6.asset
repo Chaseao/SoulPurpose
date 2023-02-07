@@ -26,13 +26,12 @@ MonoBehaviour:
       Dialogue: "It was the middle of the night! I don\u2019t know why she was out
         in the street\u2026 but, I\u2026 I\u2026 well, she didn\u2019t make it."
     - WickIsSpeaker: 0
-      Dialogue: "I swear it was an accident! Why weren\u2019t her parent with her??
-        That\u2019s why your here, isn\u2019t it\u2026 come to take me away?"
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+      Dialogue: "I swear it was an accident! Why weren\u2019t her parents with her??
+        That\u2019s why you\u2019re here, isn\u2019t it\u2026 come to take me away?"
+    EmotionsValue: 270000002900000058000000220000005400000006000000
     Choices:
     - BranchText: "\u201CI have some questions for you to answer first.\u201D"
       Requirements: []
     LeadsTo:
     - BranchText: Level1-2.0
       Requirements: []
-  jsonConversationData: {fileID: 0}

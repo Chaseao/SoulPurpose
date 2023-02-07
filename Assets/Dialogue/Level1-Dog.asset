@@ -18,14 +18,13 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 1
-      Dialogue: "<i>The dog is fast asleep. It looks pretty old\u2026</i>"
+      Dialogue: "<i>The dog is fast asleep. He looks pretty old\u2026</i>"
     - WickIsSpeaker: 1
       Dialogue: "<i>Didn\u2019t he do it for you?</i>"
-    EmotionsValue: 5e000000010000002d0000001e0000003200000055000000
+    EmotionsValue: 420000003c0000003d000000620000002400000027000000
     Choices:
     - BranchText: Exit.
       Requirements: []
     LeadsTo:
     - BranchText: Exit
       Requirements: []
-  jsonConversationData: {fileID: 0}

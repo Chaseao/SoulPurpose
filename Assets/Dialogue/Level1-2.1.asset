@@ -26,7 +26,7 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "Can\u2019t say I blame them\u2026 I\u2019ll take what\u2019s coming
         to me, not that I can fix what I\u2019ve done."
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 4a0000001c000000090000002e0000000f0000002e000000
     Choices:
     - BranchText: "\u201CCan you tell me more about your wife\u2019s passing?\u201D"
       Requirements:
@@ -34,8 +34,8 @@ MonoBehaviour:
     - BranchText: "\u201CI\u2019d like to hear more about the court hearing.\u201D"
       Requirements:
       - SeenLetter
-    - BranchText: "<b>\u201DAre you worried about the safety of your daughter with
-        these attacks?\u201D</b>"
+    - BranchText: "<i>\u201DAre you worried about the safety of your daughter with
+        these attacks?\u201D</i>"
       Requirements:
       - SeenLevel1-1.7
     - BranchText: "\u201CCan you tell me about the accident again?\u201D"
@@ -49,4 +49,3 @@ MonoBehaviour:
       Requirements: []
     - BranchText: Level1-2.4
       Requirements: []
-  jsonConversationData: {fileID: 0}

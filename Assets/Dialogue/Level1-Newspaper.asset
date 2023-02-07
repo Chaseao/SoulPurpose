@@ -27,11 +27,10 @@ MonoBehaviour:
         and thirteen-year-old daughter\u2026 reporter\u2019s have reached out to
         the family but have heard no word\u2026funeral scheduled for this coming
         Friday\u2026</i>"
-    EmotionsValue: 4800000015000000020000001c000000410000002f000000
+    EmotionsValue: 4b0000001100000033000000560000001b0000000d000000
     Choices:
     - BranchText: Exit.
       Requirements: []
     LeadsTo:
     - BranchText: Exit
       Requirements: []
-  jsonConversationData: {fileID: 0}

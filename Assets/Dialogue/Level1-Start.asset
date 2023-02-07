@@ -18,8 +18,8 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
-      Dialogue: Who are you? What are you doing in my house?! Get out before I call
-        the police!
+      Dialogue: Who are you!?!? What are you doing in my house?! Get out before I
+        call the police!
     - WickIsSpeaker: 1
       Dialogue: "You\u2019ve done harm in this world, and it\u2019s time for repayment."
     - WickIsSpeaker: 0
@@ -27,11 +27,10 @@ MonoBehaviour:
     - WickIsSpeaker: 1
       Dialogue: "I\u2019m sensing an overwhelming amount of sorrow in this house\u2014
         I can feel it emanating off of you, the girl, and the man on the couch."
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 190000002b00000043000000570000002a00000028000000
     Choices:
     - BranchText: "\u201CTell me about what\u2019s been happening.\u201D"
       Requirements: []
     LeadsTo:
     - BranchText: Level1-1.0
       Requirements: []
-  jsonConversationData: {fileID: 0}

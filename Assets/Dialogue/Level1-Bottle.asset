@@ -26,11 +26,10 @@ MonoBehaviour:
     - WickIsSpeaker: 1
       Dialogue: <i>It could belong to either the man on the couch or the man in his
         bed, but which is it?</i>
-    EmotionsValue: 2e0000001e00000010000000620000003200000016000000
+    EmotionsValue: 5e0000004f000000230000003b000000280000001a000000
     Choices:
     - BranchText: Exit.
       Requirements: []
     LeadsTo:
     - BranchText: Exit
       Requirements: []
-  jsonConversationData: {fileID: 0}

@@ -29,18 +29,18 @@ MonoBehaviour:
       Dialogue: "Every day is a struggle without my wife, for all of us. I\u2019m
         not sure how much more tragedy our family can handle\u2014 not that I\u2019ve
         been much help at all."
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 220000005a00000022000000120000001000000044000000
     Choices:
-    - BranchText: "<b>\u201CI found an empty bottle in the bathroom trash, can you
-        tell me about that?\u201D</b>"
+    - BranchText: "<i>\u201CI found an empty bottle in the bathroom trash, can you
+        tell me about that?\u201D</i>"
       Requirements:
       - SeenBottle
-    - BranchText: "<b>\u201CI saw the brochures on your counter, can you tell me
-        about that?\u201D</b>"
+    - BranchText: "<i>\u201CI saw that brochure on your counter, can you tell me
+        about that?\u201D</i>"
       Requirements:
-      - SeenBrochures
-    - BranchText: "<b>\u201CThat doesn\u2019t sound like the whole story, tell me
-        more.\u201D</b>"
+      - SeenBrochure
+    - BranchText: "<i>\u201CThat doesn\u2019t sound like the whole story, tell me
+        more.\u201D</i>"
       Requirements: []
     LeadsTo:
     - BranchText: Level1-1.1
@@ -49,4 +49,3 @@ MonoBehaviour:
       Requirements: []
     - BranchText: Level1-1.6
       Requirements: []
-  jsonConversationData: {fileID: 0}

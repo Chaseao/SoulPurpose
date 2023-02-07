@@ -18,15 +18,14 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
-      Dialogue: "Shit.. I\u2014 I\u2019m not suppose to be having that right now.
-        That\u2019s why. Suppose to be getting clean after\u2026 the accident."
+      Dialogue: "Shit.. I\u2014 I\u2019m not supposed to be having that right now.
+        That\u2019s why. Supposed to be getting clean after\u2026 the accident."
     - WickIsSpeaker: 0
       Dialogue: "Truth is\u2026 I fucked up bad recently, real bad\u2026"
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 5e0000000b0000005200000023000000420000004e000000
     Choices:
     - BranchText: "\u201CHow about you tell me the full story now?\u201D"
       Requirements: []
     LeadsTo:
     - BranchText: Level1-1.6
       Requirements: []
-  jsonConversationData: {fileID: 0}

@@ -27,11 +27,10 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "I just don\u2019t know how much good it\u2019ll do\u2026 if I can
         really fix anything."
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 4c00000001000000150000001a0000003500000054000000
     Choices:
     - BranchText: "\u201CWhy\u2019s he been so insistent lately?\u201D"
       Requirements: []
     LeadsTo:
     - BranchText: Level1-1.8
       Requirements: []
-  jsonConversationData: {fileID: 0}

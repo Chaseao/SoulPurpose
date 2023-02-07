@@ -30,11 +30,10 @@ MonoBehaviour:
       Dialogue: "We were always fighting about it\u2026 and I guess she\u2026 she
         couldn\u2019t handle it anymore. The police said it was an accident\u2026
         but, I blame myself."
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 2c000000230000000f0000005e0000003000000010000000
     Choices:
-    - BranchText: "\u201CDo you have anything else to say for yourself?\u201D"
+    - BranchText: "\u201CAre you prepared to face judgment?\u201D"
       Requirements: []
     LeadsTo:
-    - BranchText: Level1-4.2
+    - BranchText: Level1-3.6
       Requirements: []
-  jsonConversationData: {fileID: 0}

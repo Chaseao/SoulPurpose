@@ -24,12 +24,18 @@ MonoBehaviour:
       Dialogue: "<i>\u201DThe date of your court hearing is one month from the date
         posted on this letter.\u201D</i>"
     - WickIsSpeaker: 1
-      Dialogue: '[more]'
-    EmotionsValue: 20000000630000001a000000270000001d00000037000000
+      Dialogue: "<i>\u201DFailure to comply with required attendance and documentation
+        will result in disciplinary action by the court.\u201D</i>"
+    - WickIsSpeaker: 1
+      Dialogue: "<i>\u201DA response to this summons must be received within 28 days
+        of the date it was sent.\u201D</i>"
+    - WickIsSpeaker: 1
+      Dialogue: "<i>There\u2019s a lot more here, but I\u2019m not sure I want to
+        read all of that\u2026</i>"
+    EmotionsValue: 1a0000002f000000460000000d0000000c00000016000000
     Choices:
     - BranchText: Exit.
       Requirements: []
     LeadsTo:
     - BranchText: Exit
       Requirements: []
-  jsonConversationData: {fileID: 0}

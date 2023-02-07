@@ -20,12 +20,11 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "Oh\u2026 uh\u2014 ya he\u2019s been trying to get a little better
         I guess. He, uh\u2026 must have snuck that bottle past me\u2026 yeah\u2026"
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 1f0000000d00000033000000270000004800000037000000
     Choices:
     - BranchText: "\u201CYou\u2019re lying\u2014 you and I both know the bottle isn\u2019t
-        his, and neither are the brochures.\u201D"
+        his, and neither is the brochure.\u201D"
       Requirements: []
     LeadsTo:
     - BranchText: Level1-1.5
       Requirements: []
-  jsonConversationData: {fileID: 0}
