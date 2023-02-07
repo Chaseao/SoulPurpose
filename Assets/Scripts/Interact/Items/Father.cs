@@ -8,11 +8,24 @@ public class Father : MonoBehaviour, IInteractable
     public bool ExecuteDialogue()
     {
         DialogueManager.Instance.StartDialogue(dialogue);
+        EndLevel();
         return true;
     }
 
     public void OpenDoor()
     {
         //Should never activate this method
+    }
+
+    public void EndLevel()
+    {
+        if(SceneTools.NextSceneExists)
+        {
+            StartCoroutine(SceneTools.TransitionToScene(SceneTools.NextSceneIndex));
+        }
+        else
+        {
+            Application.Quit();
+        }
     }
 }

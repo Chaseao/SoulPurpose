@@ -7,7 +7,7 @@ using UnityEngine.Windows;
 public class PlayerMovement : MonoBehaviour
 {
 
-    private new Rigidbody rigidbody;
+    private Rigidbody rigidbody;
     private Vector3 movementForce;
     private Vector2 playerInput;
     private float maxX;
