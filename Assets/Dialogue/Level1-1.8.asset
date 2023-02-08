@@ -29,7 +29,7 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "He\u2019s probably right anyway, legal help or not, I need some
         help\u2026"
-    EmotionsValue: 3e000000000000005300000034000000500000005d000000
+    EmotionsValue: 320000003200000000000000000000000000000000000000
     Choices:
     - BranchText: "\u201CI have some questions to ask.\u201D"
       Requirements: []

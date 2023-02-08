@@ -26,7 +26,7 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "I want to get better\u2026 I do\u2026 it\u2019s just, so hard and\u2026
         <i>The Father begins sobbing.</i>"
-    EmotionsValue: 2a00000032000000580000000e000000300000004d000000
+    EmotionsValue: 500000003c00000046000000000000000000000000000000
     Choices:
     - BranchText: "\u201CAre you prepared to face judgment?\u201D"
       Requirements: []

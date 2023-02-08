@@ -30,7 +30,7 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "It killed her while she slept\u2026 I woke up in the morning and
         found her there\u2014 it was horrible\u2026 I still can\u2019t believe it."
-    EmotionsValue: 050000002a00000049000000190000005a00000048000000
+    EmotionsValue: 460000004600000000000000000000000000000000000000
     Choices:
     - BranchText: "\u201CI saw your broken window, what happened?\u201D"
       Requirements:

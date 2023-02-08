@@ -24,7 +24,7 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "Oh whiskey? Ya that\u2014 that must be my brother-in-law\u2019s,
         he\u2019s a big whiskey guy."
-    EmotionsValue: 0e000000300000002100000047000000390000002e000000
+    EmotionsValue: 280000001400000028000000000000000000000000000000
     Choices:
     - BranchText: "<i>\u201CSo that brochure on the counter\u2026 is that his?\u201D</i>"
       Requirements:

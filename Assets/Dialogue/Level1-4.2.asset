@@ -27,14 +27,14 @@ MonoBehaviour:
         deserve any mercy."
     - WickIsSpeaker: 0
       Dialogue: Please, do what you must.. or I might end up hurting somebody else.
-    EmotionsValue: 1a000000540000003e0000003d0000005700000027000000
+    EmotionsValue: 000000000000000000000000000000000000000000000000
     Choices:
     - BranchText: "<i>Spare (Take Dog\u2019s Soul)</i>"
       Requirements: []
     - BranchText: "<i>Take Father\u2019s Soul</i>"
       Requirements: []
     LeadsTo:
-    - BranchText: SpareEnding
+    - BranchText: Level1-SpareEnding
       Requirements: []
-    - BranchText: TakeSoulEnding
+    - BranchText: Level1-TakeSoulEnding
       Requirements: []

@@ -21,7 +21,7 @@ MonoBehaviour:
       Dialogue: "<i>The dog is fast asleep. He looks pretty old\u2026</i>"
     - WickIsSpeaker: 1
       Dialogue: "<i>Didn\u2019t he do it for you?</i>"
-    EmotionsValue: 420000003c0000003d000000620000002400000027000000
+    EmotionsValue: 1e0000001e0000001e000000000000000000000000000000
     Choices:
     - BranchText: Exit.
       Requirements: []

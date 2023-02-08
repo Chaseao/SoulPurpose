@@ -33,7 +33,7 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "She\u2019ll have to go live with her uncle. It\u2019s probably for
         the best\u2026 but I\u2026 it kills me to lose her."
-    EmotionsValue: 380000005300000023000000360000004400000018000000
+    EmotionsValue: 460000004600000000000000000000000000000000000000
     Choices:
     - BranchText: "\u201CI saw your broken window, what happened?\u201D"
       Requirements:

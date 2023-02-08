@@ -65,7 +65,7 @@ public static class JsonDialogueConverter
         for(int i = 0; i < 6; i++)
         {
             //Debug.Assert(DialogueSystemValidData.SOUND_EMOTIONS.Contains(lines[0].Split(": ")[0]), $"INVALID EMOTION AT {lines[0]}");
-            conversation.EmotionsValue[i] = UnityEngine.Random.Range(0, 100); //int.Parse(lines[0].Split(": ")[1].Trim());
+            conversation.EmotionsValue[i] = int.Parse(lines[0].Split(": ")[1].Trim());
             lines.RemoveAt(0);
         }
 

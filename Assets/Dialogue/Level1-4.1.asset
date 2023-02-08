@@ -24,14 +24,14 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "\u2026 that girl\u2026 I\u2019m so sorry -<i>overcome with pain,
         the Father goes silent</i>- -<i>it is time to decide:</i>-"
-    EmotionsValue: 4c0000003300000052000000360000001500000054000000
+    EmotionsValue: 000000000000000000000000000000000000000000000000
     Choices:
     - BranchText: "<i>Spare (Take Dog\u2019s Soul)</i>"
       Requirements: []
     - BranchText: "<i>Take Father\u2019s Soul</i>"
       Requirements: []
     LeadsTo:
-    - BranchText: SpareEnding
+    - BranchText: Level1-SpareEnding
       Requirements: []
-    - BranchText: TakeSoulEnding
+    - BranchText: Level1-TakeSoulEnding
       Requirements: []

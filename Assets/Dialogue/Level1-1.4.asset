@@ -28,7 +28,7 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "It was an accident, a horrible accident\u2026 It was dark, how could
         I have known a child would be out in the street?? How could I have known?!"
-    EmotionsValue: 460000001100000021000000020000004600000033000000
+    EmotionsValue: 320000001e00000028000000000000000000000000000000
     Choices:
     - BranchText: "\u201CLet me ask you some other questions.\u201D"
       Requirements: []

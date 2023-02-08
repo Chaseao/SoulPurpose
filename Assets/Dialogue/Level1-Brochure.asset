@@ -26,7 +26,7 @@ MonoBehaviour:
     - WickIsSpeaker: 1
       Dialogue: "<i>\u201D8-week program\u2026 designed for those struggling with
         addiction\u2026 support system for you, resources for your family.</i>"
-    EmotionsValue: 2c0000003900000048000000540000000400000063000000
+    EmotionsValue: 1e0000001400000000000000320000000000000000000000
     Choices:
     - BranchText: Exit.
       Requirements: []

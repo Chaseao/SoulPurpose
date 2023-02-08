@@ -22,7 +22,7 @@ MonoBehaviour:
     - WickIsSpeaker: 1
       Dialogue: "<i>Her eyebrows are drawn together, and there are some tear stains
         on her flushed cheeks. Maybe she\u2019s in a nightmare.</i>"
-    EmotionsValue: 3500000032000000160000003b0000000a00000029000000
+    EmotionsValue: 1e0000002800000014000000000000000000000000000000
     Choices:
     - BranchText: Exit.
       Requirements: []

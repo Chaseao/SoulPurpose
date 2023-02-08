@@ -19,7 +19,7 @@ MonoBehaviour:
     Dialogues:
     - WickIsSpeaker: 0
       Dialogue: "\u201CWhat\u2019s on your mind?\u201D"
-    EmotionsValue: 2a00000001000000280000000e000000250000005e000000
+    EmotionsValue: 1e0000001e00000000000000000000000000000000000000
     Choices:
     - BranchText: "\u201CWhat do you think of that bottle?\u201D"
       Requirements:
@@ -51,4 +51,3 @@ MonoBehaviour:
       Requirements: []
     - BranchText: Exit
       Requirements: []
-  jsonConversationData: {fileID: 0}

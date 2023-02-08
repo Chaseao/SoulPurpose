@@ -27,12 +27,12 @@ MonoBehaviour:
       Dialogue: "<i>\u201DFailure to comply with required attendance and documentation
         will result in disciplinary action by the court.\u201D</i>"
     - WickIsSpeaker: 1
-      Dialogue: "<i>\u201DA response to this summons must be received within 28 days
+      Dialogue: "<i>\u201DA response to this summons must be received within a week
         of the date it was sent.\u201D</i>"
     - WickIsSpeaker: 1
       Dialogue: "<i>There\u2019s a lot more here, but I\u2019m not sure I want to
         read all of that\u2026</i>"
-    EmotionsValue: 1a0000002f000000460000000d0000000c00000016000000
+    EmotionsValue: 1e0000003200000000000000000000000000000000000000
     Choices:
     - BranchText: Exit.
       Requirements: []

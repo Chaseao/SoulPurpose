@@ -18,12 +18,12 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
-      Dialogue: '[thoughts on brochure]'
-    EmotionsValue: 2f00000058000000350000000a0000003000000048000000
+      Dialogue: "\u201CAsking for help is a great first step! A commitment to change
+        shows dedication to a brighter future, right?\u201D"
+    EmotionsValue: 1e0000001e000000000000001e0000000000000000000000
     Choices:
     - BranchText: "\u201CI\u2019d like to ask you about something else.\u201D"
       Requirements: []
     LeadsTo:
     - BranchText: Level1-Martyn
       Requirements: []
-  jsonConversationData: {fileID: 0}

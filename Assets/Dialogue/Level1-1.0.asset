@@ -29,7 +29,7 @@ MonoBehaviour:
       Dialogue: "Every day is a struggle without my wife, for all of us. I\u2019m
         not sure how much more tragedy our family can handle\u2014 not that I\u2019ve
         been much help at all."
-    EmotionsValue: 220000005a00000022000000120000001000000044000000
+    EmotionsValue: 1e0000001e00000000000000000000000000000000000000
     Choices:
     - BranchText: "<i>\u201CI found an empty bottle in the bathroom trash, can you
         tell me about that?\u201D</i>"

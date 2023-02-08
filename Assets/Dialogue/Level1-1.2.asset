@@ -25,7 +25,7 @@ MonoBehaviour:
         a little too much sometimes, got unhealthy."
     - WickIsSpeaker: 0
       Dialogue: "But I\u2019m no alcoholic, just sometimes like a drink\u2026"
-    EmotionsValue: 4e000000530000001f0000002b000000480000000d000000
+    EmotionsValue: 280000001400000000000000140000000000000000000000
     Choices:
     - BranchText: "<i>\u201CI found a bottle hidden in the bathroom trash, care to
         explain that?\u201D</i>"

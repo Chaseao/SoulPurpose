@@ -24,7 +24,7 @@ MonoBehaviour:
       Dialogue: "<i>There\u2019s still some tiny shards of glass on the kitchen floor
         and small droplets of red next to them. The wind outside sends a chill through
         the hole. Why has no one boarded this up?</i>"
-    EmotionsValue: 160000002500000056000000330000000000000051000000
+    EmotionsValue: 1e0000001400000032000000000000000000000000000000
     Choices:
     - BranchText: Exit.
       Requirements: []

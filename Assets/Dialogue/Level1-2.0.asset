@@ -19,7 +19,7 @@ MonoBehaviour:
     Dialogues:
     - WickIsSpeaker: 0
       Dialogue: What else can I tell you?
-    EmotionsValue: 400000004000000034000000440000000800000035000000
+    EmotionsValue: 3c0000003c00000000000000000000000000000000000000
     Choices:
     - BranchText: "<i>\u201CCan you tell me more about the accident?\u201D</i>"
       Requirements: []

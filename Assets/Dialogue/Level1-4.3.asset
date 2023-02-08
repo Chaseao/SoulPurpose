@@ -26,14 +26,14 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "Not that I\u2019m deserving of it\u2026 but, I wonder if\u2026 somehow
         I\u2019ll make this up to her one day. I suppose I can hope\u2026"
-    EmotionsValue: 500000002700000058000000020000000600000038000000
+    EmotionsValue: 000000000000000000000000000000000000000000000000
     Choices:
     - BranchText: "<i>Spare (Take Dog\u2019s Soul)</i>"
       Requirements: []
     - BranchText: "<i>Take Father\u2019s Soul</i>"
       Requirements: []
     LeadsTo:
-    - BranchText: SpareEnding
+    - BranchText: Level1-SpareEnding
       Requirements: []
-    - BranchText: TakeSoulEnding
+    - BranchText: Level1-TakeSoulEnding
       Requirements: []

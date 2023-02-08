@@ -20,7 +20,7 @@ MonoBehaviour:
     - WickIsSpeaker: 1
       Dialogue: "<i>There\u2019s a man on the couch, it looks like he can\u2019t
         get to sleep\u2026</i>"
-    EmotionsValue: 4c0000000800000016000000580000000000000042000000
+    EmotionsValue: 1e0000003200000000000000000000000000000000000000
     Choices:
     - BranchText: Exit.
       Requirements: []

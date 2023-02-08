@@ -27,7 +27,7 @@ MonoBehaviour:
     - WickIsSpeaker: 1
       Dialogue: "I\u2019m sensing an overwhelming amount of sorrow in this house\u2014
         I can feel it emanating off of you, the girl, and the man on the couch."
-    EmotionsValue: 190000002b00000043000000570000002a00000028000000
+    EmotionsValue: 280000001400000000000000000000000000000000000000
     Choices:
     - BranchText: "\u201CTell me about what\u2019s been happening.\u201D"
       Requirements: []

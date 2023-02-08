@@ -21,7 +21,7 @@ MonoBehaviour:
       Dialogue: <i>This painting looks like an original, signed in the bottom corner.</i>
     - WickIsSpeaker: 1
       Dialogue: <i>Could a family member have made this?</i>
-    EmotionsValue: 0f000000300000003e0000004b0000002300000020000000
+    EmotionsValue: 1e00000014000000000000001e0000000000000000000000
     Choices:
     - BranchText: Exit.
       Requirements: []

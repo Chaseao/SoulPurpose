@@ -28,7 +28,7 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "I swear it was an accident! Why weren\u2019t her parents with her??
         That\u2019s why you\u2019re here, isn\u2019t it\u2026 come to take me away?"
-    EmotionsValue: 270000002900000058000000220000005400000006000000
+    EmotionsValue: 320000003200000000000000000000000000000000000000
     Choices:
     - BranchText: "\u201CI have some questions for you to answer first.\u201D"
       Requirements: []

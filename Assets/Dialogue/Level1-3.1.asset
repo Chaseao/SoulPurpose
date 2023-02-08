@@ -25,7 +25,7 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "It wasn\u2019t\u2026 I couldn\u2019t have done anything else\u2026
         please, believe me\u2026"
-    EmotionsValue: 0b0000005200000006000000130000006200000063000000
+    EmotionsValue: 50000000460000003c000000000000000000000000000000
     Choices:
     - BranchText: "\u201CAre you prepared to face judgment?\u201D"
       Requirements: []

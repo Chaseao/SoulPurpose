@@ -33,7 +33,7 @@ MonoBehaviour:
         doesn\u2019t deserve that."
     - WickIsSpeaker: 1
       Dialogue: "Then I suppose it\u2019s you or the dog\u2026"
-    EmotionsValue: 32000000560000003a000000470000005300000039000000
+    EmotionsValue: 5a000000460000005a000000000000000000000000000000
     Choices:
     - BranchText: "\u201CDo you have anything else to say for yourself?\u201D"
       Requirements: []

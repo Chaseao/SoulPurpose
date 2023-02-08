@@ -20,10 +20,7 @@ MonoBehaviour:
     - WickIsSpeaker: 1
       Dialogue: "<i>The picture seems to be the girl\u2019s mother\u2026 how long
         has she been gone?</i>"
-    - WickIsSpeaker: 1
-      Dialogue: "<i>The frame matches the one containing the painting in the living
-        room\u2026</i>"
-    EmotionsValue: 32000000470000004e00000022000000510000003b000000
+    EmotionsValue: 1e0000001e000000000000001e0000000000000000000000
     Choices:
     - BranchText: Exit.
       Requirements: []

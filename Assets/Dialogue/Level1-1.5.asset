@@ -30,7 +30,7 @@ MonoBehaviour:
       Dialogue: "I just had to go down to the gas station\u2026 but I had been drinking
         a little. I never thought that I\u2019d\u2026 it was an accident, a horrible
         accident."
-    EmotionsValue: 100000003c0000003e0000001b0000002a00000031000000
+    EmotionsValue: 32000000140000003c000000000000000000000000000000
     Choices:
     - BranchText: "\u201CLet me ask you some other questions.\u201D"
       Requirements: []

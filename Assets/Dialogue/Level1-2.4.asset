@@ -23,7 +23,7 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "But it was an accident! I don\u2019t know why she was alone\u2026
         I swear there was nothing I could have done, it was a freak accident!!"
-    EmotionsValue: 5b0000001d000000370000004a0000002300000003000000
+    EmotionsValue: 3c0000003c00000000000000000000000000000000000000
     Choices:
     - BranchText: "<i>\u201CCan you tell me more about the accident?\u201D</i>"
       Requirements: []
