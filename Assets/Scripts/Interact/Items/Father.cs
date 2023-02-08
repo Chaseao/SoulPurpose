@@ -5,10 +5,18 @@ using UnityEngine;
 public class Father : MonoBehaviour, IInteractable
 {
     [SerializeField] private SOConversationData dialogue;
+    private bool hasStartedFatherDialogue;
+
+
+    void Start()
+    {
+        hasStartedFatherDialogue = false;
+    }
+
     public bool ExecuteDialogue()
     {
         DialogueManager.Instance.StartDialogue(dialogue);
-        EndLevel();
+        hasStartedFatherDialogue = true;
         return true;
     }
 
@@ -26,6 +34,14 @@ public class Father : MonoBehaviour, IInteractable
         else
         {
             Application.Quit();
+        }
+    }
+
+    void Update()
+    {
+        if(hasStartedFatherDialogue && !DialogueManager.Instance.InDialogue)
+        {
+            EndLevel();
         }
     }
 }
