@@ -2,21 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using Unity.VisualScripting;
 
 public class AudioControls : SerializedMonoBehaviour
 {
     [SerializeField] Dictionary<int, AudioSource> audioFiles = new Dictionary<int, AudioSource>();
+    [SerializeField] AudioSource[] audioProx;
     [SerializeField] float adjustmentSpeed;
 
     int[] desiredVolumes = { 50, 0, 0, 0, 0, 0};
     public void SetAudio(int[] audioVolumes)
     {
         desiredVolumes = audioVolumes;
+        foreach(AudioSource audio in audioProx)
+        {
+            audio.volume = 0;
+        }
     }
 
     private void Update()
     {
         MoveTowardsDesiredVolumes();
+        UnmuteProxAudio();
     }
 
     private void MoveTowardsDesiredVolumes()
@@ -33,5 +40,17 @@ public class AudioControls : SerializedMonoBehaviour
                     : Mathf.Max(audioFiles[i].volume, desiredVolumes[i] / 100f);
             }
         }
+    }
+
+    private void UnmuteProxAudio()
+    {
+        if(!DialogueManager.Instance.InDialogue)
+        {
+            foreach(AudioSource audio in audioProx)
+            {
+                audio.volume = 0.5f;
+            }
+        }
+
     }
 }
