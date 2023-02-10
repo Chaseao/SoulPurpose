@@ -59,12 +59,12 @@ public static class JsonDialogueConverter
     {
         var conversation = new ConversationData();
         var lines = text.Split('\n').Where(x => !x.IsNullOrWhitespace()).Select(x => x.Trim()).ToList();
-        Debug.Log(lines.Count);
-        Debug.Log(text.Split('\n').Count());
 
         //AssertMarker(lines[0], ID_MARKER);
         conversation.ID = lines[0];//.Substring(ID_MARKER.Length);
+        Debug.Log($"Converting {lines[0]}");
         lines.RemoveAt(0);
+
 
         AssertMarker(lines[0], CONVERSANT_MARKER);
         conversation.Conversant = lines[0].Substring(CONVERSANT_MARKER.Length);

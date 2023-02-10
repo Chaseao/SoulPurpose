@@ -40,7 +40,7 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
         if(dialogueId == null || dialogueId.Equals("Exit"))
         {
             ExitDialogue();
-            audioControls?.SetAudio(new int[6] { 50, 0, 0, 0, 0, 0});
+            audioControls?.SetAudio(new int[6] { 40, 0, 0, 0, 0, 0}, false);
             return;
         }
         else if (!inDialogue)
@@ -88,7 +88,7 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
     {
         if (audioControls == null) return;
 
-        audioControls.SetAudio(emotionsValue);
+        audioControls.SetAudio(emotionsValue, true);
     }
 
     private string HandleLeadsTo(List<DialogueBranchData> leadsTo)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using Unity.VisualScripting;
+using System.Linq;
 
 public class AudioControls : SerializedMonoBehaviour
 {
@@ -10,47 +11,33 @@ public class AudioControls : SerializedMonoBehaviour
     [SerializeField] AudioSource[] audioProx;
     [SerializeField] float adjustmentSpeed;
 
+    int desiredProxVolumes = 50;
     int[] desiredVolumes = { 50, 0, 0, 0, 0, 0};
-    public void SetAudio(int[] audioVolumes)
+    public void SetAudio(int[] audioVolumes, bool enableProx)
     {
         desiredVolumes = audioVolumes;
-        foreach(AudioSource audio in audioProx)
-        {
-            audio.volume = 0;
-        }
+        desiredProxVolumes = enableProx ? 0 : 50;
     }
 
     private void Update()
     {
-        MoveTowardsDesiredVolumes();
-        UnmuteProxAudio();
-    }
-
-    private void MoveTowardsDesiredVolumes()
-    {
-        for (int i = 0; i < desiredVolumes.Length; i++)
+        foreach(var audioFile in audioFiles)
         {
-            if (audioFiles.ContainsKey(i) && audioFiles[i].volume != desiredVolumes[i])
-            {
-                float directionToIncrement = Mathf.Sign(desiredVolumes[i] / 100f - audioFiles[i].volume);
-                float amountToIncrment = adjustmentSpeed * Time.deltaTime / 100f;
-                audioFiles[i].volume += directionToIncrement * amountToIncrment;
-                audioFiles[i].volume = directionToIncrement > 0
-                    ? Mathf.Min(audioFiles[i].volume, desiredVolumes[i] / 100f)
-                    : Mathf.Max(audioFiles[i].volume, desiredVolumes[i] / 100f);
-            }
-        }
-    }
-
-    private void UnmuteProxAudio()
-    {
-        if(!DialogueManager.Instance.InDialogue)
-        {
-            foreach(AudioSource audio in audioProx)
-            {
-                audio.volume = 0.5f;
-            }
+            MoveTowards(audioFile.Value, desiredVolumes[audioFile.Key]);
         }
 
+        audioProx.ToList().ForEach(audio => MoveTowards(audio, desiredProxVolumes));
+    }
+
+    private void MoveTowards(AudioSource audio, float desiredVolume)
+    {
+        if (audio.volume == desiredVolume) return;
+            
+        float directionToIncrement = Mathf.Sign(desiredVolume / 100f - audio.volume);
+        float amountToIncrment = adjustmentSpeed * Time.deltaTime / 100f;
+        audio.volume += directionToIncrement * amountToIncrment;
+        audio.volume = directionToIncrement > 0
+            ? Mathf.Min(audio.volume, desiredVolume / 100f)
+            : Mathf.Max(audio.volume, desiredVolume / 100f);
     }
 }
