@@ -12,20 +12,19 @@ public class FadeToBlackSystem : SingletonMonoBehavior<FadeToBlackSystem>
     [SerializeField] bool autoFadeOut;
     private Image image;
 
-    Dictionary<GameObject, bool> test;
-
     protected override void Awake()
     {
-        base.Awake();
         image = GetComponent<Image>();
         SetFadePercentage(startFullAplha ? 1 : 0);
         SceneManager.sceneLoaded += CheckForAutoFadeOut;
+        base.Awake();
     }
 
     private void CheckForAutoFadeOut(Scene arg0, LoadSceneMode arg1)
     {
         if (autoFadeOut)
         {
+            SetFadePercentage(1);
             StartCoroutine(HandleStartOfScene());
         }
     }
@@ -85,5 +84,10 @@ public class FadeToBlackSystem : SingletonMonoBehavior<FadeToBlackSystem>
         }
 
         SetFadePercentage(1);
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= CheckForAutoFadeOut;
     }
 }
