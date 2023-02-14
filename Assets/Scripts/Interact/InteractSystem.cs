@@ -17,6 +17,7 @@ public class InteractSystem : MonoBehaviour
     [SerializeField] private SOConversationData startingDialogue;
     private bool hasHitItem;
     private bool hasHitItem1;
+    private GameObject closestItem;
 
     private void OnEnable()
     {
@@ -46,16 +47,17 @@ public class InteractSystem : MonoBehaviour
                 if (!objectsHit.ContainsKey(hit.collider.gameObject)) objectsHit.Add(hit.collider.gameObject, false);
                 if (hit.distance < minDistance)
                 {
-                    objectsHit[hit.collider.gameObject] = true;
+                    closestItem = hit.collider.gameObject;
                     minDistance = hit.distance;
-                }
-                else
-                {
-                    objectsHit[hit.collider.gameObject] = false;
                 }
             }
         }
         if(!hasHitItem) foreach (GameObject key in objectsHit.Keys.ToList()) objectsHit[key] = false;
+        else
+        {
+            foreach (GameObject key in objectsHit.Keys.ToList()) objectsHit[key] = false;
+            objectsHit[closestItem] = true;
+        }
         hasHitItem= false;
         objectsHit.Where(x => x.Value).ToList().ForEach(x => Glow(x.Key));
         objectsHit.Where(x => !x.Value).ToList().ForEach(x => NotGlow(x.Key));
