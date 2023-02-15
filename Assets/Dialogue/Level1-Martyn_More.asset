@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level1-Martyn_More
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level1-Martyn_More
+    Conversant: Martyn
+    Unlocks: N/A
+    Dialogues:
+    - WickIsSpeaker: 0
+      Dialogue: "\u201CWhat\u2019s on your mind?\u201D"
+    EmotionsValue: 1e0000001e00000000000000000000000000000000000000
+    Choices:
+    - BranchText: "\u201CWhat do you think of that bottle?\u201D"
+      Requirements:
+      - SeenBottle
+    - BranchText: "\u201CHow about that rehab brochure?\u201D"
+      Requirements:
+      - SeenBrochure
+    - BranchText: "\u201CDid you read the court summons letter?\u201D"
+      Requirements:
+      - SeenLetter
+    - BranchText: "Go back\u2026"
+      Requirements: []
+    LeadsTo:
+    - BranchText: Level1-Bottle_M
+      Requirements: []
+    - BranchText: Level1-Brochure_M
+      Requirements: []
+    - BranchText: Level1-Letter_M
+      Requirements: []
+    - BranchText: Level1-Martyn
+      Requirements: []
