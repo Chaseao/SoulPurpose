@@ -20,6 +20,7 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
     [SerializeField] float dialogueFastSpeed;
     [SerializeField] List<SOConversationData> conversationGroup;
     [SerializeField] List<string> dialogueUnlocks;
+    [SerializeField] private AudioSource interactSound;
 
     Dictionary<string, DialogueBranchData> choiceToPath = new Dictionary<string, DialogueBranchData>();
 
@@ -115,6 +116,7 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
 
         OnChoiceMenuOpen?.Invoke(choiceToPath.Keys.ToList());
         yield return new WaitUntil(() => choiceSelected != null);
+        interactSound.Play();
         OnChoiceMenuClose?.Invoke();
     }
 
