@@ -99,8 +99,8 @@ public class InteractSystem : MonoBehaviour
         if (hasHitItem1)
         {
             if (item.ExecuteDialogue()) interactSound.Play();
+            item.OpenDoor();
         }
         hasHitItem1 = false;
-        item.OpenDoor();
     }
 }
