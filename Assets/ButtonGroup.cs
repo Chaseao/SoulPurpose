@@ -9,13 +9,23 @@ public class ButtonGroup : MonoBehaviour
     List<UIButton> buttons;
     int currentButtonIndex = -1;
 
-
-    private void Start()
+    public void EnableButtons()
     {
-        buttons = GetComponentsInChildren<UIButton>().ToList();
+        SetButton(0);
+
         Controller.OnNavigateMenu += SwapButton;
         Controller.OnSelect += ActivateButton;
-        SetButton(0);
+    }
+
+    public void DisableButtons()
+    {
+        Controller.OnNavigateMenu -= SwapButton;
+        Controller.OnSelect -= ActivateButton;
+    }
+
+    private void Awake()
+    {
+        buttons = GetComponentsInChildren<UIButton>().ToList();
     }
 
     private void SetButton(int index)
@@ -41,7 +51,7 @@ public class ButtonGroup : MonoBehaviour
         if (!FadeToBlackSystem.FadeOutComplete) return;
 
         int newIndex = currentButtonIndex;
-        newIndex += Mathf.RoundToInt(direction.y);
+        newIndex -= Mathf.RoundToInt(direction.y);
         newIndex = newIndex >= buttons.Count ? 0 : newIndex;
         newIndex = newIndex < 0 ? buttons.Count - 1 : newIndex;
         SetButton(newIndex);
@@ -49,7 +59,7 @@ public class ButtonGroup : MonoBehaviour
 
     private void OnDestroy()
     {
-        Controller.OnMove -= SwapButton;
+        Controller.OnNavigateMenu -= SwapButton;
         Controller.OnSelect -= ActivateButton;
     }
 }

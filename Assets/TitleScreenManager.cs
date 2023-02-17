@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class TitleScreenManager : MonoBehaviour
 {
+    [SerializeField] ButtonGroup menuButtons;
+
     private void Start()
     {
         Controller.Instance.SwapToUI();
+        menuButtons.EnableButtons();
     }
 }

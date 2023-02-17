@@ -116,7 +116,6 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
 
         OnChoiceMenuOpen?.Invoke(choiceToPath.Keys.ToList());
         yield return new WaitUntil(() => choiceSelected != null);
-        interactSound.Play();
         OnChoiceMenuClose?.Invoke();
     }
 

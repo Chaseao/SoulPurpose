@@ -4,11 +4,13 @@ public class UIButton : MonoBehaviour
 {
     [SerializeField] ButtonFunctions function;
     [SerializeField] int sceneIndex;
+    [SerializeField] PauseMenuManager pauseMenuManager;
 
     enum ButtonFunctions
     {
         transtionToMenu,
-        quitGame
+        quitGame,
+        resumeGame
     }
 
     public void ToggleSelected(bool isSelected)
@@ -26,6 +28,9 @@ public class UIButton : MonoBehaviour
                 break;
             case ButtonFunctions.quitGame:
                 Application.Quit();
+                break;
+            case ButtonFunctions.resumeGame:
+                pauseMenuManager.ResumeGame();
                 break;
         }
     }

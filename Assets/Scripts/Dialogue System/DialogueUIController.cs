@@ -75,4 +75,10 @@ public class DialogueUIController : MonoBehaviour
         DialogueManager.OnChoiceMenuOpen -= OnChoiceMenuStart;
         DialogueManager.OnChoiceMenuClose -= OnChoiceMenuEnd;
     }
+
+    private void OnDestroy()
+    {
+        Controller.OnSelect -= SelectChoice;
+        Controller.OnNavigateMenu -= UpdateChoiceSelection;
+    }
 }
