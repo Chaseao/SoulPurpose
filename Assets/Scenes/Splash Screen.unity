@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca7d4521e8b3a4048bed2f964c8aa7cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionLength: 3
+  transitionLength: 3.75
 --- !u!4 &806788085
 Transform:
   m_ObjectHideFlags: 0

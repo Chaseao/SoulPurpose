@@ -151,6 +151,9 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
 
     private IEnumerator ProcessDialogue(DialogueData dialogue, string conversant)
     {
+        OnTextUpdated?.Invoke("", dialogue.WickIsSpeaker);
+        yield return new WaitUntil(() => FadeToBlackSystem.FadeOutComplete);
+
         continueInputRecieved = false;
         string name = (dialogue.WickIsSpeaker ? "Wick" : conversant) + ": ";
 

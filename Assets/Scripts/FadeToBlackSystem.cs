@@ -12,6 +12,8 @@ public class FadeToBlackSystem : SingletonMonoBehavior<FadeToBlackSystem>
     [SerializeField] bool autoFadeOut;
     private Image image;
 
+    public static bool FadeOutComplete => Instance == null || Instance.image.color.a == 0;
+
     protected override void Awake()
     {
         image = GetComponent<Image>();
