@@ -373,17 +373,6 @@
                 },
                 {
                     "name": "",
-                    "id": "7bbc077f-cde1-465d-85b7-af928b127371",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Select",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "5eb14d7a-a28d-4156-a435-92606a9dbfd2",
                     "path": "<Keyboard>/e",
                     "interactions": "",
