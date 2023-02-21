@@ -4,6 +4,7 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 using Unity.VisualScripting;
 using System.Linq;
+using System;
 
 public class AudioControls : SerializedMonoBehaviour
 {
@@ -13,10 +14,24 @@ public class AudioControls : SerializedMonoBehaviour
 
     int desiredProxVolumes = 50;
     int[] desiredVolumes = { 50, 0, 0, 0, 0, 0};
+
+    private void Start()
+    {
+        SceneTools.onSceneTransitionStart += OnSceneTransition;
+        audioFiles.Values.ToList().ForEach(audio => audio.volume = 0);
+        audioProx.ToList().ForEach(audio => audio.volume = 0);
+    }
+
+    private void OnSceneTransition()
+    {
+        SetAudio(new int[] { 0, 0, 0, 0, 0, 0 }, false);
+        adjustmentSpeed = 50;
+    }
+
     public void SetAudio(int[] audioVolumes, bool enableProx)
     {
         desiredVolumes = audioVolumes;
-        desiredProxVolumes = enableProx ? 0 : 50;
+        desiredProxVolumes = enableProx ? 50 : 0;
     }
 
     private void Update()
@@ -39,5 +54,10 @@ public class AudioControls : SerializedMonoBehaviour
         audio.volume = directionToIncrement > 0
             ? Mathf.Min(audio.volume, desiredVolume / 100f)
             : Mathf.Max(audio.volume, desiredVolume / 100f);
+    }
+
+    private void OnDestroy()
+    {
+        SceneTools.onSceneTransitionStart -= OnSceneTransition;
     }
 }
