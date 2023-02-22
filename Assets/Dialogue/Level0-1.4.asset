@@ -26,7 +26,7 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "I\u2019m an open book, so come back to me with whatever questions
         you might have."
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 1e0000001e00000014000000000000000000000000000000
     Choices:
     - BranchText: "\u201CI\u2019ll be back to ask more.\u201D"
       Requirements: []

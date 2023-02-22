@@ -34,7 +34,7 @@ MonoBehaviour:
       Dialogue: "I\u2019m glad I talked them into it, though\u2026 that locket is
         the last I have to remind myself of those times, before Baalmot took everything
         away."
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 1e0000001e00000000000000280000000000000000000000
     Choices:
     - BranchText: "\u201CHow have you survived all this time?\u201D"
       Requirements: []

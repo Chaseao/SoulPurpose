@@ -32,7 +32,7 @@ MonoBehaviour:
         natural order,\u201D including people like me."
     - WickIsSpeaker: 0
       Dialogue: "I\u2019m the good guy here, at least that much should be clear."
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 1e0000001e00000000000000140000000000000000000000
     Choices:
     - BranchText: "\u201CWhy should I trust you?\u201D"
       Requirements: []

@@ -30,7 +30,7 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "That is why I continue to fight Baalmot, to reverse the damage that
         he\u2019s done."
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 1e0000001e00000000000000280000000000000000000000
     Choices:
     - BranchText: "\u201CI have some more questions.\u201D"
       Requirements: []

@@ -25,10 +25,12 @@ MonoBehaviour:
     - WickIsSpeaker: 1
       Dialogue: Who the hell are <i>you</i>? Explain yourself!
     - WickIsSpeaker: 0
-      Dialogue: "Ah, yes. You must be one of Baalmot\u2019s henchmen. That time magic
-        of yours won\u2019t work on me by the way. I should have known this time
-        was coming\u2026"
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+      Dialogue: "Ah, yes\u2026 You must be one of Baalmot\u2019s henchmen. I\u2019m
+        Martyn, long time enemy of your puppetmaster."
+    - WickIsSpeaker: 0
+      Dialogue: "That time magic of yours won\u2019t work on me, by the way. I should
+        have known this time was coming\u2026"
+    EmotionsValue: 1e0000001e00000000000000000000000000000000000000
     Choices:
     - BranchText: "\u201CHow do you know about Master Baalmot?\u201D"
       Requirements: []

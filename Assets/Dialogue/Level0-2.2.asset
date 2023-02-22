@@ -37,7 +37,7 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "If one could just solidify a soul\u2019s content and remove Baalmot\u2019s
         influence\u2026"
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 1e0000001e00000028000000000000000000000000000000
     Choices:
     - BranchText: "\u201CI have some more questions.\u201D"
       Requirements: []

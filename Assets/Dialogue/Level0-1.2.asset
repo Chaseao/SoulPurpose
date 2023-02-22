@@ -35,7 +35,7 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: <i>*sighs*</i> I should have known, why would he ever give you the
         truth?
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 1e0000001e00000014000000000000000000000000000000
     Choices:
     - BranchText: "\u201CThen tell me more. What do you know?\u201D"
       Requirements: []

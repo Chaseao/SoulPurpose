@@ -18,10 +18,14 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
-      Dialogue: '[suggest bird]'
+      Dialogue: "I hear a bird outside\u2026 it\u2019s a shame to end its life early,
+        but\u2026"
     - WickIsSpeaker: 0
-      Dialogue: '[Baalmot would hardly notice]'
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+      Dialogue: "What\u2019s a bird\u2019s soul in comparison to a human\u2019s?
+        Baalmot would hardly notice the difference, that\u2019s for sure."
+    - WickIsSpeaker: 0
+      Dialogue: This method might not keep up forever, but it might be worth a try.
+    EmotionsValue: 1e0000001e0000001e000000000000000000000000000000
     Choices:
     - BranchText: "\u201CVery well, the bird it is.\u201D"
       Requirements: []

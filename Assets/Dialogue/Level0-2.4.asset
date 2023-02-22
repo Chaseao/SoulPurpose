@@ -40,7 +40,7 @@ MonoBehaviour:
         pawns, you and I included."
     - WickIsSpeaker: 0
       Dialogue: Can I ask you something?
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 1e0000001e0000001e000000000000000000000000000000
     Choices:
     - BranchText: "\u201CYeah, sure. What is it?\u201D"
       Requirements: []

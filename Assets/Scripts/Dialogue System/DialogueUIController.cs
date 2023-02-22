@@ -80,5 +80,6 @@ public class DialogueUIController : MonoBehaviour
     {
         Controller.OnSelect -= SelectChoice;
         Controller.OnNavigateMenu -= UpdateChoiceSelection;
+        DialogueManager.OnTextUpdated -= textBoxDisplay.UpdateDialogueText;
     }
 }

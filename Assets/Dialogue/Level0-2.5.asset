@@ -27,7 +27,7 @@ MonoBehaviour:
         All I know is\u2026 I need to continue, I have no other choice\u2026."
     - WickIsSpeaker: 0
       Dialogue: And why is it that you must continue?
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 1e0000001e0000001e000000000000000000000000000000
     Choices:
     - BranchText: "\u201CWell\u2026 it\u2019s my job. How could I stop?\u201D"
       Requirements: []

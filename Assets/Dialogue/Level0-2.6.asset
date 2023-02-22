@@ -19,7 +19,7 @@ MonoBehaviour:
     Dialogues:
     - WickIsSpeaker: 0
       Dialogue: "Isn\u2019t that quite interesting? You work in servitude to an all-powerful
-        master\u2026 for <i>centuries</I>... to regain the same  freedom that you
+        master\u2026 for <i>centuries</I>... to regain the same freedom that you
         were once given as birthright\u2026"
     - WickIsSpeaker: 0
       Dialogue: "\u2026only to entirely lose your sense of self by the time that
@@ -34,7 +34,7 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "If I may ask\u2026 what is your name? If you even have one, that
         is."
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 1e0000001e0000001e000000000000000000000000000000
     Choices:
     - BranchText: "\u201CMy name is Wick.\u201D"
       Requirements: []

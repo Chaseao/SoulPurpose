@@ -19,7 +19,7 @@ MonoBehaviour:
     Dialogues:
     - WickIsSpeaker: 0
       Dialogue: What do you want to ask me about?
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 1e0000001e00000000000000000000000000000000000000
     Choices:
     - BranchText: "\u201CI found an old locket, what\u2019s with that?.\u201D"
       Requirements:

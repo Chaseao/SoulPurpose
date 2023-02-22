@@ -32,7 +32,7 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "I\u2019d like to make you an offer if you\u2019re willing to hear
         it."
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 1e0000001e000000000000001e0000000000000000000000
     Choices:
     - BranchText: "\u201CWhat could you possibly offer me?\u201D"
       Requirements: []

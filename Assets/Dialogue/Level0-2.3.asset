@@ -26,7 +26,7 @@ MonoBehaviour:
     - WickIsSpeaker: 0
       Dialogue: "You may have noticed the range of people mentioned here. Serial
         killers, war criminals, rapists, slavers\u2026"
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    EmotionsValue: 1e0000001e00000028000000000000000000000000000000
     Choices:
     - BranchText: "\u201CWhat\u2019s the issue with that?\u201D"
       Requirements: []
