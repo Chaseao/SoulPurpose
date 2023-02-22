@@ -12,7 +12,11 @@ public class TextBoxDisplay : MonoBehaviour
     public void UpdateDialogueText(string text, bool wickIsSpeaking)
     {
         dialogueTextField.text = text;
-        textBoxImage.rectTransform.rotation = new Quaternion() { y = wickIsSpeaking ? 180 : 0 };
+
+        if (textBoxImage != null)
+        {
+            textBoxImage.rectTransform.rotation = new Quaternion() { y = wickIsSpeaking ? 180 : 0 };
+        }
     }
 
     public void Hide() => ToggleChildrenDisplay(false);

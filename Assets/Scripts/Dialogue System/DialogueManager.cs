@@ -4,6 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using static DialogueHelperClass;
 
@@ -28,6 +29,23 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
     bool continueInputRecieved;
     string choiceSelected;
     public bool InDialogue => inDialogue;
+
+    private void Start()
+    {
+        SceneManager.activeSceneChanged += ClearManager;
+    }
+
+
+    private void OnDestroy()
+    {
+        SceneManager.activeSceneChanged -= ClearManager;
+    }
+
+    private void ClearManager(Scene arg0, Scene arg1)
+    {
+        audioControls = FindObjectOfType<AudioControls>();
+        dialogueUnlocks.Clear();
+    }
 
     [Button]
     public void StartDialogue(SOConversationData conversation)

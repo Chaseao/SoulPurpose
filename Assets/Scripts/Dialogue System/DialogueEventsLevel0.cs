@@ -15,7 +15,8 @@ public class DialogueEventsLevel0 : MonoBehaviour
     private void OnEnable()
     {
         DialogueManager.OnDialogueStarted += UpdateLastDialogue;
-        DialogueManager.OnDialogueEnded += CheckForEvent;
+        //DialogueManager.OnDialogueEnded += CheckForEvent;
+        DialogueManager.OnChoiceMenuClose += CheckForEvent;
     }
 
     private void UpdateLastDialogue(ConversationData obj)
@@ -47,6 +48,6 @@ public class DialogueEventsLevel0 : MonoBehaviour
     private void OnDisable()
     {
         DialogueManager.OnDialogueStarted -= UpdateLastDialogue;
-        DialogueManager.OnDialogueEnded -= CheckForEvent;
+        DialogueManager.OnChoiceMenuClose -= CheckForEvent;
     }
 }
