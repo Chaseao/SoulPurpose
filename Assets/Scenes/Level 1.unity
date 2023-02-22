@@ -80960,6 +80960,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.32075134
       objectReference: {fileID: 0}
+    - target: {fileID: 3819846394783336765, guid: 52d5837d41f808f4587194481c5765e2, type: 3}
+      propertyPath: interactSound
+      value: 
+      objectReference: {fileID: 1234693881}
     - target: {fileID: 3819846394812751409, guid: 52d5837d41f808f4587194481c5765e2, type: 3}
       propertyPath: m_Name
       value: Player (1)
