@@ -25,5 +25,5 @@ MonoBehaviour:
     - BranchText: Exit.
       Requirements: []
     LeadsTo:
-    - BranchText: Exit.
+    - BranchText: Exit
       Requirements: []
