@@ -17,8 +17,10 @@ MonoBehaviour:
     Conversant: Father
     Unlocks: N/A
     Dialogues:
-    - WickIsSpeaker: 1
-      Dialogue: "[take father\u2019s soul]"
+    - WickIsSpeaker: 0
+      Dialogue: "The father\u2019s actions have been deemed unforgivable.\r\n\n"
+    - WickIsSpeaker: 0
+      Dialogue: "Wick takes his soul to fulfill his contract as planned.\r"
     EmotionsValue: 000000000000000000000000000000000000000000000000
     Choices: []
     LeadsTo:

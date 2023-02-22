@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level0-2.2
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level0-2.2
+    Conversant: Human Martyn
+    Unlocks: N/A
+    Dialogues:
+    - WickIsSpeaker: 0
+      Dialogue: "I\u2019ve practiced medicine all around the world, curing people
+        from all walks of life."
+    - WickIsSpeaker: 0
+      Dialogue: Many traditional practices have quite a lot of value and my research
+        is focused on finding the root cause of life, and with that, an explanation
+        for death.
+    - WickIsSpeaker: 0
+      Dialogue: "Others have sought fantastical objects such as the \u201CElixir
+        of Life,\u201D but those are just merely myths. They fail to account for
+        our core energy, the soul."
+    - WickIsSpeaker: 0
+      Dialogue: Nobody has ever come closer to discovering what constitutes life
+        and existence than I have.
+    - WickIsSpeaker: 0
+      Dialogue: Our souls, indestructible yet re-writable, hold the key to understanding
+        our greater purpose.
+    - WickIsSpeaker: 0
+      Dialogue: "If one could just solidify a soul\u2019s content and remove Baalmot\u2019s
+        influence\u2026"
+    EmotionsValue: 000000000000000000000000000000000000000000000000
+    Choices:
+    - BranchText: "\u201CI have some more questions.\u201D"
+      Requirements: []
+    LeadsTo:
+    - BranchText: Level0-2.0
+      Requirements: []

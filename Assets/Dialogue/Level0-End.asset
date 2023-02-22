@@ -10,21 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
-  m_Name: Level1-SpareEnding
+  m_Name: Level0-End
   m_EditorClassIdentifier: 
   conversationData:
-    ID: Level1-SpareEnding
-    Conversant: Father
-    Unlocks: N/A
+    ID: Level0-End
+    Conversant: Nothing
+    Unlocks: SeenEnd
     Dialogues:
-    - WickIsSpeaker: 0
-      Dialogue: Feeling sorry for the father and hoping to give him a second chance,
-        Wick spares him.
-    - WickIsSpeaker: 0
-      Dialogue: "The dog\u2019s soul is taken in place of the father\u2019s to fulfill
-        the contract."
+    - WickIsSpeaker: 1
+      Dialogue: "Listening to Martyn\u2019s advice, Wick takes the soul of the bird
+        right outside the little house in place of martyn\u2019s soul."
     EmotionsValue: 000000000000000000000000000000000000000000000000
-    Choices: []
+    Choices:
+    - BranchText: Exit.
+      Requirements: []
     LeadsTo:
     - BranchText: Exit
       Requirements: []

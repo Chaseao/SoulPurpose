@@ -10,21 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
-  m_Name: Level1-SpareEnding
+  m_Name: Level0-2.8
   m_EditorClassIdentifier: 
   conversationData:
-    ID: Level1-SpareEnding
-    Conversant: Father
+    ID: Level0-2.8
+    Conversant: Human Martyn
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
-      Dialogue: Feeling sorry for the father and hoping to give him a second chance,
-        Wick spares him.
+      Dialogue: '[take me with you]'
     - WickIsSpeaker: 0
-      Dialogue: "The dog\u2019s soul is taken in place of the father\u2019s to fulfill
-        the contract."
+      Dialogue: "[tell you more about Baalmot, uncover his plans; this body doesn\u2019t
+        mean much, take my soul]"
+    - WickIsSpeaker: 0
+      Dialogue: "[of course\u2026 will need a soul in my place to fulfill your contract]"
     EmotionsValue: 000000000000000000000000000000000000000000000000
-    Choices: []
+    Choices:
+    - BranchText: "[\u201Cwhat are you thinking?\u201D]"
+      Requirements: []
     LeadsTo:
-    - BranchText: Exit
+    - BranchText: Level0-2.9
       Requirements: []

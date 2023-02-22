@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level0-2.4
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level0-2.4
+    Conversant: Human Martyn
+    Unlocks: N/A
+    Dialogues:
+    - WickIsSpeaker: 0
+      Dialogue: "You didn\u2019t let me finish. Also included on the list among them
+        are surgeons, therapists, even saints\u2026 all of whom were fathers, mothers,
+        sons, daughters\u2026"
+    - WickIsSpeaker: 1
+      Dialogue: "But they surely must have had other reasons for being targeted?
+        I\u2019ve never taken an innocent soul\u2026 or at least, I don\u2019t think
+        I have\u2026"
+    - WickIsSpeaker: 0
+      Dialogue: "If you look closer, you may find that some of the names are familiar.
+        That is, if you ever knew the names of your victims\u2026 But I promise you,
+        any soul you\u2019ve taken has included  innocence just as it holds guilt."
+    - WickIsSpeaker: 1
+      Dialogue: "I suppose so\u2026 but, why do\u2013"
+    - WickIsSpeaker: 0
+      Dialogue: "Don\u2019t you understand?? The question is not whether somebody
+        is \u201Cgood\u201D or \u201Cbad,\u201D it\u2019s whether or not Baalmot
+        sees them as an interference."
+    - WickIsSpeaker: 0
+      Dialogue: "He\u2019s playing a much larger game here, within which we are <i>all</i>
+        pawns, you and I included."
+    - WickIsSpeaker: 0
+      Dialogue: Can I ask you something?
+    EmotionsValue: 000000000000000000000000000000000000000000000000
+    Choices:
+    - BranchText: "\u201CYeah, sure. What is it?\u201D"
+      Requirements: []
+    LeadsTo:
+    - BranchText: Level0-2.5
+      Requirements: []

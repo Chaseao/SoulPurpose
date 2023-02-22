@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level0-2.3
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level0-2.3
+    Conversant: Human Martyn
+    Unlocks: N/A
+    Dialogues:
+    - WickIsSpeaker: 0
+      Dialogue: "I\u2019ve been tracking Baalmot\u2019s targets for a long time.
+        The list dates back pretty far, but it is far from complete."
+    - WickIsSpeaker: 0
+      Dialogue: "There is no telling how widespread Baalmot\u2019s henchmen are,
+        and despite how long I\u2019ve been around, I\u2019m only one person."
+    - WickIsSpeaker: 0
+      Dialogue: "You may have noticed the range of people mentioned here. Serial
+        killers, war criminals, rapists, slavers\u2026"
+    EmotionsValue: 000000000000000000000000000000000000000000000000
+    Choices:
+    - BranchText: "\u201CWhat\u2019s the issue with that?\u201D"
+      Requirements: []
+    LeadsTo:
+    - BranchText: Level0-2.4
+      Requirements: []

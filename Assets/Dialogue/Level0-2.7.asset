@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level0-2.7
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level0-2.7
+    Conversant: Human Martyn
+    Unlocks: N/A
+    Dialogues:
+    - WickIsSpeaker: 0
+      Dialogue: "\u201CWick,\u201D you say?"
+    - WickIsSpeaker: 0
+      Dialogue: "Hmm\u2026"
+    - WickIsSpeaker: 0
+      Dialogue: "\u2026"
+    - WickIsSpeaker: 0
+      Dialogue: "A very peculiar name\u2026 fitting for one with a very peculiar
+        Destiny."
+    - WickIsSpeaker: 0
+      Dialogue: I believe it was Fate that brought you here today. That brought us
+        together.
+    - WickIsSpeaker: 0
+      Dialogue: "I\u2019d like to make you an offer if you\u2019re willing to hear
+        it."
+    EmotionsValue: 000000000000000000000000000000000000000000000000
+    Choices:
+    - BranchText: "\u201CWhat could you possibly offer me?\u201D"
+      Requirements: []
+    LeadsTo:
+    - BranchText: Level0-2.8
+      Requirements: []

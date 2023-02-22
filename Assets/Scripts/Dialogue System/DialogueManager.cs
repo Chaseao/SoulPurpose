@@ -19,7 +19,7 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
     [SerializeField] float dialogueSpeed;
     [SerializeField] float dialogueFastSpeed;
     [SerializeField] List<SOConversationData> conversationGroup;
-    [SerializeField] List<string> dialogueUnlocks;
+    [SerializeField] public List<string> dialogueUnlocks;
 
     Dictionary<string, DialogueBranchData> choiceToPath = new Dictionary<string, DialogueBranchData>();
 

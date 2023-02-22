@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level0-2.1.1
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level0-2.1.1
+    Conversant: Human Martyn
+    Unlocks: N/A
+    Dialogues:
+    - WickIsSpeaker: 0
+      Dialogue: "Ah yes. That locket is the only memory I have left from an old,
+        past life\u2026"
+    - WickIsSpeaker: 0
+      Dialogue: "It\u2019s been well over a century since then. In fact, those pictures
+        were some of the very first ever taken!"
+    - WickIsSpeaker: 0
+      Dialogue: "They\u2019re photos of me and my partner, we were both healers.
+        I remember pushing them to take the photos with me\u2026 they weren\u2019t
+        sure about the new tech."
+    - WickIsSpeaker: 0
+      Dialogue: "<i>*laughs*</i>  It\u2019d be funny to see how they feel about all
+        the new tech today."
+    - WickIsSpeaker: 0
+      Dialogue: "I\u2019m glad I talked them into it, though\u2026 that locket is
+        the last I have to remind myself of those times, before Baalmot took everything
+        away."
+    EmotionsValue: 000000000000000000000000000000000000000000000000
+    Choices:
+    - BranchText: "\u201CHow have you survived all this time?\u201D"
+      Requirements: []
+    LeadsTo:
+    - BranchText: Level0-2.1.2
+      Requirements: []

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level0-2.0
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level0-2.0
+    Conversant: Human Martyn
+    Unlocks: N/A
+    Dialogues:
+    - WickIsSpeaker: 0
+      Dialogue: What do you want to ask me about?
+    EmotionsValue: 000000000000000000000000000000000000000000000000
+    Choices:
+    - BranchText: "\u201CI found an old locket, what\u2019s with that?.\u201D"
+      Requirements:
+      - SeenLocket
+    - BranchText: "\u201CYour medicine bag was interesting, tell me more?\u201D"
+      Requirements:
+      - SeenDoctorsBag
+    - BranchText: "<b><color=#8B2323>\u201DWhat was that list of names?\u201D</b></color=#8B2323>"
+      Requirements:
+      - SeenList
+    - BranchText: "\u201CNevermind.\u201D"
+      Requirements: []
+    LeadsTo:
+    - BranchText: Level0-2.1.1
+      Requirements: []
+    - BranchText: Level0-2.2
+      Requirements: []
+    - BranchText: Level0-2.3
+      Requirements: []
+    - BranchText: Exit
+      Requirements: []

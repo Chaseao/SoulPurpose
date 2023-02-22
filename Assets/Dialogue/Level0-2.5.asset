@@ -10,28 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
-  m_Name: Level0-1.0
+  m_Name: Level0-2.5
   m_EditorClassIdentifier: 
   conversationData:
-    ID: Level0-1.0
+    ID: Level0-2.5
     Conversant: Human Martyn
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
-      Dialogue: "Who are you?? How did you get in here? Oh no\u2026 you must be\u2013"
+      Dialogue: How long have you been working for Baalmot?
     - WickIsSpeaker: 1
-      Dialogue: "What?! How\u2026 I don\u2019t understand\u2026 I thought time had
-        been frozen still, but you\u2019re awake!"
+      Dialogue: "I\u2019m not entirely sure\u2026 probably over a hundred years,
+        maybe more? It\u2019s all pretty blurry\u2026"
     - WickIsSpeaker: 1
-      Dialogue: Who the hell are <i>you</i>? Explain yourself!
+      Dialogue: "I work for redemption, so my soul can eventually be free once again.
+        All I know is\u2026 I need to continue, I have no other choice\u2026."
     - WickIsSpeaker: 0
-      Dialogue: "Ah, yes. You must be one of Baalmot\u2019s henchmen. That time magic
-        of yours won\u2019t work on me by the way. I should have known this time
-        was coming\u2026"
+      Dialogue: And why is it that you must continue?
     EmotionsValue: 000000000000000000000000000000000000000000000000
     Choices:
-    - BranchText: "\u201CHow do you know about Master Baalmot?\u201D"
+    - BranchText: "\u201CWell\u2026 it\u2019s my job. How could I stop?\u201D"
       Requirements: []
     LeadsTo:
-    - BranchText: Level0-1.1
+    - BranchText: Level0-2.6
       Requirements: []

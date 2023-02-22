@@ -17,6 +17,7 @@ public class InteractSystem : MonoBehaviour
     [SerializeField] private SOConversationData startingDialogue;
     private bool hasHitItem;
     private bool hasHitItem1;
+    [SerializeField] private bool isLevel0;
     private GameObject closestItem;
 
     private void OnEnable()
@@ -36,19 +37,36 @@ public class InteractSystem : MonoBehaviour
 
     void Update()
     {
+        if (Martyn.hasStartedMartynDialogue > 0) isLevel0 = false;
         RaycastHit[] hits;
         float minDistance = 1000f;
         hits = Physics.SphereCastAll(this.transform.position, rangeOfInteract, transform.forward, 0);
         foreach (RaycastHit hit in hits)
         {
-            if (hit.collider.gameObject.CompareTag("Item") || hit.collider.gameObject.CompareTag("Key"))
+            if (!isLevel0)
             {
-                hasHitItem= true;
-                if (!objectsHit.ContainsKey(hit.collider.gameObject)) objectsHit.Add(hit.collider.gameObject, false);
-                if (hit.distance < minDistance)
+                if (hit.collider.gameObject.CompareTag("Item") || hit.collider.gameObject.CompareTag("Key"))
                 {
-                    closestItem = hit.collider.gameObject;
-                    minDistance = hit.distance;
+                    hasHitItem = true;
+                    if (!objectsHit.ContainsKey(hit.collider.gameObject)) objectsHit.Add(hit.collider.gameObject, false);
+                    if (hit.distance < minDistance)
+                    {
+                        closestItem = hit.collider.gameObject;
+                        minDistance = hit.distance;
+                    }
+                }
+            }
+            else
+            {
+                if (hit.collider.gameObject.name.Equals("Martyn"))
+                {
+                    hasHitItem = true;
+                    if (!objectsHit.ContainsKey(hit.collider.gameObject)) objectsHit.Add(hit.collider.gameObject, false);
+                    if (hit.distance < minDistance)
+                    {
+                        closestItem = hit.collider.gameObject;
+                        minDistance = hit.distance;
+                    }
                 }
             }
         }
@@ -86,13 +104,28 @@ public class InteractSystem : MonoBehaviour
         hits = Physics.SphereCastAll(this.transform.position, rangeOfInteract, transform.forward, 0);
         foreach (RaycastHit hit in hits)
         {
-            if(hit.collider.gameObject.CompareTag("Item") || hit.collider.gameObject.CompareTag("Key"))
+            if (!isLevel0)
             {
-                hasHitItem1 = true;
-                if (hit.distance < minDistance)
+                if (hit.collider.gameObject.CompareTag("Item") || hit.collider.gameObject.CompareTag("Key"))
                 {
-                    item = hit.collider.gameObject.GetComponent<IInteractable>();
-                    minDistance = hit.distance;
+                    hasHitItem1 = true;
+                    if (hit.distance < minDistance)
+                    {
+                        item = hit.collider.gameObject.GetComponent<IInteractable>();
+                        minDistance = hit.distance;
+                    }
+                }
+            }
+            else
+            {
+                if (hit.collider.gameObject.name.Equals("Martyn"))
+                {
+                    hasHitItem1 = true;
+                    if (hit.distance < minDistance)
+                    {
+                        item = hit.collider.gameObject.GetComponent<IInteractable>();
+                        minDistance = hit.distance;
+                    }
                 }
             }
         }

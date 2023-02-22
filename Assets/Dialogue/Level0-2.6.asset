@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level0-2.6
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level0-2.6
+    Conversant: Human Martyn
+    Unlocks: N/A
+    Dialogues:
+    - WickIsSpeaker: 0
+      Dialogue: "Isn\u2019t that quite interesting? You work in servitude to an all-powerful
+        master\u2026 for <i>centuries</I>... to regain the same  freedom that you
+        were once given as birthright\u2026"
+    - WickIsSpeaker: 0
+      Dialogue: "\u2026only to entirely lose your sense of self by the time that
+        you\u2019ve finished. Does that seem fair to you? When will you even be done,
+        I wonder?"
+    - WickIsSpeaker: 1
+      Dialogue: "I suppose I never really thought about it\u2026 it\u2019s just\u2026
+        all I know."
+    - WickIsSpeaker: 0
+      Dialogue: "If I\u2019m being honest with you, I\u2019m surprised to see that
+        a henchman like yourself has even retained sentience after all these years."
+    - WickIsSpeaker: 0
+      Dialogue: "If I may ask\u2026 what is your name? If you even have one, that
+        is."
+    EmotionsValue: 000000000000000000000000000000000000000000000000
+    Choices:
+    - BranchText: "\u201CMy name is Wick.\u201D"
+      Requirements: []
+    LeadsTo:
+    - BranchText: Level0-2.7
+      Requirements: []

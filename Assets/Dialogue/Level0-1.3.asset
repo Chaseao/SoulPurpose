@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4c86d78dfd55d47a03b069c598849c, type: 3}
+  m_Name: Level0-1.3
+  m_EditorClassIdentifier: 
+  conversationData:
+    ID: Level0-1.3
+    Conversant: Human Martyn
+    Unlocks: N/A
+    Dialogues:
+    - WickIsSpeaker: 0
+      Dialogue: "Well to start, I\u2019m no killer or criminal. Let\u2019s be very
+        clear about that."
+    - WickIsSpeaker: 0
+      Dialogue: "I\u2019m a doctor\u2013 a healer, to be specific. I work with those
+        whom other doctors would consider a lost cause, which is precisely why Baalmot
+        wants to take me out."
+    - WickIsSpeaker: 0
+      Dialogue: My patients live well beyond their life expectancy, running from
+        his deathly clutches.
+    - WickIsSpeaker: 0
+      Dialogue: "Baalmot makes an enemy out of anybody deemed disruptive to \u201Cthe
+        natural order,\u201D including people like me."
+    - WickIsSpeaker: 0
+      Dialogue: "I\u2019m the good guy here, at least that much should be clear."
+    EmotionsValue: 000000000000000000000000000000000000000000000000
+    Choices:
+    - BranchText: "\u201CWhy should I trust you?\u201D"
+      Requirements: []
+    LeadsTo:
+    - BranchText: Level0-1.4
+      Requirements: []
