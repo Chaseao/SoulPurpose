@@ -7,6 +7,7 @@ public static class DialogueHelperClass
     public class DialogueData
     {
         public bool WickIsSpeaker;
+        public bool VoiceSpeaker;
         [SerializeField, TextArea()] public string Dialogue;
     }
 

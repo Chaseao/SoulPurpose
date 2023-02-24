@@ -18,11 +18,14 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "Here we are\u2026 the house of your next target."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I know you\u2019re probably use to just coming in and getting the
         job done\u2026 but maybe we should take some time to look around."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: These people have unique, individual lives. The least we could do
         is learn about them before taking a soul.
     EmotionsValue: 280000001400000000000000000000000000000000000000

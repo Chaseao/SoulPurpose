@@ -171,7 +171,13 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
         yield return new WaitUntil(() => FadeToBlackSystem.FadeOutComplete);
 
         continueInputRecieved = false;
-        string name = (dialogue.WickIsSpeaker ? "Wick" : conversant) + ": ";
+        string name = "";
+
+        if (!dialogue.VoiceSpeaker)
+        {
+            name = (dialogue.WickIsSpeaker ? "Wick" : conversant) + ": ";
+            name = name.Replace("Human ", "");
+        }
 
         yield return TypewriterDialogue(name, dialogue.Dialogue, dialogue.WickIsSpeaker);
 

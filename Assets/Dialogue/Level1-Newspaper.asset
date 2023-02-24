@@ -17,11 +17,14 @@ MonoBehaviour:
     Conversant: Newspaper
     Unlocks: SeenNewspaper
     Dialogues:
-    - WickIsSpeaker: 1
-      Dialogue: <i>A newspaper clipping sits on the table:</i>
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
+      Dialogue: <i>A newspaper clipping sits on the table</i>
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>\u201DWoman Loses Life in Accidental Overdose\u201D</i>"
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>\u201DPolice reported an accidental overdose last Thursday night\u2026
         found the next morning in bed\u2026 she is survived by her brother, husband,
         and thirteen-year-old daughter\u2026 reporter\u2019s have reached out to
