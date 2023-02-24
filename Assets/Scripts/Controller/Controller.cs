@@ -17,10 +17,13 @@ public class Controller : SingletonMonoBehavior<Controller>
     public static Action OnSkip;
     public static Action OnResume;
 
+    private bool inGameplay = false;
+    public bool InGameplay => inGameplay;
+
     [SerializeField] PlayerInput playerInput;
 
-    public void SwapToUI() => playerInput.SwitchCurrentActionMap("UI");
-    public void SwapToGameplay() => playerInput.SwitchCurrentActionMap("Gameplay");
+    public void SwapToUI() { playerInput.SwitchCurrentActionMap("UI"); inGameplay = false; }
+    public void SwapToGameplay() { playerInput.SwitchCurrentActionMap("Gameplay"); inGameplay = true; }
 
     #region Gameplay Layout
 

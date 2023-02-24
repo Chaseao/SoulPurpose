@@ -1,8 +1,10 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using static DialogueHelperClass;
 
-public class DialogueEventsLevel0 : MonoBehaviour
+public class DialogueEvents : MonoBehaviour
 {
     [SerializeField] GameObject imageToDisplay;
     [SerializeField] SOConversationData imageConversation;
@@ -11,6 +13,7 @@ public class DialogueEventsLevel0 : MonoBehaviour
 
     bool triggerImage;
     bool triggerAudio;
+    bool awaitingInput;
 
     private void OnEnable()
     {
@@ -27,11 +30,11 @@ public class DialogueEventsLevel0 : MonoBehaviour
 
     private void CheckForEvent()
     {
-        if (triggerImage)
+        if (triggerImage && imageToDisplay != null)
         {
             StartCoroutine(PlayImage());
         }
-        if (triggerAudio)
+        if (triggerAudio && audioToPlayFrom != null)
         {
             audioToPlayFrom.enabled = false;
         }
@@ -40,10 +43,19 @@ public class DialogueEventsLevel0 : MonoBehaviour
     private IEnumerator PlayImage()
     {
         imageToDisplay.SetActive(true);
-        yield return new WaitForSeconds(5);
+
+        yield return new WaitUntil(() => Controller.Instance.InGameplay);
+        Controller.Instance.SwapToUI();
+        Controller.OnSelect += AcceptInput;
+        awaitingInput = true;
+        yield return new WaitUntil(() => !awaitingInput);
+        Controller.OnSelect -= AcceptInput;
+        Controller.Instance.SwapToGameplay();
+
         imageToDisplay.SetActive(false);
     }
 
+    private void AcceptInput() => awaitingInput = false;
 
     private void OnDisable()
     {

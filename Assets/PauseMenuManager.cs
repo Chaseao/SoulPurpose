@@ -9,14 +9,13 @@ public class PauseMenuManager : MonoBehaviour
     {
         DisableMenu();
         Controller.OnPause += PauseGame;
-        Controller.OnResume += ResumeGame;
     }
 
     public void ResumeGame()
     {
-        if (DialogueManager.Instance.InDialogue) return;
         Controller.Instance.SwapToGameplay();
         DisableMenu();
+        Controller.OnResume -= ResumeGame;
     }
 
     private void DisableMenu()
@@ -27,8 +26,7 @@ public class PauseMenuManager : MonoBehaviour
 
     public void PauseGame()
     {
-        if (DialogueManager.Instance.InDialogue) return;
-
+        Controller.OnResume += ResumeGame;
         Controller.Instance.SwapToUI();
         canvas.enabled = true;
         buttons.EnableButtons();

@@ -206,5 +206,5 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
         Controller.OnSelect -= SpeedUpText;
     }
 
-    private void SpeedUpText() => currentDialogueSpeed = dialogueFastSpeed;
+    private void SpeedUpText() => currentDialogueSpeed = currentDialogueSpeed == dialogueFastSpeed ? currentDialogueSpeed = dialogueFastSpeed * 10 : dialogueFastSpeed;
 }
