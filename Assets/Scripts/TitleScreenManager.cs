@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class TitleScreenManager : MonoBehaviour
 {
@@ -12,5 +13,7 @@ public class TitleScreenManager : MonoBehaviour
         Controller.Instance.SwapToUI();
         menuButtons.EnableButtons();
         audioControls.SetAudio(new int[] { 50 }, false) ;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }

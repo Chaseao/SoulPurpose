@@ -13,7 +13,7 @@ public class UIButton : MonoBehaviour
         resumeGame
     }
 
-    public void ToggleSelected(bool isSelected)
+    public virtual void ToggleSelected(bool isSelected)
     {
         transform.localScale = Vector3.one * (isSelected ? 1.2f : 1);
     }
