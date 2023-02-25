@@ -12,9 +12,12 @@ public class InteractMartynSystem : SerializedMonoBehaviour
     [SerializeField] private GameObject martynSignal;
 
     private Dictionary<ConversationData, bool> conversations;
+    private bool shouldEnable = false;
 
-    private void Start()
+    private void Awake()
     {
+        martynSignal.SetActive(false);
+        conversations = new Dictionary<ConversationData, bool>();
         foreach(var conversation in conversationsToTrack)
         {
             conversations.TryAdd(conversation.Data, false);
@@ -25,15 +28,21 @@ public class InteractMartynSystem : SerializedMonoBehaviour
     {
         Controller.OnMartynInteract += InteractMartyn;
         DialogueManager.OnDialogueStarted += UpdateTracking;
+        DialogueManager.OnDialogueEnded += ToggleSignal;
     }
 
     private void UpdateTracking(ConversationData conversation)
     {
         if (conversations.ContainsKey(conversation))
         {
-            martynSignal.SetActive(!conversations[conversation]);
+            shouldEnable = !conversations[conversation];
             conversations[conversation] = true;
         }
+    }
+
+    private void ToggleSignal()
+    {
+        martynSignal.SetActive(shouldEnable);
     }
 
     private void OnDisable()
@@ -44,7 +53,15 @@ public class InteractMartynSystem : SerializedMonoBehaviour
     void InteractMartyn()
     {
         martynSignal.SetActive(false);
+        shouldEnable = false;
         print("Starting Martyn Dialogue");
         DialogueManager.Instance.StartDialogue(dialogue);
+    }
+
+    private void OnDestroy()
+    {
+        Controller.OnMartynInteract -= InteractMartyn;
+        DialogueManager.OnDialogueStarted -= UpdateTracking;
+        DialogueManager.OnDialogueEnded -= ToggleSignal;
     }
 }
