@@ -13,7 +13,7 @@ public class AudioControls : SerializedMonoBehaviour
     [SerializeField] float adjustmentSpeed;
 
     int desiredProxVolumes = 50;
-    int[] desiredVolumes = { 50, 0, 0, 0, 0, 0};
+    int[] desiredVolumes = { 50, 0, 0, 0, 50, 0};
 
     private void Start()
     {

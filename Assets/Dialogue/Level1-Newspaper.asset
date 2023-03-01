@@ -19,7 +19,7 @@ MonoBehaviour:
     Dialogues:
     - WickIsSpeaker: 0
       VoiceSpeaker: 1
-      Dialogue: <i>A newspaper clipping sits on the table</i>
+      Dialogue: <i>An old newspaper clipping sits on the table.</i>
     - WickIsSpeaker: 0
       VoiceSpeaker: 1
       Dialogue: "<i>\u201DWoman Loses Life in Accidental Overdose\u201D</i>"
@@ -27,9 +27,11 @@ MonoBehaviour:
       VoiceSpeaker: 1
       Dialogue: "<i>\u201DPolice reported an accidental overdose last Thursday night\u2026
         found the next morning in bed\u2026 she is survived by her brother, husband,
-        and thirteen-year-old daughter\u2026 reporter\u2019s have reached out to
-        the family but have heard no word\u2026funeral scheduled for this coming
-        Friday\u2026</i>"
+        and thirteen-year-old daughter\u2026</i>"
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
+      Dialogue: "<i>Reporters have reached out to the family but have heard no word\u2026
+        the funeral is scheduled for this coming Friday\u2026</i>"
     EmotionsValue: 1e0000003200000000000000000000000000000000000000
     Choices:
     - BranchText: Exit.

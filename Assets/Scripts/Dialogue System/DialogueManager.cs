@@ -58,7 +58,7 @@ public class DialogueManager : SingletonMonoBehavior<DialogueManager>
         if(dialogueId == null || dialogueId.Equals("Exit"))
         {
             ExitDialogue();
-            audioControls?.SetAudio(new int[6] { 40, 0, 0, 0, 0, 0}, true);
+            audioControls?.SetAudio(new int[6] { 40, 0, 0, 0, 40, 0}, true);
             return;
         }
         else if (!inDialogue)
