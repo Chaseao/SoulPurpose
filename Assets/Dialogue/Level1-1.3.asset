@@ -18,12 +18,16 @@ MonoBehaviour:
     Unlocks: SeenLevel1-1.3
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "Oh\u2026 uh\u2014 ya he\u2019s been trying to get a little better
-        I guess. He, uh\u2026 must have snuck that bottle past me\u2026 yeah\u2026"
+        I guess. She has a kind heart, wants to help out."
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 0
+      Dialogue: "He, uh\u2026 must have snuck that bottle past us\u2026 yeah\u2026"
     EmotionsValue: 280000001400000032000000000000000000000000000000
     Choices:
     - BranchText: "\u201CYou\u2019re lying\u2014 you and I both know the bottle isn\u2019t
-        his, and neither is the brochure.\u201D"
+        his, and the brochure is clearly for you.\u201D"
       Requirements: []
     LeadsTo:
     - BranchText: Level1-1.5

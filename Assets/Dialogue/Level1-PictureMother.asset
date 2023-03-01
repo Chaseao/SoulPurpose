@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationData:
     ID: Level1-PictureMother
-    Conversant: Nothing
+    Conversant: N/A
     Unlocks: N/A
     Dialogues:
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>The picture seems to be the girl\u2019s mother\u2026 how long
         has she been gone?</i>"
     EmotionsValue: 1e0000001e000000000000001e0000000000000000000000

@@ -14,12 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationData:
     ID: Level1-DCloset
-    Conversant: Nothing
+    Conversant: N/A
     Unlocks: N/A
     Dialogues:
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: <i>The clothes here are folded quite nicely.</i>
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>They\u2019re also quite small. I suspect they are being grown
         out of fast.\u201D</i>"
     EmotionsValue: 1e0000001e0000001e000000000000000000000000000000

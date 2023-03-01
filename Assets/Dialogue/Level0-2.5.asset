@@ -18,14 +18,18 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: How long have you been working for Baalmot?
     - WickIsSpeaker: 1
+      VoiceSpeaker: 0
       Dialogue: "I\u2019m not entirely sure\u2026 probably over a hundred years,
         maybe more? It\u2019s all pretty blurry\u2026"
     - WickIsSpeaker: 1
+      VoiceSpeaker: 0
       Dialogue: "I work for redemption, so my soul can eventually be free once again.
         All I know is\u2026 I need to continue, I have no other choice\u2026."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: And why is it that you must continue?
     EmotionsValue: 1e0000001e0000001e000000000000000000000000000000
     Choices:

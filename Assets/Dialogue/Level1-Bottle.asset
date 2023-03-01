@@ -17,15 +17,18 @@ MonoBehaviour:
     Conversant: Bottle
     Unlocks: SeenBottle
     Dialogues:
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>There\u2019s an empty bottle here, laying in the far corner of
         the bathroom. It reeks of alcohol.</i>"
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>It seems that whoever put this here didn\u2019t want it to be
         found\u2026</i>"
-    - WickIsSpeaker: 1
-      Dialogue: <i>It could belong to either the man on the couch or the man in the
-        South bedroom, but which is it?</i>
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
+      Dialogue: <i>It could belong to either the man on the couch or the man across
+        the hall, but which is it?</i>
     EmotionsValue: 1e0000001400000032000000000000000000000000000000
     Choices:
     - BranchText: Exit.

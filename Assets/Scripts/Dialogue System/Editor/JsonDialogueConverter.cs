@@ -38,6 +38,7 @@ public static class JsonDialogueConverter
             {
                 var file = AssetDatabase.LoadAssetAtPath(filePath, typeof(SOConversationData)) as SOConversationData;
                 file.SetConversation(conversation.Data);
+                EditorUtility.SetDirty(file);
             }
             else
             {

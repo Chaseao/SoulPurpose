@@ -18,36 +18,26 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
-      Dialogue: "\u201CWhat\u2019s on your mind?\u201D"
+      VoiceSpeaker: 0
+      Dialogue: "What\u2019s on your mind?"
     EmotionsValue: 1e0000001e00000000000000000000000000000000000000
     Choices:
-    - BranchText: "\u201CWhat do you think of that bottle?\u201D"
-      Requirements:
-      - SeenBottle
     - BranchText: "\u201CThoughts about the mother?\u201D"
       Requirements:
       - SeenNewspaper
-    - BranchText: "\u201CHow about that rehab brochure?\u201D"
-      Requirements:
-      - SeenBrochure
-    - BranchText: "\u201CDid you read the court summons letter?\u201D"
-      Requirements:
-      - SeenLetter
     - BranchText: "\u201CWow\u2026 that busted window\u2026\u201D"
       Requirements:
       - SeenWindow
+    - BranchText: "More options\u2026"
+      Requirements: []
     - BranchText: "\u201CNevermind.\u201D"
       Requirements: []
     LeadsTo:
-    - BranchText: Level1-Bottle_M
-      Requirements: []
     - BranchText: Level1-Newspaper_M
       Requirements: []
-    - BranchText: Level1-Brochure_M
-      Requirements: []
-    - BranchText: Level1-Letter_M
-      Requirements: []
     - BranchText: Level1-Window_M
+      Requirements: []
+    - BranchText: Level1-Martyn_More
       Requirements: []
     - BranchText: Exit
       Requirements: []

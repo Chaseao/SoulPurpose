@@ -18,11 +18,10 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: What else can I tell you?
     EmotionsValue: 3c0000003c00000000000000000000000000000000000000
     Choices:
-    - BranchText: "<i>\u201CCan you tell me more about the accident?\u201D</i>"
-      Requirements: []
     - BranchText: "\u201CI saw your broken window, what happened?\u201D"
       Requirements:
       - SeenWindow
@@ -32,12 +31,14 @@ MonoBehaviour:
     - BranchText: "\u201CI\u2019d like to hear more about the court hearing.\u201D"
       Requirements:
       - SeenLetter
-    LeadsTo:
-    - BranchText: Level1-3.1
+    - BranchText: "<b><color=#8B2323>\u201CCan you tell me more about the accident?\u201D</b></color>"
       Requirements: []
+    LeadsTo:
     - BranchText: Level1-2.1
       Requirements: []
     - BranchText: Level1-2.2
       Requirements: []
     - BranchText: Level1-2.3
+      Requirements: []
+    - BranchText: Level1-3.1
       Requirements: []

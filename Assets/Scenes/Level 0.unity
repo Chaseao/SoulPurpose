@@ -22866,6 +22866,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bc0a668db0c40624b90098370a9faa50, type: 2}
   - {fileID: 11400000, guid: c1d25cb22e3a93346964da9aa726dca2, type: 2}
   - {fileID: 11400000, guid: 83c6783ae054096428b39c4a20bc4cad, type: 2}
+  - {fileID: 11400000, guid: d379d302932f3af4ea35c275d65fd0d0, type: 2}
+  - {fileID: 11400000, guid: 28fb7c2ba187c1b42b840cc942f2df97, type: 2}
+  - {fileID: 11400000, guid: b16946bae64124343b626ef7b9422a8c, type: 2}
+  - {fileID: 11400000, guid: 5e031c08e3c1cb24d80da4c06220f594, type: 2}
+  - {fileID: 11400000, guid: 0ea84d21d7839f24993b6e0d96b92b29, type: 2}
+  - {fileID: 11400000, guid: 8d5db8a53b3f12a489ad9baad2b622cd, type: 2}
   - {fileID: 11400000, guid: e29cbcd6fac7b034787d004108216688, type: 2}
   - {fileID: 11400000, guid: 9989234944a8cfb498551feb90da7c99, type: 2}
   - {fileID: 11400000, guid: 6266d45583182864cbdcd1cc001e8e3b, type: 2}
@@ -32917,6 +32923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageToDisplay: {fileID: 810755086}
   imageConversation: {fileID: 11400000, guid: ff6466f3e4e77ea489563e5d25a6638f, type: 2}
+  shouldEnableAudio: 0
   audioToPlayFrom: {fileID: 753269950}
   audioConversation: {fileID: 11400000, guid: 79a342669b0721d4ba90611ed1a1c839, type: 2}
 --- !u!4 &1657881701

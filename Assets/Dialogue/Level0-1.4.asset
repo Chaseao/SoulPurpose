@@ -18,12 +18,15 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "Have you been listening to me?? Your \u201CMaster\u201D is killing
         people off indiscriminately!"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "If you won\u2019t take me at my word, feel free to have a look around
         my place."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I\u2019m an open book, so come back to me with whatever questions
         you might have."
     EmotionsValue: 1e0000001e00000014000000000000000000000000000000

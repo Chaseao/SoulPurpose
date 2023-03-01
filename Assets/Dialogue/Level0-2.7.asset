@@ -18,18 +18,24 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "\u201CWick,\u201D you say?"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "Hmm\u2026"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "\u2026"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "A very peculiar name\u2026 fitting for one with a very peculiar
         Destiny."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: I believe it was Fate that brought you here today. That brought us
         together.
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I\u2019d like to make you an offer if you\u2019re willing to hear
         it."
     EmotionsValue: 1e0000001e000000000000001e0000000000000000000000

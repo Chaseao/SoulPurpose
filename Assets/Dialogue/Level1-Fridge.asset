@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationData:
     ID: Level1-Fridge
-    Conversant: Nothing
+    Conversant: N/A
     Unlocks: N/A
     Dialogues:
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>The refrigerator is basically empty\u2026 nothing more than some
         lunchmeat and leftover pizza.</i>"
     EmotionsValue: 1e0000001400000014000000000000000000000000000000

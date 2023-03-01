@@ -18,14 +18,18 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "The accident was two weeks ago\u2014 God I can\u2019t believe it\u2019s
         only been two weeks\u2026"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I was out driving, and this girl\u2026 she appeared out of nowhere!"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "It was the middle of the night! I don\u2019t know why she was out
         in the street\u2026 but, I\u2026 I\u2026 well, she didn\u2019t make it."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I swear it was an accident! Why weren\u2019t her parents with her??
         That\u2019s why you\u2019re here, isn\u2019t it\u2026 come to take me away?"
     EmotionsValue: 320000003200000000000000000000000000000000000000

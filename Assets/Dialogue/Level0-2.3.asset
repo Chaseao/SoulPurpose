@@ -18,12 +18,15 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I\u2019ve been tracking Baalmot\u2019s targets for a long time.
         The list dates back pretty far, but it is far from complete."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "There is no telling how widespread Baalmot\u2019s henchmen are,
         and despite how long I\u2019ve been around, I\u2019m only one person."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "You may have noticed the range of people mentioned here. Serial
         killers, war criminals, rapists, slavers\u2026"
     EmotionsValue: 1e0000001e00000028000000000000000000000000000000

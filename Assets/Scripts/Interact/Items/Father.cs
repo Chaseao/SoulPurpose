@@ -5,6 +5,7 @@ using UnityEngine;
 public class Father : MonoBehaviour, IInteractable
 {
     [SerializeField] private SOConversationData dialogue;
+    [SerializeField] private float pauseLength;
     private bool hasStartedFatherDialogue;
 
 
@@ -37,11 +38,17 @@ public class Father : MonoBehaviour, IInteractable
         }
     }
 
+    private IEnumerator DramaticPauseToEnd()
+    {
+        yield return new WaitForSecondsRealtime(pauseLength);
+        EndLevel();
+    }
+
     void Update()
     {
         if(hasStartedFatherDialogue && !DialogueManager.Instance.InDialogue)
         {
-            EndLevel();
+            StartCoroutine(DramaticPauseToEnd());
         }
     }
 }

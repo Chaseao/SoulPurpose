@@ -18,17 +18,23 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I\u2026 No.. just\u2026"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I\u2019m sorry\u2026 my wife, my daughter\u2026"
     - WickIsSpeaker: 0
-      Dialogue: "\u2026 that girl\u2026 I\u2019m so sorry -<i>overcome with pain,
-        the Father goes silent</i>- -<i>it is time to decide:</i>-"
+      VoiceSpeaker: 0
+      Dialogue: "\u2026 that girl\u2026 I\u2019m so sorry."
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
+      Dialogue: "<i>Overcome with pain, the Father goes silent\u2026it is time to
+        decide.</i>-"
     EmotionsValue: 000000000000000000000000000000000000000000000000
     Choices:
-    - BranchText: "<i>Spare (Take Dog\u2019s Soul)</i>"
+    - BranchText: "<b><color=#8B2323>Spare (Take Dog\u2019s Soul)</b></color>"
       Requirements: []
-    - BranchText: "<i>Take Father\u2019s Soul</i>"
+    - BranchText: "<b><color=#8B2323>Take Father\u2019s Soul</b></color>"
       Requirements: []
     LeadsTo:
     - BranchText: Level1-SpareEnding

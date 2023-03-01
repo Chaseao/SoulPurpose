@@ -18,21 +18,27 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
-      Dialogue: "Yeah\u2026 my brother-in-law brought those. He\u2019s, uh\u2026
-        trying to talk me into getting some professional help."
+      VoiceSpeaker: 0
+      Dialogue: "Yeah\u2026 my daughter got that from a school counselor, they\u2019ve
+        been suggesting family therapy."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
+      Dialogue: "My brother-in-law has been, uh\u2026 trying to talk me into getting
+        other professional help."
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "You see, it\u2019s been tough since my wife passed\u2026 I was drinking
         a little too much sometimes, got unhealthy."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "But I\u2019m no alcoholic, just sometimes like a drink\u2026"
     EmotionsValue: 280000001400000000000000140000000000000000000000
     Choices:
-    - BranchText: "<i>\u201CI found a bottle hidden in the bathroom trash, care to
-        explain that?\u201D</i>"
+    - BranchText: "<b><color=#8B2323>\u201CI found a bottle hidden in the bathroom
+        trash, care to explain that?\u201D</b></color>"
       Requirements:
       - SeenBottle
-    - BranchText: "<i>\u201CIt seems pretty insistent of your brother-in-law to bring
-        all of these\u2026\u201D</i>"
+    - BranchText: "<b><color=#8B2323>\u201CIt seems pretty insistent of your brother-in-law\u2026\u201D</b></color>"
       Requirements: []
     LeadsTo:
     - BranchText: Level1-1.7

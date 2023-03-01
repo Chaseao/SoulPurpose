@@ -18,15 +18,19 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "Well\u2026 my brother-in-law thinks that making contact with some
         rehab programs might help me\u2026 with an, uh, upcoming court hearing."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "There was an accident almost two weeks ago. I was out driving, after
         a few drinks\u2026 and this girl just\u2026 just came out of nowhere!"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "It was so dark and I\u2014 I couldn\u2019t do anything. She wasn\u2019t
         even with anybody, I don\u2019t know why she was there!"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "He\u2019s probably right anyway, legal help or not, I need some
         help\u2026"
     EmotionsValue: 320000003200000000000000000000000000000000000000

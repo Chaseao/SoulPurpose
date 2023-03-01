@@ -18,9 +18,10 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
-      Dialogue: "\u201CLosing someone you love is perhaps the hardest thing in life
-        to face. I can\u2019t imagine this family\u2019s pain. It\u2019s just him
-        and his daughter now\u2026isn\u2019t it?\u201D"
+      VoiceSpeaker: 0
+      Dialogue: "Losing someone you love is perhaps the hardest thing in life to
+        face. I can\u2019t imagine this family\u2019s pain. It\u2019s just him and
+        his daughter now\u2026isn\u2019t it?"
     EmotionsValue: 1e0000003200000000000000000000000000000000000000
     Choices:
     - BranchText: "\u201CI\u2019d like to ask you about something else.\u201D"

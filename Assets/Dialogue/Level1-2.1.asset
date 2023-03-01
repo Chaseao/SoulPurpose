@@ -18,34 +18,27 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "That was the neighbors, or\u2026 somebody in the neighborhood at
         least. Doesn\u2019t matter who, they all hate me now."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "They threw a rock through our window just three days ago with a
-        note: \u201CKILLER\u201D"
+        note, \u201CKILLER\u201D"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "Can\u2019t say I blame them\u2026 I\u2019ll take what\u2019s coming
         to me, not that I can fix what I\u2019ve done."
     EmotionsValue: 460000003200000032000000000000000000000000000000
     Choices:
-    - BranchText: "\u201CCan you tell me more about your wife\u2019s passing?\u201D"
-      Requirements:
-      - SeenNewspaper
-    - BranchText: "\u201CI\u2019d like to hear more about the court hearing.\u201D"
-      Requirements:
-      - SeenLetter
-    - BranchText: "<i>\u201DAre you worried about the safety of your daughter with
-        these attacks?\u201D</i>"
+    - BranchText: "\u201CLet\u2019s talk about something else, I have other questions.\u201D"
+      Requirements: []
+    - BranchText: "<b><color=#8B2323>\u201DAre you worried about the safety of your
+        daughter with these attacks?\u201D</b></color>"
       Requirements:
       - SeenLevel1-1.7
-    - BranchText: "\u201CCan you tell me about the accident again?\u201D"
-      Requirements: []
     LeadsTo:
-    - BranchText: Level1-2.2
-      Requirements: []
-    - BranchText: Level1-2.3
+    - BranchText: Level1-2.4
       Requirements: []
     - BranchText: Level1-3.2
-      Requirements: []
-    - BranchText: Level1-2.4
       Requirements: []

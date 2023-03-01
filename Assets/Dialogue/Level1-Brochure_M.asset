@@ -18,12 +18,13 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
-      Dialogue: "\u201CAsking for help is a great first step! A commitment to change
-        shows dedication to a brighter future, right?\u201D"
+      VoiceSpeaker: 0
+      Dialogue: Asking for help is a great first step! A commitment to change shows
+        dedication to a brighter future, right?
     EmotionsValue: 1e0000001e000000000000001e0000000000000000000000
     Choices:
     - BranchText: "\u201CI\u2019d like to ask you about something else.\u201D"
       Requirements: []
     LeadsTo:
-    - BranchText: Level1-Martyn
+    - BranchText: Level1-Martyn_More
       Requirements: []

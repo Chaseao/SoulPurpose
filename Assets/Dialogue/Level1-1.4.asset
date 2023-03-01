@@ -18,14 +18,18 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
-      Dialogue: "Oh, those? No\u2026 those are for me. He brought them for me. I\u2019m
-        trying to get some professional help."
+      VoiceSpeaker: 0
+      Dialogue: "Oh, you saw that? You\u2019re right, the  letter is addressed to
+        me. He\u2019d never make a mistake like that."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I\u2014 I screwed up pretty bad a few weeks back. I was driving
         and this girl\u2026 she\u2026"
     - WickIsSpeaker: 0
-      Dialogue: well she appeared out of nowhere.
+      VoiceSpeaker: 0
+      Dialogue: Well she appeared out of nowhere.
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "It was an accident, a horrible accident\u2026 It was dark, how could
         I have known a child would be out in the street?? How could I have known?!"
     EmotionsValue: 320000001e00000028000000000000000000000000000000

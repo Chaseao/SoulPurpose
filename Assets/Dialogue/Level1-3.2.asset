@@ -18,14 +18,19 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "What? Yes..! Yes of course I worry for her safety\u2026 I\u2026
-        what am I suppose to do? What else do you want me to do?"
+        what am I supposed to do? What else do you want me to do?"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I know I\u2019ve fucked up\u2026 what more do you want? Just here
         to rub it in more?"
     - WickIsSpeaker: 0
-      Dialogue: "I want to get better\u2026 I do\u2026 it\u2019s just, so hard and\u2026
-        <i>The Father begins sobbing.</i>"
+      VoiceSpeaker: 0
+      Dialogue: "I want to get better\u2026 I do\u2026 it\u2019s just, so hard and\u2026"
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
+      Dialogue: <i>The Father begins sobbing.</i>
     EmotionsValue: 500000003c00000046000000000000000000000000000000
     Choices:
     - BranchText: "\u201CAre you prepared to face judgment?\u201D"

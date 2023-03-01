@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationData:
     ID: Level1-TakeSoulEnding
-    Conversant: Father
+    Conversant: N/A
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
-      Dialogue: "The father\u2019s actions have been deemed unforgivable.\r\n\n"
+      VoiceSpeaker: 1
+      Dialogue: "<i>The father\u2019s actions have been deemed unforgivable.</i>"
     - WickIsSpeaker: 0
-      Dialogue: "Wick takes his soul to fulfill his contract as planned.\r"
+      VoiceSpeaker: 1
+      Dialogue: <i>Wick takes his soul to fulfill his contract as planned.</i>
     EmotionsValue: 000000000000000000000000000000000000000000000000
     Choices: []
     LeadsTo:

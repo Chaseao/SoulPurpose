@@ -18,7 +18,8 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
-      Dialogue: "\u201CWhat\u2019s on your mind?\u201D"
+      VoiceSpeaker: 0
+      Dialogue: "What\u2019s on your mind?"
     EmotionsValue: 1e0000001e00000000000000000000000000000000000000
     Choices:
     - BranchText: "\u201CWhat do you think of that bottle?\u201D"

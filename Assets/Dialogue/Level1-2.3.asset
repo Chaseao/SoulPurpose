@@ -18,39 +18,38 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "The hearing is in a month. I\u2019m out on bail right now\u2026
         brother-in-law helped me out with that. He\u2019s trying to help me get some
         legal help\u2026 but, I don\u2019t know\u2026"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I\u2019m not sure there\u2019s much anybody can do. The girl died,
         and the family isn\u2019t going to let me off\u2014 not that I blame them."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I\u2019ve heard that people in my situation\u2026 well, there\u2019s
-        a minimum of ten years. <i>The Father tears up</i>"
+        a minimum of ten years."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 1
+      Dialogue: <i>The Father tears up</i>
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I\u2019ll\u2026 I think that I\u2019ll probably lose custody of
         my girl\u2026"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "She\u2019ll have to go live with her uncle. It\u2019s probably for
         the best\u2026 but I\u2026 it kills me to lose her."
     EmotionsValue: 460000004600000000000000000000000000000000000000
     Choices:
-    - BranchText: "\u201CI saw your broken window, what happened?\u201D"
-      Requirements:
-      - SeenWindow
-    - BranchText: "\u201CCan you tell me more about your wife\u2019s passing?\u201D"
-      Requirements:
-      - SeenNewspaper
-    - BranchText: "<i>\u201DAre you prepared to face consequences for your crimes?\u201D</i>"
+    - BranchText: "\u201CHow about I ask you about something else instead?\u201D"
       Requirements: []
-    - BranchText: "\u201CCan you tell me about the accident again?\u201D"
+    - BranchText: "<b><color=#8B2323>\u201DAre you prepared to face legal consequences
+        for your crimes?\u201D</b></color>"
       Requirements: []
     LeadsTo:
-    - BranchText: Level1-2.1
-      Requirements: []
-    - BranchText: Level1-2.2
+    - BranchText: Level1-2.4
       Requirements: []
     - BranchText: Level1-3.4
-      Requirements: []
-    - BranchText: Level1-2.4
       Requirements: []

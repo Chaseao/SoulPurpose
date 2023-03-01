@@ -18,29 +18,32 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "Well\u2026 It certainly hasn\u2019t been easy here. My wife passed
         away about six months ago and it\u2019s made things really difficult around
         here."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "That\u2019s her brother on the couch, he\u2019s been trying to help
         out as much as he can\u2026 especially recently. My daughter should be in
         her room with our dog."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "Every day is a struggle without my wife, for all of us. I\u2019m
         not sure how much more tragedy our family can handle\u2014 not that I\u2019ve
         been much help at all."
     EmotionsValue: 1e0000001e00000000000000000000000000000000000000
     Choices:
-    - BranchText: "<i>\u201CI found an empty bottle in the bathroom trash, can you
-        tell me about that?\u201D</i>"
+    - BranchText: "<b><color=#8B2323>\u201CI found an empty bottle in the bathroom
+        trash, can you tell me about that?\u201D</b></color>"
       Requirements:
       - SeenBottle
-    - BranchText: "<i>\u201CI saw that brochure on your counter, can you tell me
-        about that?\u201D</i>"
+    - BranchText: "<b><color=#8B2323>\u201CI saw that brochure in your daughter\u2019s
+        room, can you tell me about that?\u201D</b></color>"
       Requirements:
       - SeenBrochure
-    - BranchText: "<i>\u201CThat doesn\u2019t sound like the whole story, tell me
-        more.\u201D</i>"
+    - BranchText: "<b><color=#8B2323>\u201CThat doesn\u2019t sound like the whole
+        story, tell me more.\u201D</b></color>"
       Requirements: []
     LeadsTo:
     - BranchText: Level1-1.1

@@ -18,9 +18,11 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "Shit.. I\u2014 I\u2019m not supposed to be having that right now.
         That\u2019s why. Supposed to be getting clean after\u2026 the accident."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "Truth is\u2026 I fucked up bad recently, real bad\u2026"
     EmotionsValue: 32000000280000001e000000000000000000000000000000
     Choices:

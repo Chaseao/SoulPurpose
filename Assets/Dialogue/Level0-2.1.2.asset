@@ -18,16 +18,20 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "As a healer, I\u2019ve had access to some\u2026 advanced forms of
         medicine."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I was quite experimental back in the day. It\u2019s hard to say
         exactly how any of it works\u2026 Science and magic\u2026 they\u2019re really
         just one in the same, you know?"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "My medicines have given me longevity, but I\u2019ve paid a great
         price for it. Everything I once held dear has gone away."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "That is why I continue to fight Baalmot, to reverse the damage that
         he\u2019s done."
     EmotionsValue: 1e0000001e00000000000000280000000000000000000000

@@ -17,44 +17,33 @@ MonoBehaviour:
     Conversant: death_cupboard
     Unlocks: SeenList
     Dialogues:
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>Looks like a collection of lists of various people\u2019s names.
-        There are so many pages here, I wonder why Martyn has something like this
-        just lying around here. Well, I guess I should read a few entries given they
-        asked to look around here.</i>"
-    - WickIsSpeaker: 1
-      Dialogue: "<i>\u201DName: Beatrice\u2026Age: 35\u2026Date: 3/4/1878\u201D</i>"
-    - WickIsSpeaker: 1
-      Dialogue: "<i>\u201DCrime: Murder - Beatrice in an effort to fight off a home
-        intruder stabbed and killed a man.\u201D</i>"
-    - WickIsSpeaker: 1
-      Dialogue: "<i>\u201CNotes: Once the mother of two was gone from this world,
-        her daughters struggled to survive. One went to foster care and dealt with
-        abuse from other kids, the other worked at a coal mine for 5 years before
-        dying an early death.\u201D</i>"
-    - WickIsSpeaker: 1
-      Dialogue: "<i>\u201DName: Lorenzo\u2026Age: 58\u2026Date: 12/14/1916\u201D</i>"
-    - WickIsSpeaker: 1
-      Dialogue: "<i>\u201DCrime: Thievery - Lorenzo was caught stealing food from
-        local shops for their pantry.\u201D</i>"
-    - WickIsSpeaker: 1
-      Dialogue: "<i>\u201DNotes: With Lorenzo\u2019s passing, the food pantry they
-        owned and ran had to shut down and many of the locals suffered food struggles.
-        \u201D</i>"
-    - WickIsSpeaker: 1
-      Dialogue: "<i>\u201DName: Baatar\u2026Age: 27\u2026Date: 9/2/1976\u201D</i>"
-    - WickIsSpeaker: 1
-      Dialogue: "<i>\u201DCrime: Saving Lives - Baatar was a firefighter who prided
-        themselves on the number of lives they saved time they were called.\u201D</i>"
-    - WickIsSpeaker: 1
-      Dialogue: "<i>\u201CNotes: Baatar\u2019s death caused many more people\u2019s
-        suffering not only in the fires unfought, but from the loved ones around
-        Baatar, a single mother, and a lone child to fend for themselves in a cruel
-        world.\u201D</i>"
-    - WickIsSpeaker: 1
+        There are so many pages here, I wonder why Martyn has something like this...</i>"
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
+      Dialogue: "<i>\u201DName- Beatrice\u2026Age- 35\u2026Date- 3/4/1878\u2026Crime-
+        Murder - Beatrice in an effort to fight off a home intruder stabbed and killed
+        a man.\u201D</i>"
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
+      Dialogue: "<i>\u201CNotes- Once the mother of two was gone from this world,
+        her daughters struggled to survive\u201D</i>"
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
+      Dialogue: "<i>\u201DName- Baatar\u2026Age- 27\u2026Date- 9/2/1976\u2026Crime-
+        Saving Lives -  Baatar was a firefighter who prided themselves on the number
+        of lives they saved.\u201D</i>"
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
+      Dialogue: "<i>\u201CNotes- Baatar left behind a single mother, and a lone child
+        to fend for themselves in a cruel world.\u201D</i>"
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>It seems like a list of people and crimes they committed. I wonder
-        if these are Martyn\u2019s lists? But if so why are there so many names?
-        </i>"
+        if these are Martyn\u2019s lists? But if so why are there so many names and
+        why are they so old? </i>"
     EmotionsValue: 1e0000001400000032000000000000000000000000000000
     Choices:
     - BranchText: Exit.

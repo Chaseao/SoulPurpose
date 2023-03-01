@@ -18,19 +18,24 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "Well to start, I\u2019m no killer or criminal. Let\u2019s be very
         clear about that."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I\u2019m a doctor\u2013 a healer, to be specific. I work with those
         whom other doctors would consider a lost cause, which is precisely why Baalmot
         wants to take me out."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: My patients live well beyond their life expectancy, running from
         his deathly clutches.
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "Baalmot makes an enemy out of anybody deemed disruptive to \u201Cthe
         natural order,\u201D including people like me."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I\u2019m the good guy here, at least that much should be clear."
     EmotionsValue: 1e0000001e00000000000000140000000000000000000000
     Choices:

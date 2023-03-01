@@ -18,19 +18,24 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "Ah yes. That locket is the only memory I have left from an old,
         past life\u2026"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "It\u2019s been well over a century since then. In fact, those pictures
         were some of the very first ever taken!"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "They\u2019re photos of me and my partner, we were both healers.
         I remember pushing them to take the photos with me\u2026 they weren\u2019t
         sure about the new tech."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "<i>*laughs*</i>  It\u2019d be funny to see how they feel about all
         the new tech today."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I\u2019m glad I talked them into it, though\u2026 that locket is
         the last I have to remind myself of those times, before Baalmot took everything
         away."

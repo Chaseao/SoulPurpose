@@ -18,20 +18,26 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "What do you mean \u201Cjudgment?\u201D"
     - WickIsSpeaker: 1
+      VoiceSpeaker: 0
       Dialogue: "I\u2019m here to collect a soul; if not yours\u2026 then somebody
         else\u2026"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: Somebody else?! Please, leave my daughter out of this!!
     - WickIsSpeaker: 1
+      VoiceSpeaker: 0
       Dialogue: "Your daughter is safe, I will bring her no harm. Though I suppose
         your brother-in-law could take your place\u2026 or even your daughter\u2019s
         dog."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "No, not my brother-in-law\u2026 he wouldn\u2019t hurt a fly! He
         doesn\u2019t deserve that."
     - WickIsSpeaker: 1
+      VoiceSpeaker: 0
       Dialogue: "Then I suppose it\u2019s you or the dog\u2026"
     EmotionsValue: 5a000000460000005a000000000000000000000000000000
     Choices:

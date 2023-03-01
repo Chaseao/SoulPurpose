@@ -18,21 +18,27 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "Oh what\u2019s that? What kind of bottle did you find?"
     - WickIsSpeaker: 1
+      VoiceSpeaker: 0
       Dialogue: It looked like some kind of liquor, whiskey maybe?
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "Oh whiskey? Ya that\u2014 that must be my brother-in-law\u2019s,
         he\u2019s a big whiskey guy."
     EmotionsValue: 280000001400000028000000000000000000000000000000
     Choices:
-    - BranchText: "<i>\u201CSo that brochure on the counter\u2026 is that his?\u201D</i>"
+    - BranchText: "<b><color=#8B2323>\u201CSo that brochure in your daughter\u2019s
+        room\u2026 she has that for him, her uncle?\u201D</b></color>"
       Requirements:
       - SeenBrochure
-    - BranchText: "<i>\u201CWas he also the recipient of that letter I saw?\u201D</i>"
+    - BranchText: "<b><color=#8B2323>\u201CWas he also the recipient of that letter
+        I saw? It mentioned a DUI\u2026\u201D</b></color>"
       Requirements:
       - SeenLetter
-    - BranchText: "<i>\u201CIt seemed pretty hidden away, why might that be?\u201D</i>"
+    - BranchText: "<b><color=#8B2323>\u201CIt seemed pretty hidden away, why might
+        that be?\u201D</b></color>"
       Requirements: []
     LeadsTo:
     - BranchText: Level1-1.3

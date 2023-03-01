@@ -18,15 +18,24 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "You\u2019re right\u2014 the bottle was mine. I\u2019m the one with
-        a problem. My brother-in-law brought the brochures because he\u2019s trying
-        to get me professional help."
+        a problem. My daughter got the brochure from a school counselor."
     - WickIsSpeaker: 0
-      Dialogue: "Two weeks ago I\u2026 I fucked up. There was this girl\u2026 <i>the
-        Father starts crying</i>"
+      VoiceSpeaker: 0
+      Dialogue: "She doesn\u2019t know the full story, but she can see that I\u2019m
+        struggling."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
+      Dialogue: "Two weeks ago I\u2026 I fucked up. There was this girl\u2026"
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
+      Dialogue: <i>The Father starts crying</i>
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "She was just nine years old\u2026 younger than my own little girl."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I just had to go down to the gas station\u2026 but I had been drinking
         a little. I never thought that I\u2019d\u2026 it was an accident, a horrible
         accident."

@@ -18,20 +18,26 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: Take my soul with you, but not for Baalmot.
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "You have no choice but to continue fulfilling contracts, so I\u2019ll
         come with you to learn more about Baalmot\u2019s nefarious plan."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: Maybe together we can put an end to his reign and stop the meaninglessness
         of death.
     - WickIsSpeaker: 1
+      VoiceSpeaker: 0
       Dialogue: "But if I\u2019m to take your soul, how will you be able to help
         me?"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "Don\u2019t worry about this body, it\u2019s temporary anyway. We
         will still be able to communicate while I\u2019m in my soul form."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "However, you will need a replacement soul to hand over to Baalmot\u2026"
     EmotionsValue: 1e0000001e000000000000001e0000000000000000000000
     Choices:

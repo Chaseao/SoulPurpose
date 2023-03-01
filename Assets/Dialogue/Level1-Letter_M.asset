@@ -18,12 +18,17 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
-      Dialogue: "\u201CHmm, what a dire situation. Did you see the painting on the
-        wall by the way? Must be an original. Wow, he creates such beautiful things.\u201D"
+      VoiceSpeaker: 0
+      Dialogue: Hmm, what a dire situation. Legal situations can be tricky though,
+        do we really know the full story?
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 0
+      Dialogue: Did you see the painting on the wall by the way? Must be an original.
+        Wow, he creates such beautiful things.
     EmotionsValue: 1e0000003200000000000000000000000000000000000000
     Choices:
     - BranchText: "\u201CI\u2019d like to ask you about something else.\u201D"
       Requirements: []
     LeadsTo:
-    - BranchText: Level1-Martyn
+    - BranchText: Level1-Martyn_More
       Requirements: []

@@ -18,15 +18,10 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
-      Dialogue: "The accident was about two weeks ago. I was out driving at night
-        and\u2026 well I hit that girl. She didn\u2019t make it."
-    - WickIsSpeaker: 0
-      Dialogue: "But it was an accident! I don\u2019t know why she was alone\u2026
-        I swear there was nothing I could have done, it was a freak accident!!"
+      VoiceSpeaker: 0
+      Dialogue: Yeah, what do you want to ask about?
     EmotionsValue: 3c0000003c00000000000000000000000000000000000000
     Choices:
-    - BranchText: "<i>\u201CCan you tell me more about the accident?\u201D</i>"
-      Requirements: []
     - BranchText: "\u201CI saw your broken window, what happened?\u201D"
       Requirements:
       - SeenWindow
@@ -36,12 +31,14 @@ MonoBehaviour:
     - BranchText: "\u201CI\u2019d like to hear more about the court hearing.\u201D"
       Requirements:
       - SeenLetter
-    LeadsTo:
-    - BranchText: Level1-3.1
+    - BranchText: "<b><color=#8B2323>\u201CCan you tell me more about the accident?\u201D</b></color>"
       Requirements: []
+    LeadsTo:
     - BranchText: Level1-2.1
       Requirements: []
     - BranchText: Level1-2.2
       Requirements: []
     - BranchText: Level1-2.3
+      Requirements: []
+    - BranchText: Level1-3.1
       Requirements: []

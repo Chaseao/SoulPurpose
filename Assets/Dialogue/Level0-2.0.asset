@@ -18,6 +18,7 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: What do you want to ask me about?
     EmotionsValue: 1e0000001e00000000000000000000000000000000000000
     Choices:

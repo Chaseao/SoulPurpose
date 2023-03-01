@@ -17,17 +17,20 @@ MonoBehaviour:
     Conversant: medical_bag
     Unlocks: SeenDoctorsBag
     Dialogues:
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>There\u2019s a bag here that looks like it has lots of different
         medical supplies\u2026Is Martyn some sort of Doctor? </i>"
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: <i>It seems like the medical supplies are strangely vast. There are
         the typical bandages, gauze, and wipes, but also strange-looking herbs, oils,
         needles, and a lot of different colored flasks. Just what kind of Doctor
         is Martyn? </i>
-    - WickIsSpeaker: 1
-      Dialogue: "<i>The flasks have labels like \u201CBone\u201D, \u201CBrazo\u201D,
-        \u201C\u0434\u0435\u043F\u0440\u0435\u0441\u0441\u0438\u044F\u201D, and \u201C\u05EA\u05D5\u05E2\u05DE\u05D3\u201D.
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
+      Dialogue: "<i>The flasks have labels like \u201CBone,\u201D \u201CBrazo,\u201D
+        \u201C\u0434\u0435\u043F\u0440\u0435\u0441\u0441\u0438\u044F,\u201D and \u201C\u05D3\u05DE\u05E2\u05D5\u05EA.\u201D
         What exactly do these flasks do and why are there so many different languages?
         </i>"
     EmotionsValue: 1e0000000000000000000000320000000000000000000000

@@ -8,6 +8,7 @@ public class DialogueEvents : MonoBehaviour
 {
     [SerializeField] GameObject imageToDisplay;
     [SerializeField] SOConversationData imageConversation;
+    [SerializeField] bool shouldEnableAudio;
     [SerializeField] AudioSource audioToPlayFrom;
     [SerializeField] SOConversationData audioConversation;
 
@@ -18,7 +19,7 @@ public class DialogueEvents : MonoBehaviour
     private void OnEnable()
     {
         DialogueManager.OnDialogueStarted += UpdateLastDialogue;
-        //DialogueManager.OnDialogueEnded += CheckForEvent;
+        DialogueManager.OnDialogueEnded += CheckForEvent;
         DialogueManager.OnChoiceMenuClose += CheckForEvent;
     }
 
@@ -32,11 +33,13 @@ public class DialogueEvents : MonoBehaviour
     {
         if (triggerImage && imageToDisplay != null)
         {
+            triggerImage = false;
             StartCoroutine(PlayImage());
         }
         if (triggerAudio && audioToPlayFrom != null)
         {
-            audioToPlayFrom.enabled = false;
+            triggerAudio = false;
+            audioToPlayFrom.enabled = shouldEnableAudio;
         }
     }
 
@@ -60,6 +63,7 @@ public class DialogueEvents : MonoBehaviour
     private void OnDisable()
     {
         DialogueManager.OnDialogueStarted -= UpdateLastDialogue;
+        DialogueManager.OnDialogueEnded -= CheckForEvent;
         DialogueManager.OnChoiceMenuClose -= CheckForEvent;
     }
 }

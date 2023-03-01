@@ -18,13 +18,17 @@ MonoBehaviour:
     Unlocks: SeenLevel1-1.7
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "\u2026 I\u2014 I don\u2019t know what to say\u2026"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I\u2019m just\u2026 struggling. Struggling real bad."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: My brother-in-law is probably right about rehab. He keeps pushing
         me to call those places.
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I just don\u2019t know how much good it\u2019ll do\u2026 if I can
         really fix anything."
     EmotionsValue: 280000001e00000028000000000000000000000000000000

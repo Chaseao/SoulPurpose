@@ -17,10 +17,12 @@ MonoBehaviour:
     Conversant: Window
     Unlocks: SeenWindow
     Dialogues:
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>There\u2019s a broken window in the kitchen\u2026A heavy piece
         of metal lies on the ground outside.</i>"
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>There\u2019s still some tiny shards of glass on the kitchen floor
         and small droplets of red next to them. The wind outside sends a chill through
         the hole. Why has no one boarded this up?</i>"

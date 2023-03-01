@@ -18,14 +18,18 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "No\u2026 no I\u2019m not, I\u2014 this isn\u2019t what I wanted."
     - WickIsSpeaker: 0
-      Dialogue: "None of this is how it was suppose to be\u2026 she was suppose to
-        still be here\u2026 with me. We had a whole life to live\u2026"
+      VoiceSpeaker: 0
+      Dialogue: "None of this is how it was supposed to be\u2026 she was supposed
+        to still be here\u2026 with me. We had a whole life to live\u2026"
     - WickIsSpeaker: 0
-      Dialogue: "I can\u2019t even bare to see my daughter\u2014 ashamed of her father,
+      VoiceSpeaker: 0
+      Dialogue: "I can\u2019t even bear to see my daughter\u2014 ashamed of her father,
         a total waste."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I want to get better for her\u2026 I do, but\u2026 how much of a
         father could I ever be to her\u2026"
     EmotionsValue: 5000000046000000000000002d0000000000000000000000

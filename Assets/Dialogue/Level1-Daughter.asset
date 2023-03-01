@@ -14,12 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationData:
     ID: Level1-Daughter
-    Conversant: Nothing
+    Conversant: N/A
     Unlocks: N/A
     Dialogues:
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>The girl is sleeping\u2026</i>"
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>Her eyebrows are drawn together, and there are some tear stains
         on her flushed cheeks. Maybe she\u2019s in a nightmare.</i>"
     EmotionsValue: 1e0000002800000014000000000000000000000000000000

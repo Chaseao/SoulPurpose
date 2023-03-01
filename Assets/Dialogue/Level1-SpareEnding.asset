@@ -14,15 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationData:
     ID: Level1-SpareEnding
-    Conversant: Father
+    Conversant: N/A
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
-      Dialogue: Feeling sorry for the father and hoping to give him a second chance,
-        Wick spares him.
+      VoiceSpeaker: 1
+      Dialogue: <i>Feeling sorry for the father and hoping to give him a second chance,
+        Wick spares him.</i>
     - WickIsSpeaker: 0
-      Dialogue: "The dog\u2019s soul is taken in place of the father\u2019s to fulfill
-        the contract."
+      VoiceSpeaker: 1
+      Dialogue: "<i>The dog\u2019s soul is taken in place of the father\u2019s to
+        fulfill the contract.</i>"
     EmotionsValue: 000000000000000000000000000000000000000000000000
     Choices: []
     LeadsTo:

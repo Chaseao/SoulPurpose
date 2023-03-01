@@ -14,12 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationData:
     ID: Level1-Dog
-    Conversant: Nothing
+    Conversant: N/A
     Unlocks: N/A
     Dialogues:
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>The dog is fast asleep. He looks pretty old\u2026</i>"
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>Didn\u2019t he do it for you?</i>"
     EmotionsValue: 1e0000001e0000001e000000000000000000000000000000
     Choices:

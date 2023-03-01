@@ -17,15 +17,18 @@ MonoBehaviour:
     Conversant: Brochure
     Unlocks: SeenBrochure
     Dialogues:
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>There\u2019s a brochure on the counter for a rehab program.</i>"
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>\u201DGet your life back on track! Find your inner self again
         through meditation and relaxation all while making the right choice for your
         loved ones.\u201D</i>"
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>\u201D8-week program\u2026 designed for those struggling with
-        addiction\u2026 support system for you, resources for your family.</i>"
+        addiction\u2026 support system for you, resources for your family.\u201D</i>"
     EmotionsValue: 1e0000001400000000000000320000000000000000000000
     Choices:
     - BranchText: Exit.

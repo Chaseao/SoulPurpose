@@ -18,23 +18,29 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I\u2019ve practiced medicine all around the world, curing people
         from all walks of life."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: Many traditional practices have quite a lot of value and my research
         is focused on finding the root cause of life, and with that, an explanation
         for death.
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "Others have sought fantastical objects such as the \u201CElixir
         of Life,\u201D but those are just merely myths. They fail to account for
         our core energy, the soul."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: Nobody has ever come closer to discovering what constitutes life
         and existence than I have.
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: Our souls, indestructible yet re-writable, hold the key to understanding
         our greater purpose.
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "If one could just solidify a soul\u2019s content and remove Baalmot\u2019s
         influence\u2026"
     EmotionsValue: 1e0000001e00000028000000000000000000000000000000

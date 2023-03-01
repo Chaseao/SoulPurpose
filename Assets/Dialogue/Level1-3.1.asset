@@ -18,11 +18,14 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I\u2019ve told you everything I can!! There\u2019s nothing else
         I could have done!"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I fucked up real bad, I know, but I swear it wasn\u2019t my fault!"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "It wasn\u2019t\u2026 I couldn\u2019t have done anything else\u2026
         please, believe me\u2026"
     EmotionsValue: 50000000460000003c000000000000000000000000000000

@@ -15,7 +15,7 @@ MonoBehaviour:
   conversationData:
     ID: Level0.5-Start
     Conversant: Martyn
-    Unlocks: "\rN/A"
+    Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
       VoiceSpeaker: 0

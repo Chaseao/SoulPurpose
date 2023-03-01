@@ -18,12 +18,13 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
-      Dialogue: "\u201CI love a nice, refreshing drink every one and a while. Someone
-        must have forgotten to throw this away. No harm done right?\u201D"
+      VoiceSpeaker: 0
+      Dialogue: I love a nice, refreshing drink every one and a while. Someone must
+        have forgotten to throw this away. No harm done right?
     EmotionsValue: 1e0000001e0000001e000000000000000000000000000000
     Choices:
     - BranchText: "\u201CI\u2019d like to ask you about something else.\u201D"
       Requirements: []
     LeadsTo:
-    - BranchText: Level1-Martyn
+    - BranchText: Level1-Martyn_More
       Requirements: []

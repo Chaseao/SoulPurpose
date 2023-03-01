@@ -18,15 +18,20 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "My wife? She\u2026 she would\u2026"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "She\u2019d tell me I\u2019m\u2026 lousy, worthless\u2026"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "\u2026 a waste of a man. And she\u2019d be right."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "It\u2019s my fault she took those pills\u2014 it was no accident.
         We had a fight that night\u2026 because of my drinking."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "We were always fighting about it\u2026 and I guess she\u2026 she
         couldn\u2019t handle it anymore. The police said it was an accident\u2026
         but, I blame myself."

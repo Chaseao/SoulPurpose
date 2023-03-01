@@ -17,14 +17,17 @@ MonoBehaviour:
     Conversant: locket
     Unlocks: SeenLocket
     Dialogues:
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>An ancient locket\u2026I\u2019m sure Martyn wouldn\u2019t mind
         if I opened it given they did ask me to look around here.</i>"
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: "<i>There\u2019s a very old-looking picture inside of two friends.
         I can\u2019t say I recognize who they are, but I feel like I\u2019ve seen
         them before\u2026strange.</i>"
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: <i>I wonder why Martyn has this locket lying around here? Why keep
         a locket of two strangers in your house? I wonder if this locket has been
         passed down.</i>

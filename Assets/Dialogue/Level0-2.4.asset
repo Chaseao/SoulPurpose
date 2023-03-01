@@ -18,27 +18,34 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "You didn\u2019t let me finish. Also included on the list among them
         are surgeons, therapists, even saints\u2026 all of whom were fathers, mothers,
         sons, daughters\u2026"
     - WickIsSpeaker: 1
+      VoiceSpeaker: 0
       Dialogue: "But they surely must have had other reasons for being targeted?
         I\u2019ve never taken an innocent soul\u2026 or at least, I don\u2019t think
         I have\u2026"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "If you look closer, you may find that some of the names are familiar.
         That is, if you ever knew the names of your victims\u2026 But I promise you,
         any soul you\u2019ve taken has included  innocence just as it holds guilt."
     - WickIsSpeaker: 1
+      VoiceSpeaker: 0
       Dialogue: "I suppose so\u2026 but, why do\u2013"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "Don\u2019t you understand?? The question is not whether somebody
         is \u201Cgood\u201D or \u201Cbad,\u201D it\u2019s whether or not Baalmot
         sees them as an interference."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "He\u2019s playing a much larger game here, within which we are <i>all</i>
         pawns, you and I included."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: Can I ask you something?
     EmotionsValue: 1e0000001e0000001e000000000000000000000000000000
     Choices:

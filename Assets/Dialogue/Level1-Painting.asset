@@ -14,12 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationData:
     ID: Level1-Painting
-    Conversant: Nothing
+    Conversant: N/A
     Unlocks: N/A
     Dialogues:
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: <i>This painting looks like an original, signed in the bottom corner.</i>
-    - WickIsSpeaker: 1
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
       Dialogue: <i>Could a family member have made this?</i>
     EmotionsValue: 1e00000014000000000000001e0000000000000000000000
     Choices:

@@ -18,12 +18,15 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "Oh trust me, I know a lot about your \u201CMaster\u201D and what
         he\u2019s been doing."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "It\u2019s about time he found me\u2026 been decades since I had
         to start fresh again."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I guess I\u2019ve been too laid back recently. What a shame, I was
         starting to get used to this lifestyle."
     EmotionsValue: 1e0000001e00000014000000000000000000000000000000

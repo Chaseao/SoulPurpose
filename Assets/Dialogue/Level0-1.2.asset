@@ -18,21 +18,28 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: Well I certainly know why Baalmot wants me dead! <i>*laughs*</i>
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: "I\u2019m curious, what were you told about me? That I\u2019ve committed
         some sort of \u201Ccrime?\u201D"
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: Or was he more specific? Did he say I murdered somebody? Or maybe
         a few!! <i>*laughs harder*</i>
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: What was the story he gave to you, his mere henchman?
     - WickIsSpeaker: 1
+      VoiceSpeaker: 0
       Dialogue: "He told me\u2026 well, not much if I\u2019m honest. I suppose I\u2026
         I  don\u2019t really ask questions\u2026"
     - WickIsSpeaker: 1
+      VoiceSpeaker: 0
       Dialogue: "I just finish my contracts as I\u2019m told and move on."
     - WickIsSpeaker: 0
+      VoiceSpeaker: 0
       Dialogue: <i>*sighs*</i> I should have known, why would he ever give you the
         truth?
     EmotionsValue: 1e0000001e00000014000000000000000000000000000000

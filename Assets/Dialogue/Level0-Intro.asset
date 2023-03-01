@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationData:
     ID: Level0-Intro
-    Conversant: Nothing
+    Conversant: N/A
     Unlocks: N/A
     Dialogues:
-    - WickIsSpeaker: 1
-      Dialogue: "I\u2019m here to take another soul, this target\u2019s name is Martyn
-        it seems."
-    EmotionsValue: 000000000000000000000000000000000000000000000000
+    - WickIsSpeaker: 0
+      VoiceSpeaker: 1
+      Dialogue: "<i>Here I am at my next target\u2019s residence\u2026 I just need
+        to find them and take their soul, then I\u2019ll be on my way.</i>"
+    EmotionsValue: 1e0000001e00000000000000000000000000000000000000
     Choices:
     - BranchText: Exit.
       Requirements: []

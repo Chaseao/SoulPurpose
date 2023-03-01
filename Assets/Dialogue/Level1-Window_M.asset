@@ -18,8 +18,9 @@ MonoBehaviour:
     Unlocks: N/A
     Dialogues:
     - WickIsSpeaker: 0
-      Dialogue: "\u201CI mean, they could use the fresh air! I\u2019ve heard it helps
-        with mental health. That aside, I\u2019m sure someone will fix it soon.\u201D"
+      VoiceSpeaker: 0
+      Dialogue: "I mean, they could use the fresh air! I\u2019ve heard it helps with
+        mental health. That aside, I\u2019m sure someone will fix it soon."
     EmotionsValue: 1e0000001e0000001e000000000000000000000000000000
     Choices:
     - BranchText: "\u201CI\u2019d like to ask you about something else.\u201D"
