@@ -1,5 +1,5 @@
 # SoulPurpose
-Play as Wick as they serve Anubus in collecting the souls of the damned
+Play as Wick as they serve Baalmot in collecting the souls of the damned
 
 What The Team Learned:
 - How to create a dialogue inmporter tool to take Google Docs and convert into branching dialogue (Chase)
